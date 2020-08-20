@@ -151,22 +151,16 @@ a:hover {
 
 /*if the screen is less than 600px tall*/
 @media screen and (max-height: 600px) {
-  .heading {
-    flex: 5;
-  }
-
-  .section {
-    flex: 2;
+  .img-circle {
+    width: 100px;
+    border-radius: 50px;
   }
 }
 
 /*if the screen is at least 600px tall*/
 @media screen and (min-height: 601px) {
-  .heading {
-    flex: 2;
-  }
-
-  .section {
-    flex: 2;
+  .img-circle {
+    width: 150px;
+    border-radius: 75px;
   }
 }
