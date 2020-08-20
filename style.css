@@ -20,7 +20,7 @@ body {
 }
 
 .heading {
-  background-color: #0e0e0e;
+  background-color: #5d5c61;
   color: #ffffff;
 
   flex: 2;
@@ -32,6 +32,8 @@ body {
 #name {
   font-size: xx-large;
   padding-bottom: 10px;
+  color: #379683;
+  padding-top: 10px;
   flex: 2;
 }
 
@@ -76,7 +78,7 @@ body {
 }
 
 .btn {
-  background-color: #1c1c1c;
+  background-color: #7395ae;
   border: none;
   color: white;
   cursor: pointer;
@@ -89,24 +91,24 @@ body {
 }*/
 
 .btn:focus {
-  background-color: #424242;
+  background-color: #557a95;
 }
 
 .btn-active {
   pointer-events: none;
-  background-color: #424242;
+  background-color: #557a95;
 }
 
 a {
-  color: turquoise;
+  color: #379683;
 }
 
 a:hover {
-  color: purple;
+  color: #b1a296;
 }
 
 .section {
-  background-color: #424242;
+  background-color: #557a95;
   color: #ffffff;
 
   display: flex;
@@ -185,6 +187,6 @@ a:hover {
 
 @media (hover: hover) {
   .btn:hover {
-    background-color: turquoise;
+    background-color: #379683;
   }
 }
