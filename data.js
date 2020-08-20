@@ -6,9 +6,9 @@ var data = {
     imgSource: "me.png",
     mailLink: "mailto:walt.frederick.john@live.com",
     mailText: "walt.frederick.john@live.com",
-    link1Link: "https://github.com/waltwengert",
+    githubLink: "https://github.com/waltwengert",
     link1Text: "GitHub",
-    link2Link: "https://www.linkedin.com/in/walter-wengert-457864196/",
+    linkedinLink: "https://www.linkedin.com/in/walter-wengert-457864196/",
     link2Text: "LinkedIn",
   },
   about: {

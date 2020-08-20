@@ -11,10 +11,8 @@ function populatePage() {
   document.getElementById("myImg").src = heading.imgSource;
   document.getElementById("mail").href = heading.mailLink;
   document.getElementById("mail").innerHTML = heading.mailText;
-  document.getElementById("link1").href = heading.link1Link;
-  document.getElementById("link1").innerHTML = heading.link1Text;
-  document.getElementById("link2").href = heading.link2Link;
-  document.getElementById("link2").innerHTML = heading.link2Text;
+  document.getElementById("github").href = heading.githubLink;
+  document.getElementById("linkedin").href = heading.linkedinLink;
 
   //populate the about section
   var about = pageData.about;
