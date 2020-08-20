@@ -45,6 +45,8 @@ body {
 }
 
 #mail {
+  width: min-content;
+  align-self: center;
   font-size: large;
   padding-top: 20px;
   padding-bottom: 10px;
@@ -70,7 +72,7 @@ body {
   padding-right: 10%;
   padding-left: 10%;
   display: flex;
-  flex: 5;
+  flex: 2;
 }
 
 .btn {
@@ -127,18 +129,44 @@ a:hover {
 
 /*if the screen is less than 600px wide*/
 @media screen and (max-width: 600px) {
+  .heading {
+    flex: 2;
+  }
+
+  .section {
+    flex: 3;
+  }
+
   .buttons {
     padding-right: 0%;
     padding-left: 0%;
   }
 
   .btn {
-    font-size: 14px;
+    font-size: 0px;
+  }
+
+  .fas {
+    font-size: 22px;
+  }
+
+  .img-circle {
+    width: 100px;
+    border-radius: 50px;
+    flex: 3;
   }
 }
 
 /*if the screen is at least 600px wide*/
 @media screen and (min-width: 601px) {
+  .heading {
+    flex: 2;
+  }
+
+  .section {
+    flex: 2;
+  }
+
   .buttons {
     padding-right: 10%;
     padding-left: 10%;
@@ -147,20 +175,10 @@ a:hover {
   .btn {
     font-size: 22px;
   }
-}
 
-/*if the screen is less than 600px tall*/
-@media screen and (max-height: 600px) {
-  .img-circle {
-    width: 100px;
-    border-radius: 50px;
-  }
-}
-
-/*if the screen is at least 600px tall*/
-@media screen and (min-height: 601px) {
   .img-circle {
     width: 150px;
     border-radius: 75px;
+    flex: 4;
   }
 }

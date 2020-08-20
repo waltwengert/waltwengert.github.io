@@ -11,7 +11,7 @@ var data = {
   },
   about: {
     para1:
-      "I am a recent graduate from The University of Queensland where I majored in Computer Science and Film & Television Studies in a dual Bachelor of Science and Arts.",
+      "I'm a recent graduate from The University of Queensland where I majored in Computer Science and Film & Television Studies in a dual Bachelor of Science and Arts.",
     para2:
       "Currently, I work as an IT Technician for Education Queensland. In this role I manage a school's network and assist staff with hardware and software issues.",
     para3:
