@@ -20,7 +20,7 @@ body {
 }
 
 .heading {
-  background-color: #5d5c61;
+  background-color: #c2cad0;
   color: #ffffff;
 
   flex: 2;
@@ -32,7 +32,7 @@ body {
 #name {
   font-size: xx-large;
   padding-bottom: 10px;
-  color: #379683;
+  color: #123c69;
   padding-top: 10px;
   flex: 2;
 }
@@ -100,11 +100,11 @@ body {
 }
 
 a {
-  color: #379683;
+  color: #123c69;
 }
 
 a:hover {
-  color: #b1a296;
+  color: #64ceeb;
 }
 
 .section {
@@ -170,8 +170,8 @@ a:hover {
   }
 
   .buttons {
-    padding-right: 10%;
-    padding-left: 10%;
+    padding-right: 8%;
+    padding-left: 8%;
   }
 
   .btn {
@@ -187,6 +187,6 @@ a:hover {
 
 @media (hover: hover) {
   .btn:hover {
-    background-color: #379683;
+    background-color: #123c69;
   }
 }
