@@ -17,6 +17,8 @@ body {
 
   display: flex;
   flex-direction: column;
+
+  background-color: #c2cad0;
 }
 
 .heading {
@@ -52,6 +54,7 @@ body {
   width: min-content;
   align-self: center;
   font-size: large;
+  font-style: italic;
   padding-top: 20px;
   padding-bottom: 10px;
   flex: 1;
@@ -109,6 +112,10 @@ a:hover {
   background-color: #557a95;
   color: #ffffff;
 
+  /*-16% from 8% padding either side*/
+  width: 84%;
+  align-self: center;
+
   display: flex;
   flex-direction: column;
 
@@ -119,6 +126,7 @@ a:hover {
 
 .section h3 {
   font-size: x-large;
+  font-style: italic;
   padding: 15px;
 }
 
