@@ -104,10 +104,6 @@ a {
   color: #123c69;
 }
 
-a:hover {
-  color: #d83f87;
-}
-
 .section {
   background-color: #557a95;
   color: #ffffff;
@@ -198,5 +194,9 @@ a:hover {
 @media (hover: hover) {
   .btn:hover {
     background-color: #123c69;
+  }
+
+  a:hover {
+    color: #d83f87;
   }
 }
