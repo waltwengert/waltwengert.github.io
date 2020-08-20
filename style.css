@@ -85,16 +85,16 @@ body {
 }
 
 .btn:hover {
-  background-color: #424242;
+  background-color: turquoise;
 }
 
 .btn:focus {
-  background-color: turquoise;
+  background-color: #424242;
 }
 
 .btn-active {
   pointer-events: none;
-  background-color: turquoise;
+  background-color: #424242;
 }
 
 a {
