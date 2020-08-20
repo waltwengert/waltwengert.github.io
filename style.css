@@ -125,7 +125,7 @@ a:hover {
   padding: 20px;
 }
 
-/*if the screen is less than 500px wide*/
+/*if the screen is less than 600px wide*/
 @media screen and (max-width: 600px) {
   .buttons {
     padding-right: 0%;
@@ -137,7 +137,7 @@ a:hover {
   }
 }
 
-/*if the screen is at least 500px wide*/
+/*if the screen is at least 600px wide*/
 @media screen and (min-width: 601px) {
   .buttons {
     padding-right: 10%;
@@ -146,5 +146,27 @@ a:hover {
 
   .btn {
     font-size: 22px;
+  }
+}
+
+/*if the screen is less than 600px tall*/
+@media screen and (max-height: 600px) {
+  .heading {
+    flex: 5;
+  }
+
+  .section {
+    flex: 2;
+  }
+}
+
+/*if the screen is at least 600px tall*/
+@media screen and (min-height: 601px) {
+  .heading {
+    flex: 2;
+  }
+
+  .section {
+    flex: 2;
   }
 }
