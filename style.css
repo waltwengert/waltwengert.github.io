@@ -84,9 +84,9 @@ body {
   flex: 1;
 }
 
-.btn:hover {
+/*.btn:hover {
   background-color: turquoise;
-}
+}*/
 
 .btn:focus {
   background-color: #424242;
@@ -180,5 +180,11 @@ a:hover {
     width: 150px;
     border-radius: 75px;
     flex: 4;
+  }
+}
+
+@media (hover: hover) {
+  .btn:hover {
+    background-color: turquoise;
   }
 }
