@@ -1,0 +1,61 @@
+/* CSS 'reset' */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .bg-1 {
+    background-color: #0E0E0E;
+    color: #FFFFFF;
+
+    min-height: 420px;
+  }
+
+  .bg-2 {
+    background-color: #424242;
+    color: #FFFFFF;
+
+    min-height: 20vh;
+
+    overflow: hidden;
+  }
+
+  .img-circle {
+      width: 150px;
+      border-radius: 75px;
+  }
+  
+  .btn {
+    background-color: #1C1C1C;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 22px;
+    cursor: pointer;
+    min-width: 150px;
+    width: 18%;
+    max-width: 250px;
+  }
+
+  .btn:hover {
+    background-color: #424242;
+  }
+
+  .btn:focus {
+    background-color: #45A29E;
+  }
+
+  .btn-active {
+    pointer-events: none;
+    background-color: #45A29E;
+  }
