@@ -30,11 +30,15 @@ function populatePage() {
 }
 
 function toggleBtn(btnID) {
+  //btnID 0-3 based on index of following arrays
   var btns = ["btnAbout", "btnProj", "btnEdu", "btnEmp"];
+  var divs = ["about", "projects", "education", "employment"];
 
   for (var i = 0; i < btns.length; i++) {
     document.getElementById(btns[i]).classList.remove("btn-active");
+    document.getElementById(divs[i]).style.display = "none";
   }
 
-  document.getElementById(btnID).classList.add("btn-active");
+  document.getElementById(btns[btnID]).classList.add("btn-active");
+  document.getElementById(divs[btnID]).style.display = "flex";
 }
