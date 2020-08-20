@@ -74,7 +74,6 @@ body {
   border: none;
   color: white;
   padding: 12px 16px;
-  font-size: 22px;
   cursor: pointer;
   flex: 1;
   /*min-width: 150px;
@@ -118,6 +117,10 @@ a:hover {
     padding-right: 0%;
     padding-left: 0%;
   }
+
+  .btn {
+    font-size: 16px;
+  }
 }
 
 /*if the screen is at least 500px wide*/
@@ -125,5 +128,9 @@ a:hover {
   .buttons {
     padding-right: 10%;
     padding-left: 10%;
+  }
+
+  .btn {
+    font-size: 22px;
   }
 }
