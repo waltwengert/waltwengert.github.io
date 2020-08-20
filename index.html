@@ -1,139 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Walt Wengert</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <title>Walt Wengert</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-  <!--Favicon, TODO add href-->
-  <link rel="icon" href="" type="image/x-icon"/>
-  <script src="index.js"></script>
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
 
-<body>
-  <!--Page heading, to remain at top of screen with basic details + nav buttons-->
-  <!--TODO style-->
-  <!--TODO pull info from data.json-->
-  <div class="bg-1" align="center">
-    <h1>Walt Wengert</h1>
-    <img src="me.png" class="img-circle center-block" alt="me">
-    <a class="text-center" href="mailto:walt.frederick.john@live.com" target="_top"><h4 class="text-center">walt.frederick.john@live.com</h4></a>
-    <a class="text-center" href="https://www.linkedin.com/in/walter-wengert-457864196/" target="_blank"><h4 class="text-center">LinkedIn</h4></a>
-    <a class="text-center" href="https://github.com/waltwengert" target="_blank"><h4 class="text-center">GitHub</h4></a>
+    <!--to have JSON accesible in JS (for a mock API response)-->
+    <script src="data.js"></script>
 
-    <button id="btnAbout" type="button" class="btn btn-info btn-active" onclick="toggleBtn('btnAbout')" data-toggle="collapse" data-parent="#accordion" data-target="#about"><i class="fas fa-address-card"></i><br>About</button>
-    <button id="btnProj" type="button" class="btn btn-info" onclick="toggleBtn('btnProj')" data-toggle="collapse" data-parent="#accordion" data-target="#projects"><i class="fas fa-keyboard"></i><br>Projects</button>
-    <button id="btnEdu" type="button" class="btn btn-info" onclick="toggleBtn('btnEdu')" data-toggle="collapse" data-parent="#accordion" data-target="#education"><i class="fas fa-user-graduate"></i><br>Education</button>
-    <button id="btnEmp" type="button" class="btn btn-info" onclick="toggleBtn('btnEmp')" data-toggle="collapse" data-parent="#accordion" data-target="#employment"><i class="fas fa-briefcase"></i><br>Employment</button>
-  </div>
+    <!--Favicon, TODO add href-->
+    <link rel="icon" href="" type="image/x-icon" />
+    <script src="index.js"></script>
+  </head>
 
-  <!--About section, basic paragraph describing who I am in context of dev-->
-  <!--TODO pull info from data.json-->
-  <div id="about" class="bg-2">
-    <h3>About</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-    <br>
-    <p>Duis nibh erat, luctus in efficitur ut, finibus a turpis. </p>
-  </div>
+  <body>
+    <!--Page heading, to remain at top of screen with basic details + nav buttons-->
+    <!--TODO style-->
+    <div class="bg-1" align="center">
+      <h1 id="name"></h1>
+      <img id="myImg" class="img-circle center-block" alt="me" />
+      <a id="mail" class="text-center" target="_top"></a>
+      <a id="link1" class="text-center" target="_blank"></a>
+      <a id="link2" class="text-center" target="_blank"></a>
 
-  <!--Projects section, 2 rows of tiles/cards for each project that scrolls horizontally-->
-  <div id="projects" class="bg-2">
-    <h3>Projects</h3>
+      <button
+        id="btnAbout"
+        type="button"
+        class="btn btn-info btn-active"
+        onclick="toggleBtn('btnAbout')"
+        data-toggle="collapse"
+        data-parent="#accordion"
+        data-target="#about"
+      >
+        <i class="fas fa-address-card"></i><br />About
+      </button>
+      <button
+        id="btnProj"
+        type="button"
+        class="btn btn-info"
+        onclick="toggleBtn('btnProj')"
+        data-toggle="collapse"
+        data-parent="#accordion"
+        data-target="#projects"
+      >
+        <i class="fas fa-keyboard"></i><br />Projects
+      </button>
+      <button
+        id="btnEdu"
+        type="button"
+        class="btn btn-info"
+        onclick="toggleBtn('btnEdu')"
+        data-toggle="collapse"
+        data-parent="#accordion"
+        data-target="#education"
+      >
+        <i class="fas fa-user-graduate"></i><br />Education
+      </button>
+      <button
+        id="btnEmp"
+        type="button"
+        class="btn btn-info"
+        onclick="toggleBtn('btnEmp')"
+        data-toggle="collapse"
+        data-parent="#accordion"
+        data-target="#employment"
+      >
+        <i class="fas fa-briefcase"></i><br />Employment
+      </button>
+    </div>
 
-    <!--TODO replace table with what's described above-->
-    <!--TODO pull info from data.json-->
-    <table class="table table-bordered">
-      <tbody>
-        <tr>
-          <td>/logo<br>Work Rosterer<br><a href="comingSoon.html" target="_blank">Live  </a><a href="">  Source</a></td>
-          <td>HTML, CSS, JS, PHP, SQL</td>
-        </tr>
-        <tr>
-          <td>/logo<br>Secret Santa<br><a href="comingSoon.html" target="_blank">Live  </a><a href="">  Source</a></td>
-          <td>HTML, CSS, JS</td>
-        </tr>
-        <tr>
-          <td>/logo<br>Endless Runner<br><a href="comingSoon.html" target="_blank">Live  </a><a href="">  Source</a></td>
-          <td>Python</td>
-        </tr>
-        <tr>
-          <td>/logo<br>Calculator<br><a href="comingSoon.html" target="_blank">Live  </a><a href="">  Source</a></td>
-          <td>Python</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+    <!--About section, basic paragraph describing who I am in context of dev-->
+    <!--TODO style-->
+    <div id="about" class="bg-2">
+      <h3>About</h3>
+      <p id="aboutP1"></p>
+      <br />
+      <p id="aboutP2"></p>
+    </div>
 
-  <!--Education section, basic table (level, focus, institution, period)-->
-  <div id="education" class="bg-2">
-    <h3>Education</h3>
+    <!--Projects section, 2 rows of tiles/cards for each project that scrolls horizontally-->
+    <div id="projects" class="bg-2">
+      <h3>Projects</h3>
 
-    <!--TODO style table-->
-    <!--TODO pull info from data.json-->
-    <table class="table table-bordered">
-      <tbody>
-        <tr>
-          <td>Bachelor of Science</td>
-          <td>Computer Science (extended major)</td>
-          <td>The University of Queensland<br>2015-2019</td>
-        </tr>
-        <tr>
-          <td>Bachelor of Arts</td>
-          <td>Film and Television Studies (major);<br>Communication Studies (minor), Philosophy (minor)</td>
-          <td>The University of Queensland<br>2015-2019</td>
-        </tr>
-        <tr>
-          <td>Certificate III</td>
-          <td>Media</td>
-          <td>TAFE/Lightmare Studios<br>2012-2013</td>
-        </tr>
-        <tr>
-          <td>Certificate I</td>
-          <td>Information Technology</td>
-          <td>TAFE<br>2012</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+      <!--TODO what's described above-->
+      <!--TODO pull info from data.json-->
+    </div>
 
-  <!--Employment section, basic table (employer, position, period)-->
-  <div id="employment" class="bg-2">
-    <h3>Previous Employment</h3>
+    <!--Education section, basic table (level, focus, institution, period)-->
+    <!--TODO style-->
+    <div id="education" class="bg-2">
+      <h3>Education</h3>
 
-    <!--TODO style table-->
-    <!--TODO pull info from data.json-->
-    <table class="table table-bordered">
-      <tbody>
-        <tr>
-          <td>Kmart</td>
-          <td>Retail Assistant</td>
-          <td>April 2012 - Present</td>
-        </tr>
-        <tr>
-          <td>Lightmare Studios</td>
-          <td>Intern</td>
-          <td>May 2012 - May 2013</td>
-        </tr>
-        <tr>
-          <td>Australian Electoral Commission</td>
-          <td>Polling Official</td>
-          <td>June 2016</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+      <!--TODO pull info from data.json-->
+      <table id="educationTbl" class="table table-bordered"></table>
+    </div>
 
-</body>
+    <!--Employment section, basic table (employer, position, period)-->
+    <!--TODO style-->
+    <div id="employment" class="bg-2">
+      <h3>Previous Employment</h3>
+
+      <!--TODO pull info from data.json-->
+      <table id="employmentTbl" class="table table-bordered"></table>
+    </div>
+  </body>
 </html>
-<html><head><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8"><meta name="Robots" content="NOINDEX " /></head><body></body>
-                <script type="text/javascript">
-                 var gearPage = document.getElementById('GearPage');
-                 if(null != gearPage)
-                 {
-                     gearPage.parentNode.removeChild(gearPage);
-                     document.title = "Error";
-                 }
-                 </script>
-                 </html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Robots" content="NOINDEX " />
+  </head>
+  <body></body>
+  <script type="text/javascript">
+    var gearPage = document.getElementById("GearPage");
+    if (null != gearPage) {
+      gearPage.parentNode.removeChild(gearPage);
+      document.title = "Error";
+    }
+  </script>
+</html>
