@@ -117,7 +117,7 @@ a {
 
   flex: 2;
 
-  overflow: auto;
+  overflow: hidden;
 }
 
 .section h3 {
@@ -129,6 +129,31 @@ a {
 .section p {
   font-size: large;
   padding: 20px;
+}
+
+.carousel {
+  display: flex;
+}
+
+.arrow {
+  flex: 1;
+  padding: 20px;
+  font-size: 30px;
+  color: #7395ae;
+}
+
+.tileContainer {
+  width: 400%;
+  /*flex: 6;*/
+  display: flex;
+  flex-direction: row;
+}
+
+.tile {
+  width: 25%;
+  height: 100%;
+  padding: 20px;
+  flex: 1;
 }
 
 /*if the screen is less than 600px wide*/
@@ -198,5 +223,9 @@ a {
 
   a:hover {
     color: #d83f87;
+  }
+
+  .arrow:hover {
+    color: #123c69;
   }
 }

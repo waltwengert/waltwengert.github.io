@@ -17,9 +17,29 @@ function populatePage() {
 
   //populate the about section
   var about = pageData.about;
+
+  for (var i = 0; i < about.length; i++) {
+    var aboutDiv = document.createElement("div");
+    aboutDiv.classList.add("tile");
+    aboutDiv.id = "aboutDiv" + i;
+    document.getElementById("aboutTiles").append(aboutDiv);
+
+    var para = document.createElement("p");
+    para.innerHTML = about[i];
+    aboutDiv.append(para);
+    //alert(about[i]);
+  }
+
+  /*
+  var parDiv1 = document.createElement("div");
+  parDiv1.classList.add("tile");
+  document.getElementById("aboutTiles").append(parDiv1);
+  parDiv1.innerHTML = "lorem ipsum";
+
   document.getElementById("aboutP1").innerHTML = about.para1;
   document.getElementById("aboutP2").innerHTML = about.para2;
   document.getElementById("aboutP3").innerHTML = about.para3;
+  */
 
   //populate the projects section
   var projects = pageData.projects;
