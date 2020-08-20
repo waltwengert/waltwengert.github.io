@@ -30,7 +30,9 @@ body {
 }
 
 #name {
-  font-size: xx-large;
+  font-family: "Gugi", "Arial", sans-serif;
+  font-style: italic;
+  font-size: 42px;
   padding-bottom: 10px;
   color: #123c69;
   padding-top: 10px;
@@ -86,10 +88,6 @@ body {
   flex: 1;
 }
 
-/*.btn:hover {
-  background-color: turquoise;
-}*/
-
 .btn:focus {
   background-color: #557a95;
 }
@@ -104,7 +102,7 @@ a {
 }
 
 a:hover {
-  color: #64ceeb;
+  color: #d83f87;
 }
 
 .section {
