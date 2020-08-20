@@ -142,6 +142,7 @@ a:hover {
   }
 
   .section {
+    width: 100%;
     flex: 2;
   }
 
@@ -172,6 +173,9 @@ a:hover {
   }
 
   .section {
+    /*-16% from 8% padding either side*/
+    width: 84%;
+    align-self: center;
     flex: 2;
   }
 
