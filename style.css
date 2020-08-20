@@ -112,7 +112,7 @@ a:hover {
 
   flex: 2;
 
-  overflow: hidden;
+  overflow: auto;
 }
 
 .section h3 {
