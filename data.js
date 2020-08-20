@@ -10,8 +10,12 @@ var data = {
     linkedinLink: "https://www.linkedin.com/in/walter-wengert-457864196/",
   },
   about: {
-    para1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    para2: "Duis nibh erat, luctus in efficitur ut, finibus a turpis.",
+    para1:
+      "I am a recent graduate from The University of Queensland where I majored in Computer Science and Film + Television Studies in a dual degree Bachelor of Science/Arts.",
+    para2:
+      "Currently, I work as an IT Technician for Education Queensland. In this role I manage a school's network and assist staff with hardware and software issues.",
+    para3:
+      "Software development was the focus of my degree and I am currently seeking employment in this field. Check out the projects tab on this website to see some of my work!",
   },
   projects: [
     {

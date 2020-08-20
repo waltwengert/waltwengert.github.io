@@ -1,5 +1,6 @@
 window.onload = function () {
   populatePage();
+  toggleBtn(0);
 };
 
 function populatePage() {
@@ -18,6 +19,7 @@ function populatePage() {
   var about = pageData.about;
   document.getElementById("aboutP1").innerHTML = about.para1;
   document.getElementById("aboutP2").innerHTML = about.para2;
+  document.getElementById("aboutP3").innerHTML = about.para3;
 
   //populate the projects section
   var projects = pageData.projects;

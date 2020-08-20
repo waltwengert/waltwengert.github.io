@@ -23,12 +23,10 @@ body {
   background-color: #0e0e0e;
   color: #ffffff;
 
-  flex: 3;
+  flex: 2;
 
   display: flex;
   flex-direction: column;
-
-  /*min-height: 50%;*/
 }
 
 #name {
@@ -82,9 +80,6 @@ body {
   cursor: pointer;
   padding: 12px 0px;
   flex: 1;
-  /*min-width: 150px;
-  width: 18%;
-  max-width: 250px;*/
 }
 
 .btn:hover {
@@ -112,9 +107,22 @@ a:hover {
   background-color: #424242;
   color: #ffffff;
 
+  display: flex;
+  flex-direction: column;
+
   flex: 2;
 
   overflow: hidden;
+}
+
+.section h3 {
+  font-size: x-large;
+  padding: 15px;
+}
+
+.section p {
+  font-size: large;
+  padding: 20px;
 }
 
 /*if the screen is less than 500px wide*/
