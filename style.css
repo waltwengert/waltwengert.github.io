@@ -264,5 +264,6 @@ a {
 
   .arrow:hover {
     color: #437b91;
+    cursor: pointer;
   }
 }
