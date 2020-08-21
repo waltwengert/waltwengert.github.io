@@ -18,12 +18,11 @@ body {
   display: flex;
   flex-direction: column;
 
-  background-color: #4d4d4d;
+  background-color: #636363;
 }
 
 .heading {
-  background-image: linear-gradient(to bottom, #2b2d2e, #4d4d4d);
-  color: #4385cc;
+  background-image: linear-gradient(to bottom, #18191a, #636363);
 
   flex: 2;
 
@@ -36,7 +35,7 @@ body {
   font-style: italic;
   font-size: 42px;
   padding-bottom: 10px;
-  color: #4385cc;
+  color: #ffb073;
   padding-top: 10px;
   flex: 2;
 }
@@ -101,7 +100,7 @@ body {
 }
 
 a {
-  color: #4385cc;
+  color: #ffb882;
 }
 
 .section {
@@ -236,7 +235,7 @@ a {
   }
 
   a:hover {
-    color: #eb4492;
+    color: #4385cc;
   }
 
   .arrow:hover {
