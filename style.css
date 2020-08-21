@@ -196,6 +196,7 @@ a {
   .tile {
     /*if the screen is thin (mobile) then have only one tile at a time*/
     width: 100%;
+    margin: 0px;
   }
 
   .arrow {
