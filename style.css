@@ -31,7 +31,7 @@ body {
 }
 
 #name {
-  font-family: "Gugi", "Arial", sans-serif;
+  font-family: "Fjalla One", "Arial", sans-serif;
   font-size: 42px;
   padding-bottom: 10px;
   color: #151515;
@@ -119,6 +119,11 @@ a {
   overflow: auto;
 }
 
+.section h2 {
+  font-size: x-large;
+  padding-bottom: 5px;
+}
+
 .section h3 {
   font-size: x-large;
   padding: 15px;
@@ -160,11 +165,16 @@ a {
   color: #fffaff;
   max-width: 350px;
   min-height: 200px;
+  vertical-align: middle;
   border-left: 3px solid;
+  border-color: #264653;
+  /*border-left: 3px solid;
   border-top: 3px solid;
   border-color: #264653;
-  box-shadow: 5px 5px grey;
+  
   /*background-image: linear-gradient(to bottom, #264653, #437b91);*/
+
+  box-shadow: 5px 5px grey;
 }
 
 /*if the screen is less than 600px wide*/
