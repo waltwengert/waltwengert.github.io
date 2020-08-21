@@ -18,11 +18,11 @@ body {
   display: flex;
   flex-direction: column;
 
-  background-color: #636363;
+  background-color: #aed1ea;
 }
 
 .heading {
-  background-image: linear-gradient(to bottom, #18191a, #636363);
+  background-image: linear-gradient(to bottom, #7eb5dd, #aed1ea);
 
   flex: 2;
 
@@ -35,7 +35,7 @@ body {
   font-style: italic;
   font-size: 42px;
   padding-bottom: 10px;
-  color: #ffb073;
+  color: #1e1b18;
   padding-top: 10px;
   flex: 2;
 }
@@ -82,30 +82,31 @@ body {
 }
 
 .btn {
-  background-color: #7395ae;
+  background-color: #4578ed;
   border: none;
-  color: white;
+  color: #fffaff;
   cursor: pointer;
   padding: 12px 0px;
   flex: 1;
 }
 
 .btn:focus {
-  background-color: #557a95;
+  background-color: #205ce9;
 }
 
 .btn-active {
   pointer-events: none;
-  background-color: #557a95;
+  background-color: #205ce9;
 }
 
 a {
-  color: #ffb882;
+  color: #1e1b18;
 }
 
 .section {
-  background-color: #557a95;
-  color: #ffffff;
+  background-image: linear-gradient(to bottom, #205ce9, #4578ed);
+  /*background-color: #0f3795;*/
+  color: #fffaff;
 
   /*-16% from 8% padding either side*/
   width: 84%;
@@ -139,7 +140,7 @@ a {
   flex: 1;
   padding: 20px;
   font-size: 30px;
-  color: #7395ae;
+  color: #1e1b18;
 }
 
 .tileContainer {
@@ -231,14 +232,14 @@ a {
 
 @media (hover: hover) {
   .btn:hover {
-    background-color: #4385cc;
+    background-color: #d8315b;
   }
 
   a:hover {
-    color: #4385cc;
+    color: #d8315b;
   }
 
   .arrow:hover {
-    color: #4385cc;
+    color: #d8315b;
   }
 }
