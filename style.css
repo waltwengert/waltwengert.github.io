@@ -35,7 +35,7 @@ body {
   font-style: italic;
   font-size: 42px;
   padding-bottom: 10px;
-  color: #199c8c;
+  color: #151515;
   padding-top: 10px;
   flex: 2;
 }
@@ -82,7 +82,7 @@ body {
 }
 
 .btn {
-  background-color: #1fb5a3;
+  background-color: #3f3f3f;
   border: none;
   color: #fffaff;
   cursor: pointer;
@@ -91,22 +91,22 @@ body {
 }
 
 .btn:focus {
-  background-color: #199c8c;
+  background-color: #2a2a2a;
 }
 
 .btn-active {
   pointer-events: none;
-  background-color: #199c8c;
+  background-color: #2a2a2a;
 }
 
 a {
-  color: #1fb5a3;
+  color: #2a2a2a;
 }
 
 .section {
-  background-image: linear-gradient(to bottom, #199c8c, #1fb5a3);
-  /*background-color: #0f3795;*/
-  color: #fffaff;
+  /*background-image: linear-gradient(to bottom, #6a6a6a, #7f7f7f);*/
+  background-color: #fffaff;
+  color: #264653;
 
   /*-16% from 8% padding either side*/
   width: 84%;
@@ -140,7 +140,7 @@ a {
   flex: 1;
   padding: 20px;
   font-size: 30px;
-  color: #1e1b18;
+  color: #264653;
 }
 
 .tileContainer {
@@ -159,7 +159,12 @@ a {
   flex-shrink: 0;
   width: 47%;
   background-color: #437b91;
+  color: #fffaff;
   max-width: 350px;
+  border-left: 3px solid;
+  border-top: 3px solid;
+  border-color: #264653;
+  box-shadow: 5px 5px grey;
   /*background-image: linear-gradient(to bottom, #264653, #437b91);*/
 }
 
@@ -240,14 +245,15 @@ a {
 
 @media (hover: hover) {
   .btn:hover {
-    background-color: #e9c46a;
+    background-color: #fbfc97;
+    color: #264653;
   }
 
   a:hover {
-    color: #e9c46a;
+    color: #fbfc97;
   }
 
   .arrow:hover {
-    color: #e9c46a;
+    color: #437b91;
   }
 }
