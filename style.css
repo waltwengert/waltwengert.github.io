@@ -32,7 +32,6 @@ body {
 
 #name {
   font-family: "Gugi", "Arial", sans-serif;
-  font-style: italic;
   font-size: 42px;
   padding-bottom: 10px;
   color: #151515;
@@ -122,7 +121,6 @@ a {
 
 .section h3 {
   font-size: x-large;
-  font-style: italic;
   padding: 15px;
 }
 
@@ -245,12 +243,12 @@ a {
 
 @media (hover: hover) {
   .btn:hover {
-    background-color: #fbfc97;
+    background-color: #fffaff;
     color: #264653;
   }
 
   a:hover {
-    color: #fbfc97;
+    color: #fffaff;
   }
 
   .arrow:hover {
