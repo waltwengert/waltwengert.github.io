@@ -197,6 +197,10 @@ a {
     /*if the screen is thin (mobile) then have only one tile at a time*/
     width: 100%;
   }
+
+  .arrow {
+    padding: 5px;
+  }
 }
 
 /*if the screen is at least 600px wide*/
