@@ -159,6 +159,7 @@ a {
   background-color: #437b91;
   color: #fffaff;
   max-width: 350px;
+  min-height: 200px;
   border-left: 3px solid;
   border-top: 3px solid;
   border-color: #264653;
