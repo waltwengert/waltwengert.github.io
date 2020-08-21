@@ -193,6 +193,11 @@ a {
     border-radius: 50px;
     flex: 3;
   }
+
+  .tile {
+    /*if the screen is thin (mobile) then have only one tile at a time*/
+    width: 50%;
+  }
 }
 
 /*if the screen is at least 600px wide*/
@@ -221,6 +226,11 @@ a {
     width: 150px;
     border-radius: 75px;
     flex: 4;
+  }
+
+  .tile {
+    /*if the screen is wide (desktop) then have two tiles at a time*/
+    width: 50%;
   }
 }
 
