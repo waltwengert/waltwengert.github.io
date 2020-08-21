@@ -196,7 +196,7 @@ a {
 
   .tile {
     /*if the screen is thin (mobile) then have only one tile at a time*/
-    width: 50%;
+    width: 100%;
   }
 }
 
