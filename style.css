@@ -18,11 +18,11 @@ body {
   display: flex;
   flex-direction: column;
 
-  background-color: #aed1ea;
+  background-color: #437b91;
 }
 
 .heading {
-  background-image: linear-gradient(to bottom, #7eb5dd, #aed1ea);
+  background-image: linear-gradient(to bottom, #264653, #437b91);
 
   flex: 2;
 
@@ -35,7 +35,7 @@ body {
   font-style: italic;
   font-size: 42px;
   padding-bottom: 10px;
-  color: #1e1b18;
+  color: #199c8c;
   padding-top: 10px;
   flex: 2;
 }
@@ -82,7 +82,7 @@ body {
 }
 
 .btn {
-  background-color: #4578ed;
+  background-color: #1fb5a3;
   border: none;
   color: #fffaff;
   cursor: pointer;
@@ -91,20 +91,20 @@ body {
 }
 
 .btn:focus {
-  background-color: #205ce9;
+  background-color: #199c8c;
 }
 
 .btn-active {
   pointer-events: none;
-  background-color: #205ce9;
+  background-color: #199c8c;
 }
 
 a {
-  color: #1e1b18;
+  color: #1fb5a3;
 }
 
 .section {
-  background-image: linear-gradient(to bottom, #205ce9, #4578ed);
+  background-image: linear-gradient(to bottom, #199c8c, #1fb5a3);
   /*background-color: #0f3795;*/
   color: #fffaff;
 
@@ -144,7 +144,7 @@ a {
 }
 
 .tileContainer {
-  flex: 6;
+  flex: 7;
   height: 100%;
 
   flex-shrink: 0;
@@ -154,10 +154,13 @@ a {
 }
 
 .tile {
-  width: 50%;
   padding: 0px;
+  margin: 10px;
   flex-shrink: 0;
-  border-style: solid;
+  width: 47%;
+  background-color: #437b91;
+  max-width: 350px;
+  /*background-image: linear-gradient(to bottom, #264653, #437b91);*/
 }
 
 /*if the screen is less than 600px wide*/
@@ -226,20 +229,20 @@ a {
 
   .tile {
     /*if the screen is wide (desktop) then have two tiles at a time*/
-    width: 50%;
+    width: 47%;
   }
 }
 
 @media (hover: hover) {
   .btn:hover {
-    background-color: #d8315b;
+    background-color: #e9c46a;
   }
 
   a:hover {
-    color: #d8315b;
+    color: #e9c46a;
   }
 
   .arrow:hover {
-    color: #d8315b;
+    color: #e9c46a;
   }
 }
