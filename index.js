@@ -24,10 +24,19 @@ function populatePage() {
     aboutDiv.id = "aboutDiv" + i;
     document.getElementById("aboutTiles").append(aboutDiv);
 
-    var para = document.createElement("p");
-    para.innerHTML = about[i];
-    aboutDiv.append(para);
-    //alert(about[i]);
+    var titleContainer = document.createElement("span");
+    var title = document.createElement("h3");
+    title.innerHTML = about[i].heading;
+    titleContainer.append(title);
+    aboutDiv.append(titleContainer);
+
+    var head = document.createElement("h2");
+    head.innerHTML = about[i].heading;
+    aboutDiv.append(head);
+
+    var body = document.createElement("p");
+    body.innerHTML = about[i].body;
+    aboutDiv.append(body);
   }
 
   /*

@@ -10,10 +10,21 @@ var data = {
     linkedinLink: "https://www.linkedin.com/in/walter-wengert-457864196/",
   },
   about: [
-    "<h2>I am a...</h2>recent graduate from The University of Queensland where I majored in Computer Science and Film & Television Studies in a Bachelor of Science and Arts dual degree.",
-    "<h2>I currently work...</h2>as an IT Technician for Education Queensland. In this role I manage a school's network and assist staff with hardware and software issues.",
-    "<h2>Software development...</h2>was the focus of my degree and I am currently seeking employment in this field. Check out the projects tab on this website to see some of my work!",
-    "This page brought to you by Font-Awesome's icons and Google's Gugi font.",
+    {
+      heading: "I am a...",
+      body:
+        "recent graduate from The University of Queensland where I majored in Computer Science and Film & Television Studies in a Bachelor of Science and Arts dual degree.",
+    },
+    {
+      heading: "I work...",
+      body:
+        "as an IT Technician for Education Queensland. In this role I manage a school's network and assist staff with hardware and software issues.",
+    },
+    {
+      heading: "Software development...",
+      body:
+        "was the focus of my degree and I am currently seeking employment in this field. Check out the projects tab on this website to see some of my work!",
+    },
   ],
   projects: [
     {
