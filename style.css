@@ -102,7 +102,7 @@ a {
 .section {
   /*background-image: linear-gradient(to bottom, #6a6a6a, #7f7f7f);*/
   background-color: #fffaff;
-  color: #1f3ef0; /*#264653;*/
+  color: #2a2a2a; /*#264653;*/
 
   /*-16% from 8% padding either side*/
   width: 84%;
@@ -189,18 +189,13 @@ a {
 .tile h2 {
   padding-top: 5%;
   padding-left: 5%;
-
-  font-size: 0;
-}
-
-.tile p {
-  font-size: 0;
 }
 
 /*if the screen is less than 600px wide*/
 @media screen and (max-width: 600px) {
   .section {
     width: 100%;
+    background-color: #b0d6ff;
   }
 
   .buttons {
@@ -219,10 +214,23 @@ a {
   .tile {
     /*if the screen is thin (mobile) then have only one tile at a time*/
     width: 95%;
+    border: 0;
   }
 
-  .arrow {
-    padding: 5px;
+  .tile h2 {
+    font-size: x-large;
+  }
+
+  .tile p {
+    font-size: medium;
+  }
+
+  .section h3 {
+    display: none;
+  }
+
+  .tile span {
+    display: none;
   }
 }
 
