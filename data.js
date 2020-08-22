@@ -16,9 +16,9 @@ var data = {
         "recent graduate from The University of Queensland where I majored in Computer Science and Film & Television Studies in a Bachelor of Science and Arts dual degree.",
     },
     {
-      heading: "I work",
+      heading: "I currently",
       body:
-        "as an IT Technician for Education Queensland. In this role I manage a school's network and assist staff with hardware and software issues.",
+        "work as an IT Technician for Education Queensland. In this role I manage a school's network and assist staff with hardware and software issues.",
     },
     {
       heading: "Software development",
