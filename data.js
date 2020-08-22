@@ -11,9 +11,9 @@ var data = {
   },
   about: [
     {
-      heading: "I am a",
+      heading: "I am",
       body:
-        "recent graduate from The University of Queensland where I majored in Computer Science and Film & Television Studies in a Bachelor of Science and Arts dual degree.",
+        "a recent graduate from The University of Queensland where I majored in Computer Science and Film & Television Studies in a Bachelor of Science and Arts dual degree.",
     },
     {
       heading: "I currently",

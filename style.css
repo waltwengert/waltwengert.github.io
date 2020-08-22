@@ -18,7 +18,7 @@ body {
   display: flex;
   flex-direction: column;
 
-  background-color: #b0d6ff; /*#437b91;#1f3ef0;*/
+  background-color: #b0d6ff;
 }
 
 .heading {
@@ -70,7 +70,6 @@ body {
   padding-left: 10%;
   display: flex;
   height: 100%;
-  /*flex: 2;*/
 }
 
 .btn {
@@ -100,20 +99,16 @@ a {
 }
 
 .section {
-  /*background-image: linear-gradient(to bottom, #6a6a6a, #7f7f7f);*/
   background-color: #fffaff;
-  color: #2a2a2a; /*#264653;*/
+  color: #2a2a2a;
 
   /*-16% from 8% padding either side*/
   width: 40%;
   align-self: center;
   height: 100%;
-
   display: flex;
   flex-direction: column;
-
   flex: 1;
-
   overflow: scroll;
 }
 
@@ -129,56 +124,37 @@ a {
 
 .section p {
   font-size: large;
-  padding-left: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
   padding-bottom: 5%;
 }
 
 .tileContainer {
   width: 100%;
-  /*align-self: center;*/
-  /*height: 80%;*/
-
   flex-shrink: 0;
   overflow: hidden;
-
-  /*display: inline-flex;*/
-  /*min-height: 200px;*/
 }
 
 .tile {
   padding: 0px;
-  margin: 0 auto;
-  /*margin: 10px;*/
-  /*flex-shrink: 0;*/
-  /*flex: 1;*/
-  /*width: 20%;*/
-  /*background-color: #1f3ef0;
-  color: #fffaff;*/
-  /*height: 80%;*/
-  /*max-width: 350px;*/
-  /*min-height: 200px;*/
-  /*align-self: center;*/
+  margin: 20px auto;
   vertical-align: middle;
-  border-top: 3px solid;
+  border-left: 2px solid;
   border-color: #2a2a2a;
-
   overflow: hidden;
-
-  /*border-radius: 30px;*/
-
-  /*box-shadow: 5px 5px grey;*/
+  background-color: #bfbfbf; /*b0d6ff;*/
 }
 
 .tile h2 {
   padding-top: 5%;
-  padding-left: 5%;
+  padding-left: 10%;
+  padding-bottom: 10px;
 }
 
 /*if the screen is less than 600px wide*/
 @media screen and (max-width: 600px) {
   .section {
     width: 100%;
-    /*background-color: #b0d6ff;*/
   }
 
   .buttons {
@@ -198,6 +174,7 @@ a {
     /*if the screen is thin (mobile) then have only one tile at a time*/
     width: 95%;
     border: 0;
+    background-color: #fffaff;
   }
 
   .tile h2 {
@@ -236,19 +213,19 @@ a {
 
   .tile {
     /*if the screen is wide (desktop) then have two tiles at a time*/
-    width: 70%;
+    width: 80%;
   }
 }
 
 /*if the screen is at least 400px high*/
 @media screen and (min-height: 750px) {
-  .btn {
+  /*.btn {
     font-size: 30px;
   }
 
   .fas {
     font-size: 38px;
-  }
+  }*/
 }
 
 @media (hover: hover) {
