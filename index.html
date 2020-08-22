@@ -32,7 +32,6 @@
 
   <body>
     <!--Page heading, to remain at top of screen with basic details + nav buttons-->
-    <!--TODO style-->
     <div class="heading" align="center">
       <h1 id="name"></h1>
       <img id="myImg" class="img-circle center-block" alt="me" />
@@ -46,15 +45,13 @@
         ></a>
       </div>
 
+      <!--Rows of buttons to change active section-->
       <div class="buttons">
         <button
           id="btnAbout"
           type="button"
           class="btn btn-info btn-active"
           onclick="toggleBtn(0)"
-          data-toggle="collapse"
-          data-parent="#accordion"
-          data-target="#about"
         >
           <i class="fas fa-address-card"></i><br />About
         </button>
@@ -63,9 +60,6 @@
           type="button"
           class="btn btn-info"
           onclick="toggleBtn(1)"
-          data-toggle="collapse"
-          data-parent="#accordion"
-          data-target="#projects"
         >
           <i class="fas fa-keyboard"></i><br />Projects
         </button>
@@ -74,9 +68,6 @@
           type="button"
           class="btn btn-info"
           onclick="toggleBtn(2)"
-          data-toggle="collapse"
-          data-parent="#accordion"
-          data-target="#education"
         >
           <i class="fas fa-user-graduate"></i><br />Education
         </button>
@@ -85,46 +76,30 @@
           type="button"
           class="btn btn-info"
           onclick="toggleBtn(3)"
-          data-toggle="collapse"
-          data-parent="#accordion"
-          data-target="#employment"
         >
           <i class="fas fa-briefcase"></i><br />Employment
         </button>
       </div>
     </div>
 
-    <!--About section, basic paragraph describing who I am in context of dev-->
-    <!--TODO style-->
+    <!--About section, basic paragraphs describing who I am in context of dev-->
     <div id="about" class="section">
-      <h3>About</h3>
       <div id="aboutTiles" class="tileContainer"></div>
     </div>
 
-    <!--Projects section, 2 rows of tiles/cards for each project that scrolls horizontally-->
+    <!--Projects section, rows of tiles for each project-->
     <div id="projects" class="section">
-      <h3>Projects</h3>
-
-      <!--TODO what's described above-->
       <!--TODO pull info from data.json-->
     </div>
 
-    <!--Education section, basic table (level, focus, institution, period)-->
-    <!--TODO style-->
+    <!--Education section, rows of tiles (level, focus, institution, period)-->
     <div id="education" class="section">
-      <h3>Education</h3>
-
       <!--TODO pull info from data.json-->
-      <table id="educationTbl" class="table table-bordered"></table>
     </div>
 
-    <!--Employment section, basic table (employer, position, period)-->
-    <!--TODO style-->
+    <!--Employment section, rows of tiles (employer, position, period)-->
     <div id="employment" class="section">
-      <h3>Previous Employment</h3>
-
       <!--TODO pull info from data.json-->
-      <table id="employmentTbl" class="table table-bordered"></table>
     </div>
   </body>
 </html>
