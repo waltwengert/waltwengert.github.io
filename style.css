@@ -195,7 +195,7 @@ a {
 @media screen and (max-width: 600px) {
   .section {
     width: 100%;
-    background-color: #b0d6ff;
+    /*background-color: #b0d6ff;*/
   }
 
   .buttons {
