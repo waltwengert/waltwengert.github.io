@@ -11,17 +11,17 @@ var data = {
   },
   about: [
     {
-      heading: "I am a...",
+      heading: "I am a",
       body:
         "recent graduate from The University of Queensland where I majored in Computer Science and Film & Television Studies in a Bachelor of Science and Arts dual degree.",
     },
     {
-      heading: "I work...",
+      heading: "I work",
       body:
         "as an IT Technician for Education Queensland. In this role I manage a school's network and assist staff with hardware and software issues.",
     },
     {
-      heading: "Software development...",
+      heading: "Software development",
       body:
         "was the focus of my degree and I am currently seeking employment in this field. Check out the projects tab on this website to see some of my work!",
     },
