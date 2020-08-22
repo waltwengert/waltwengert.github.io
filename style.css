@@ -105,7 +105,7 @@ a {
   color: #2a2a2a; /*#264653;*/
 
   /*-16% from 8% padding either side*/
-  width: 84%;
+  width: 40%;
   align-self: center;
   height: 100%;
 
@@ -114,7 +114,7 @@ a {
 
   flex: 1;
 
-  overflow: visible;
+  overflow: scroll;
 }
 
 .section h2 {
@@ -124,44 +124,42 @@ a {
 .section h3 {
   font-size: x-large;
   padding: 15px;
+  padding-bottom: 40px;
 }
 
 .section p {
   font-size: large;
-  padding: 20px;
-}
-
-.carousel {
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  height: 100%;
+  padding-left: 5%;
+  padding-bottom: 5%;
 }
 
 .tileContainer {
-  flex: 7;
-  height: 100%;
+  width: 100%;
+  /*align-self: center;*/
+  /*height: 80%;*/
 
   flex-shrink: 0;
   overflow: hidden;
 
-  display: inline-flex;
+  /*display: inline-flex;*/
   /*min-height: 200px;*/
 }
 
 .tile {
   padding: 0px;
-  margin: 10px;
-  flex-shrink: 0;
+  margin: 0 auto;
+  /*margin: 10px;*/
+  /*flex-shrink: 0;*/
   /*flex: 1;*/
-  width: 20%;
+  /*width: 20%;*/
   /*background-color: #1f3ef0;
   color: #fffaff;*/
-  height: 80%;
+  /*height: 80%;*/
   /*max-width: 350px;*/
-  min-height: 200px;
+  /*min-height: 200px;*/
+  /*align-self: center;*/
   vertical-align: middle;
-  border: 3px solid;
+  border-top: 3px solid;
   border-color: #2a2a2a;
 
   overflow: hidden;
@@ -169,21 +167,6 @@ a {
   /*border-radius: 30px;*/
 
   /*box-shadow: 5px 5px grey;*/
-}
-
-.tile span {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.tile h3 {
-  padding: 0%;
-  text-align: center;
-  flex: 0 0 120px;
-  font-size: xx-large;
 }
 
 .tile h2 {
@@ -253,7 +236,7 @@ a {
 
   .tile {
     /*if the screen is wide (desktop) then have two tiles at a time*/
-    width: 50%;
+    width: 70%;
   }
 }
 
@@ -276,21 +259,5 @@ a {
 
   a:hover {
     color: #bfbfbf;
-  }
-
-  .tile:hover p {
-    font-size: medium;
-  }
-
-  .tile:hover h2 {
-    font-size: x-large;
-  }
-
-  .tile:hover h3 {
-    display: none;
-  }
-
-  .tile:hover span {
-    display: none;
   }
 }
