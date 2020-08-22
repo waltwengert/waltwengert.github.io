@@ -24,12 +24,6 @@ function populatePage() {
     //aboutDiv.id = "aboutDiv" + i;
     document.getElementById("aboutTiles").append(aboutDiv);
 
-    var titleContainer = document.createElement("span");
-    var title = document.createElement("h3");
-    title.innerHTML = about[i].heading;
-    titleContainer.append(title);
-    aboutDiv.append(titleContainer);
-
     var head = document.createElement("h2");
     head.innerHTML = about[i].heading;
     aboutDiv.append(head);
