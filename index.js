@@ -21,7 +21,7 @@ function populatePage() {
   for (var i = 0; i < about.length; i++) {
     var aboutDiv = document.createElement("div");
     aboutDiv.classList.add("tile");
-    aboutDiv.id = "aboutDiv" + i;
+    //aboutDiv.id = "aboutDiv" + i;
     document.getElementById("aboutTiles").append(aboutDiv);
 
     var titleContainer = document.createElement("span");

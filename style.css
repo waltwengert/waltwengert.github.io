@@ -18,13 +18,13 @@ body {
   display: flex;
   flex-direction: column;
 
-  background-color: #437b91;
+  background-color: #b0d6ff; /*#437b91;#1f3ef0;*/
 }
 
 .heading {
-  background-image: linear-gradient(to bottom, #264653, #437b91);
+  background-image: linear-gradient(to bottom, #429eff, #b0d6ff);
 
-  flex: 2;
+  flex: 1;
 
   display: flex;
   flex-direction: column;
@@ -36,16 +36,13 @@ body {
   padding-bottom: 10px;
   color: #151515;
   padding-top: 10px;
-  flex: 2;
 }
 
 .img-circle {
-  width: 150px;
-  border-radius: 75px;
-  display: block;
+  width: 120px;
+  border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
-  flex: 4;
 }
 
 #mail {
@@ -54,12 +51,6 @@ body {
   font-size: large;
   font-style: italic;
   padding-top: 20px;
-  padding-bottom: 10px;
-  flex: 1;
-}
-
-.icons {
-  flex: 1;
   padding-bottom: 10px;
 }
 
@@ -74,10 +65,12 @@ body {
 }
 
 .buttons {
+  padding-top: 10px;
   padding-right: 10%;
   padding-left: 10%;
   display: flex;
-  flex: 2;
+  height: 100%;
+  /*flex: 2;*/
 }
 
 .btn {
@@ -85,7 +78,7 @@ body {
   border: none;
   color: #fffaff;
   cursor: pointer;
-  padding: 12px 0px;
+  padding: 12px;
   flex: 1;
 }
 
@@ -102,21 +95,26 @@ a {
   color: #2a2a2a;
 }
 
+.fas {
+  font-size: 30px;
+}
+
 .section {
   /*background-image: linear-gradient(to bottom, #6a6a6a, #7f7f7f);*/
   background-color: #fffaff;
-  color: #264653;
+  color: #1f3ef0; /*#264653;*/
 
   /*-16% from 8% padding either side*/
   width: 84%;
   align-self: center;
+  height: 100%;
 
   display: flex;
   flex-direction: column;
 
-  flex: 2;
+  flex: 1;
 
-  overflow: auto;
+  overflow: visible;
 }
 
 .section h2 {
@@ -136,13 +134,8 @@ a {
 .carousel {
   display: flex;
   align-items: center;
-}
-
-.arrow {
-  flex: 1;
-  padding: 20px;
-  font-size: 30px;
-  color: #264653;
+  overflow: hidden;
+  height: 100%;
 }
 
 .tileContainer {
@@ -152,23 +145,28 @@ a {
   flex-shrink: 0;
   overflow: hidden;
 
-  display: flex;
+  display: inline-flex;
+  /*min-height: 200px;*/
 }
 
 .tile {
   padding: 0px;
   margin: 10px;
   flex-shrink: 0;
-  width: 47%;
-  background-color: #437b91;
-  color: #fffaff;
-  max-width: 350px;
+  /*flex: 1;*/
+  width: 20%;
+  /*background-color: #1f3ef0;
+  color: #fffaff;*/
+  height: 80%;
+  /*max-width: 350px;*/
   min-height: 200px;
   vertical-align: middle;
-  border-left: 3px solid;
-  border-color: #264653;
+  border: 3px solid;
+  border-color: #2a2a2a;
 
   overflow: hidden;
+
+  /*border-radius: 30px;*/
 
   /*box-shadow: 5px 5px grey;*/
 }
@@ -201,13 +199,8 @@ a {
 
 /*if the screen is less than 600px wide*/
 @media screen and (max-width: 600px) {
-  .heading {
-    flex: 2;
-  }
-
   .section {
     width: 100%;
-    flex: 2;
   }
 
   .buttons {
@@ -219,20 +212,13 @@ a {
     font-size: 0px;
   }
 
-  .fas {
-    font-size: 22px;
-  }
-
   .img-circle {
-    width: 100px;
-    border-radius: 50px;
-    flex: 3;
+    width: 80px;
   }
 
   .tile {
     /*if the screen is thin (mobile) then have only one tile at a time*/
-    width: 100%;
-    margin: 0px;
+    width: 95%;
   }
 
   .arrow {
@@ -242,15 +228,10 @@ a {
 
 /*if the screen is at least 600px wide*/
 @media screen and (min-width: 601px) {
-  .heading {
-    flex: 2;
-  }
-
   .section {
     /*-16% from 8% padding either side*/
     width: 84%;
     align-self: center;
-    flex: 2;
   }
 
   .buttons {
@@ -262,39 +243,35 @@ a {
     font-size: 22px;
   }
 
-  .img-circle {
-    width: 150px;
-    border-radius: 75px;
-    flex: 4;
-  }
-
   .tile {
     /*if the screen is wide (desktop) then have two tiles at a time*/
-    width: 47%;
+    width: 50%;
+  }
+}
+
+/*if the screen is at least 400px high*/
+@media screen and (min-height: 750px) {
+  .btn {
+    font-size: 30px;
+  }
+
+  .fas {
+    font-size: 38px;
   }
 }
 
 @media (hover: hover) {
   .btn:hover {
-    background-color: #fffaff;
-    color: #264653;
+    background-color: #bfbfbf;
+    color: #3f3f3f;
   }
 
   a:hover {
-    color: #fffaff;
-  }
-
-  .arrow:hover {
-    color: #437b91;
-    cursor: pointer;
-  }
-
-  .tile:hover {
-    display: block;
+    color: #bfbfbf;
   }
 
   .tile:hover p {
-    font-size: large;
+    font-size: medium;
   }
 
   .tile:hover h2 {
