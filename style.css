@@ -18,11 +18,12 @@ body {
   display: flex;
   flex-direction: column;
 
-  background-color: #b0d6ff;
+  background-color: #1a1a1a;
 }
 
 .heading {
-  background-image: linear-gradient(to bottom, #429eff, #b0d6ff);
+  /*background-image: linear-gradient(to bottom, #1a1a1a, #2a2a2a);*/
+  background-color: #1a1a1a;
 
   flex: 1;
 
@@ -34,7 +35,7 @@ body {
   font-family: "Roboto Slab", "Arial", sans-serif;
   font-size: 42px;
   padding-bottom: 10px;
-  color: #151515;
+  color: #fffaff;
   padding-top: 10px;
 }
 
@@ -89,10 +90,43 @@ body {
 .btn-active {
   pointer-events: none;
   background-color: #2a2a2a;
+  color: #1a1a1a;
+}
+
+#btnAbout {
+  background-color: #053d45;
+}
+
+#about {
+  background-color: #053d45;
+}
+
+#btnProj {
+  background-color: #0f4f3a;
+}
+
+#projects {
+  background-color: #0f4f3a;
+}
+
+#btnEdu {
+  background-color: #f5c050;
+}
+
+#education {
+  background-color: #f5c050;
+}
+
+#btnEmp {
+  background-color: #379672;
+}
+
+#employment {
+  background-color: #379672;
 }
 
 a {
-  color: #2a2a2a;
+  color: #fffaff;
 }
 
 .fas {
@@ -110,7 +144,7 @@ a {
   display: flex;
   flex-direction: column;
   flex: 1;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .section h2 {
@@ -131,6 +165,7 @@ a {
 }
 
 .tileContainer {
+  padding-top: 20px;
   width: 100%;
   flex-shrink: 0;
   overflow: hidden;
@@ -178,6 +213,7 @@ a {
     border-top: 1px solid;
     border-color: #3f3f3f;
     background-color: #fffaff;
+    margin: auto;
   }
 
   .tile h2 {
@@ -234,10 +270,10 @@ a {
 @media (hover: hover) {
   .btn:hover {
     background-color: #bfbfbf;
-    color: #3f3f3f;
+    color: #9f9f9f;
   }
 
   a:hover {
-    color: #bfbfbf;
+    color: #9f9f9f;
   }
 }
