@@ -124,8 +124,8 @@ a {
   width: 84%;
   margin: auto;
 
-  /*TODO modify this to always include buttons*/
-  height: 100%;
+  /*leave 78px for the height of the buttons*/
+  height: calc(100% - 78px);
 
   color: #2a2a2a;
   box-sizing: border-box;
