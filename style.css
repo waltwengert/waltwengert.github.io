@@ -125,11 +125,9 @@ a {
   margin: auto;
 
   /*TODO modify this to always include buttons*/
-  height: 85%;
+  height: 100%;
 
   color: #2a2a2a;
-  display: flex;
-  flex-direction: column;
   box-sizing: border-box;
 }
 
@@ -145,8 +143,12 @@ a {
 }
 
 .tileContainer {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 20px;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .tile {
@@ -154,7 +156,7 @@ a {
   border-left: 2px solid;
   border-color: #2a2a2a;
   background-color: #bfbfbf;
-  width: 80%;
+  width: 100%;
 }
 
 .tile h2 {

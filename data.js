@@ -110,5 +110,25 @@ var data = {
       position: "Assistant",
       period: "May 2012-May 2013",
     },
+    {
+      employer: "Education Queensland",
+      position: "IT Technician",
+      period: "June 2020-Present",
+    },
+    {
+      employer: "Kmart",
+      position: "Retail Assistant",
+      period: "April 2012-June 2020",
+    },
+    {
+      employer: "Australian Electoral Commission",
+      position: "Polling Official",
+      period: "June 2016",
+    },
+    {
+      employer: "Lightmare Studios",
+      position: "Assistant",
+      period: "May 2012-May 2013",
+    },
   ],
 };
