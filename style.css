@@ -171,9 +171,11 @@ a {
   }
 
   .tile {
-    /*if the screen is thin (mobile) then have only one tile at a time*/
+    /*if the screen is thin (mobile) then modify tile style*/
     width: 95%;
-    border: 0;
+    border: 0px;
+    border-top: 1px solid;
+    border-color: #3f3f3f;
     background-color: #fffaff;
   }
 
