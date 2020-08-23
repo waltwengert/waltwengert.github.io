@@ -88,35 +88,35 @@ a {
 }
 
 #btnAbout {
-  background-color: #053d45;
+  background-color: #2b4162; /*#053d45;*/
 }
 
 #about {
-  background-color: #053d45;
+  background-color: #2b4162; /*#053d45;*/
 }
 
 #btnProj {
-  background-color: #0f4f3a;
+  background-color: #0b6e4f; /*#0f4f3a;*/
 }
 
 #projects {
-  background-color: #0f4f3a;
+  background-color: #0b6e4f; /*#0f4f3a;*/
 }
 
 #btnEdu {
-  background-color: #f5c050;
+  background-color: #fa9f42; /*#f5c050;*/
 }
 
 #education {
-  background-color: #f5c050;
+  background-color: #fa9f42; /*#f5c050;*/
 }
 
 #btnEmp {
-  background-color: #379672;
+  background-color: #721817; /*#379672;*/
 }
 
 #employment {
-  background-color: #379672;
+  background-color: #721817; /*#379672;*/
 }
 
 .section {
