@@ -15,8 +15,8 @@ body {
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
 
-  display: flex;
-  flex-direction: column;
+  /*display: flex;
+  flex-direction: column;*/
 
   background-color: #1a1a1a;
 }
@@ -25,9 +25,9 @@ body {
   /*background-image: linear-gradient(to bottom, #1a1a1a, #2a2a2a);*/
   background-color: #1a1a1a;
 
-  flex: 1;
+  /*flex: 1;*/
 
-  display: flex;
+  /*display: flex;*/
   flex-direction: column;
 }
 
@@ -42,8 +42,11 @@ body {
 .img-circle {
   width: 120px;
   border-radius: 50%;
-  margin-left: auto;
-  margin-right: auto;
+  padding-bottom: 5px;
+  margin: 0 auto;
+  display: block;
+  /*margin-left: 50%;
+  margin-right: 50%;*/
 }
 
 #mail {
@@ -72,6 +75,7 @@ body {
   padding-left: 10%;
   display: flex;
   height: 100%;
+  max-height: 100%;
 }
 
 .btn {
@@ -81,6 +85,7 @@ body {
   cursor: pointer;
   padding: 12px;
   flex: 1;
+  /*max-height: 100%;*/
 }
 
 .btn:focus {
@@ -127,6 +132,7 @@ body {
 
 a {
   color: #fffaff;
+  padding-top: 10px;
 }
 
 .fas {
@@ -138,13 +144,19 @@ a {
   color: #2a2a2a;
 
   /*-16% from 8% padding either side*/
-  width: 40%;
+  width: 84%;
+  margin: auto;
+  /*padding-left: 8%;*/
+  /*padding-right: 8%;*/
+
   align-self: center;
   height: 100%;
   display: flex;
   flex-direction: column;
-  flex: 1;
+  /*flex: 1;*/
   overflow: auto;
+
+  box-sizing: border-box;
 }
 
 .section h2 {
@@ -191,6 +203,7 @@ a {
 @media screen and (max-width: 600px) {
   .section {
     width: 100%;
+    padding: 0;
   }
 
   .buttons {
@@ -235,12 +248,6 @@ a {
 
 /*if the screen is at least 600px wide*/
 @media screen and (min-width: 601px) {
-  .section {
-    /*-16% from 8% padding either side*/
-    width: 84%;
-    align-self: center;
-  }
-
   .buttons {
     padding-right: 8%;
     padding-left: 8%;
