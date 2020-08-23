@@ -124,11 +124,12 @@ a {
   width: 84%;
   margin: auto;
 
+  /*TODO modify this to always include buttons*/
+  height: 85%;
+
   color: #2a2a2a;
-  height: 100%;
   display: flex;
   flex-direction: column;
-  overflow: auto;
   box-sizing: border-box;
 }
 
@@ -145,7 +146,7 @@ a {
 
 .tileContainer {
   padding-top: 20px;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .tile {
