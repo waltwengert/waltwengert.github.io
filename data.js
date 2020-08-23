@@ -23,7 +23,7 @@ var data = {
     {
       heading: "Software development",
       body:
-        "was the focus of my degree and I am currently seeking employment in this field. Check out the projects tab on this website to see some of my work!",
+        "was the focus of my degree and I am currently seeking employment in this field. Check out the projects tab on this site to see some of my work!",
     },
   ],
   projects: [
@@ -31,35 +31,35 @@ var data = {
       logo: "project.jpg",
       title: "Shift Rosterer",
       tech: "HTML, CSS, JS, PHP, SQL",
-      link: "comingSoon.html",
-      source: "comingSoon.html",
+      link: " ",
+      source: " ",
       description:
         "Tool for employers/employees to manage an organisation's shift roster.",
     },
     {
       logo: "project.jpg",
-      title: "Secret Santa",
+      title: "This Portfolio Site",
       tech: "HTML, CSS, JS",
-      link: "comingSoon.html",
-      source: "comingSoon.html",
+      link: "https://github.com/waltwengert/portfolio_site",
+      source: "https://github.com/waltwengert/portfolio_site",
       description:
-        "Tool for assigning secret santa recipients for a given group.",
+        "Single page website to display resume information and easily link to portfolio projects' source/downloads.",
     },
     {
       logo: "project.jpg",
       title: "Endless Runner",
       tech: "Python (TkInter)",
-      link: "comingSoon.html",
-      source: "comingSoon.html",
+      link: "https://github.com/waltwengert/endless_runner",
+      source: "https://github.com/waltwengert/endless_runner",
       description: "Simple horizontal endless runner game.",
     },
     {
       logo: "project.jpg",
       title: "py Calculator",
       tech: "Python",
-      link: "comingSoon.html",
-      source: "comingSoon.html",
-      description: "Python implementation of a standard graphical calculator",
+      link: "https://github.com/waltwengert/py_calculator",
+      source: "https://github.com/waltwengert/py_calculator",
+      description: "Python implementation of a standard GUI calculator",
     },
   ],
   education: [
