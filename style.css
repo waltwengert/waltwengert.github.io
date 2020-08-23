@@ -170,6 +170,9 @@ a {
   .section {
     width: 100%;
     padding: 0;
+
+    /*leave 78px for the height of the buttons*/
+    height: calc(100% - 54px);
   }
 
   .buttons {
