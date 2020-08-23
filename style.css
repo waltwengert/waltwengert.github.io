@@ -31,7 +31,7 @@ body {
 }
 
 #name {
-  font-family: "Fjalla One", "Arial", sans-serif;
+  font-family: "Roboto Slab", "Arial", sans-serif;
   font-size: 42px;
   padding-bottom: 10px;
   color: #151515;
@@ -50,6 +50,7 @@ body {
   align-self: center;
   font-size: large;
   font-style: italic;
+  font-family: "Roboto Slab", "Arial", sans-serif;
   padding-top: 20px;
   padding-bottom: 10px;
 }
