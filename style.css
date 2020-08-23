@@ -14,27 +14,16 @@ body {
   height: 100%;
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
-
-  /*display: flex;
-  flex-direction: column;*/
-
   background-color: #1a1a1a;
 }
 
 .heading {
-  /*background-image: linear-gradient(to bottom, #1a1a1a, #2a2a2a);*/
   background-color: #1a1a1a;
-
-  /*flex: 1;*/
-
-  /*display: flex;*/
-  flex-direction: column;
 }
 
 #name {
   font-family: "Roboto Slab", "Arial", sans-serif;
   font-size: 42px;
-  padding-bottom: 10px;
   color: #fffaff;
   padding-top: 10px;
 }
@@ -42,50 +31,51 @@ body {
 .img-circle {
   width: 120px;
   border-radius: 50%;
-  padding-bottom: 5px;
-  margin: 0 auto;
+  padding: 10px;
+
+  /*to center the image*/
+  margin: auto;
   display: block;
-  /*margin-left: 50%;
-  margin-right: 50%;*/
 }
 
 #mail {
-  width: min-content;
-  align-self: center;
+  font-family: "Roboto Slab", "Arial", sans-serif;
   font-size: large;
   font-style: italic;
-  font-family: "Roboto Slab", "Arial", sans-serif;
-  padding-top: 20px;
-  padding-bottom: 10px;
+
+  /*to stop the link going accross the entire page*/
+  width: min-content;
 }
 
-#github {
-  font-size: xx-large;
+a {
+  color: #fffaff;
+  padding-top: 10px;
+}
+
+/*the github and linkedin icons*/
+.fab {
+  font-size: 30px;
   padding: 10px;
 }
 
-#linkedin {
-  font-size: xx-large;
-  padding: 10px;
+/*the icons in the nav buttons*/
+.fas {
+  font-size: 30px;
 }
 
 .buttons {
-  padding-top: 10px;
-  padding-right: 10%;
-  padding-left: 10%;
   display: flex;
-  height: 100%;
-  max-height: 100%;
+  padding-right: 8%;
+  padding-left: 8%;
 }
 
 .btn {
-  background-color: #3f3f3f;
   border: none;
   color: #fffaff;
   cursor: pointer;
   padding: 12px;
   flex: 1;
-  /*max-height: 100%;*/
+  font-size: 20px;
 }
 
 .btn:focus {
@@ -94,7 +84,6 @@ body {
 
 .btn-active {
   pointer-events: none;
-  background-color: #2a2a2a;
   color: #1a1a1a;
 }
 
@@ -130,43 +119,21 @@ body {
   background-color: #379672;
 }
 
-a {
-  color: #fffaff;
-  padding-top: 10px;
-}
-
-.fas {
-  font-size: 30px;
-}
-
 .section {
-  background-color: #fffaff;
-  color: #2a2a2a;
-
   /*-16% from 8% padding either side*/
   width: 84%;
   margin: auto;
-  /*padding-left: 8%;*/
-  /*padding-right: 8%;*/
 
-  align-self: center;
+  color: #2a2a2a;
   height: 100%;
   display: flex;
   flex-direction: column;
-  /*flex: 1;*/
   overflow: auto;
-
   box-sizing: border-box;
 }
 
 .section h2 {
   font-size: x-large;
-}
-
-.section h3 {
-  font-size: x-large;
-  padding: 15px;
-  padding-bottom: 0px;
 }
 
 .section p {
@@ -178,19 +145,15 @@ a {
 
 .tileContainer {
   padding-top: 20px;
-  width: 100%;
-  flex-shrink: 0;
   overflow: hidden;
 }
 
 .tile {
-  padding: 0px;
   margin: 10px auto;
-  vertical-align: middle;
   border-left: 2px solid;
   border-color: #2a2a2a;
-  overflow: hidden;
-  background-color: #bfbfbf; /*b0d6ff;*/
+  background-color: #bfbfbf;
+  width: 80%;
 }
 
 .tile h2 {
@@ -199,7 +162,7 @@ a {
   padding-bottom: 10px;
 }
 
-/*if the screen is less than 600px wide*/
+/*if the screen is less than 600px wide (i.e. a mobile device)*/
 @media screen and (max-width: 600px) {
   .section {
     width: 100%;
@@ -229,54 +192,14 @@ a {
     margin: auto;
   }
 
-  .tile h2 {
-    font-size: x-large;
-  }
-
   .tile p {
     font-size: medium;
   }
-
-  .section h3 {
-    display: none;
-  }
-
-  .tile span {
-    display: none;
-  }
 }
 
-/*if the screen is at least 600px wide*/
-@media screen and (min-width: 601px) {
-  .buttons {
-    padding-right: 8%;
-    padding-left: 8%;
-  }
-
-  .btn {
-    font-size: 22px;
-  }
-
-  .tile {
-    /*if the screen is wide (desktop) then have two tiles at a time*/
-    width: 80%;
-  }
-}
-
-/*if the screen is at least 400px high*/
-@media screen and (min-height: 750px) {
-  /*.btn {
-    font-size: 30px;
-  }
-
-  .fas {
-    font-size: 38px;
-  }*/
-}
-
+/*only have hover functionality on hover enabled devices (i.e. not touch)*/
 @media (hover: hover) {
   .btn:hover {
-    background-color: #bfbfbf;
     color: #9f9f9f;
   }
 
