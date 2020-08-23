@@ -21,7 +21,6 @@ function populatePage() {
   for (var i = 0; i < about.length; i++) {
     var aboutDiv = document.createElement("div");
     aboutDiv.classList.add("tile");
-    //aboutDiv.id = "aboutDiv" + i;
     document.getElementById("aboutTiles").append(aboutDiv);
 
     var head = document.createElement("h2");
@@ -33,25 +32,56 @@ function populatePage() {
     aboutDiv.append(body);
   }
 
-  /*
-  var parDiv1 = document.createElement("div");
-  parDiv1.classList.add("tile");
-  document.getElementById("aboutTiles").append(parDiv1);
-  parDiv1.innerHTML = "lorem ipsum";
-
-  document.getElementById("aboutP1").innerHTML = about.para1;
-  document.getElementById("aboutP2").innerHTML = about.para2;
-  document.getElementById("aboutP3").innerHTML = about.para3;
-  */
-
   //populate the projects section
   var projects = pageData.projects;
+
+  for (var i = 0; i < projects.length; i++) {
+    var projectDiv = document.createElement("div");
+    projectDiv.classList.add("tile");
+    document.getElementById("projectTiles").append(projectDiv);
+
+    var pTitle = document.createElement("h2");
+    pTitle.innerHTML = projects[i].title;
+    projectDiv.append(pTitle);
+
+    var pDescription = document.createElement("p");
+    pDescription.innerHTML = projects[i].description;
+    projectDiv.append(pDescription);
+  }
 
   //populate the education section
   var education = pageData.education;
 
+  for (var i = 0; i < education.length; i++) {
+    var educationDiv = document.createElement("div");
+    educationDiv.classList.add("tile");
+    document.getElementById("educationTiles").append(educationDiv);
+
+    var eTitle = document.createElement("h2");
+    eTitle.innerHTML = education[i].level;
+    educationDiv.append(eTitle);
+
+    var eDescription = document.createElement("p");
+    eDescription.innerHTML = education[i].focus;
+    educationDiv.append(eDescription);
+  }
+
   //populate the employment section
   var employment = pageData.employment;
+
+  for (var i = 0; i < employment.length; i++) {
+    var employmentDiv = document.createElement("div");
+    employmentDiv.classList.add("tile");
+    document.getElementById("employmentTiles").append(employmentDiv);
+
+    var eTitle = document.createElement("h2");
+    eTitle.innerHTML = employment[i].employer;
+    employmentDiv.append(eTitle);
+
+    var eDescription = document.createElement("p");
+    eDescription.innerHTML = employment[i].position;
+    employmentDiv.append(eDescription);
+  }
 }
 
 function toggleBtn(btnID) {
