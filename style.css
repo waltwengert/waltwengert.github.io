@@ -212,6 +212,11 @@ a {
     width: 80px;
   }
 
+  .fab {
+    /*increase top padding of github/linkedin icons to centre them*/
+    padding-top: 13px;
+  }
+
   .tile {
     /*if the screen is thin (mobile) then modify tile style*/
     width: 95%;
