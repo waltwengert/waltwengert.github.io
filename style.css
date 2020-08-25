@@ -149,8 +149,13 @@ a {
   margin-left: auto;
   margin-right: auto;
   padding-top: 20px;
-  overflow-y: auto;
+  overflow-y: scroll;
   overflow-x: hidden;
+  scrollbar-width: none;
+}
+
+.tileContainer::-webkit-scrollbar {
+  display: none;
 }
 
 .tile {
