@@ -86,8 +86,8 @@ function populatePage() {
 
 function toggleBtn(btnID, firstLoad) {
   if (!firstLoad) {
-    //scroll down the page to the sections part (301px constant on regular screens)
-    window.scroll({top: 301, behavior: 'smooth'});
+    //scroll down the page to the sections part (302px constant on regular screens)
+    window.scroll({top: 302, behavior: 'smooth'});
   }
 
   //btnID 0-3 based on index of following arrays
