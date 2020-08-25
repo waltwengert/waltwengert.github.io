@@ -66,8 +66,9 @@ a {
 /*the github and linkedin icons*/
 .fab {
   font-size: 30px;
-  padding: 10px;
-  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 8px;
 }
 
 /*the icons in the nav buttons*/
@@ -81,7 +82,7 @@ a {
   padding-left: 8%;
 
   /*the height of heading*/
-  margin-top: 302px;
+  margin-top: 281px;
 }
 
 .btn {
