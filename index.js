@@ -1,6 +1,6 @@
 window.onload = function () {
   populatePage();
-  toggleBtn(0);
+  toggleBtn(0, true);
 };
 
 function populatePage() {
@@ -84,7 +84,12 @@ function populatePage() {
   }
 }
 
-function toggleBtn(btnID) {
+function toggleBtn(btnID, firstLoad) {
+  if (!firstLoad) {
+    //scroll down the page to the sections part (281px constant on regular screens)
+    window.scroll({top: 281, behavior: 'smooth'});
+  }
+
   //btnID 0-3 based on index of following arrays
   var btns = ["btnAbout", "btnProj", "btnEdu", "btnEmp"];
   var divs = ["about", "projects", "education", "employment"];
