@@ -34,7 +34,7 @@ html {
 
 #name {
   font-family: "Roboto Slab", "Arial", sans-serif;
-  font-size: 42px;
+  font-size: 44px;
   color: #fffaff;
   padding-top: 10px;
 }
@@ -42,7 +42,8 @@ html {
 .img-circle {
   width: 120px;
   border-radius: 50%;
-  padding: 10px;
+  padding-bottom: 10px;
+  padding-top: 5px;
 
   /*to center the image*/
   margin: auto;
@@ -51,7 +52,7 @@ html {
 
 #mail {
   font-family: "Roboto Slab", "Arial", sans-serif;
-  font-size: large;
+  font-size: 18px;
   font-style: italic;
 
   /*to stop the link going accross the entire page*/
@@ -145,10 +146,16 @@ a {
 
   color: #2a2a2a;
   box-sizing: border-box;
+
+  /*this is only temporary, in JS change to auto at page's bottom*/
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .section h2 {
-  font-size: x-large;
+  font-size: 28px;
 }
 
 .section p {
@@ -158,26 +165,28 @@ a {
   padding-bottom: 5%;
 }
 
-.tileContainer {
+/*.tileContainer {
   width: 80%;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 20px;
-  overflow-y: scroll;
+  padding-bottom: 20px;
+  overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: none;
 }
 
 .tileContainer::-webkit-scrollbar {
   display: none;
-}
+}*/
 
 .tile {
   margin: 10px auto;
   border-left: 2px solid;
   border-color: #2a2a2a;
   background-color: #bfbfbf;
-  width: 100%;
+  width: 80%;
 }
 
 .tile h2 {
@@ -188,6 +197,14 @@ a {
 
 /*if the screen is less than 600px wide (i.e. a mobile device)*/
 @media screen and (max-width: 600px) {
+  #name {
+    font-size: 30px;
+  }
+
+  #mail {
+    font-size: 14px;
+  }
+
   .section {
     width: 100%;
     padding: 0;
@@ -209,7 +226,7 @@ a {
   }
 
   .img-circle {
-    width: 80px;
+    width: 100px;
   }
 
   .fab {
@@ -227,9 +244,9 @@ a {
     margin: auto;
   }
 
-  .tile p {
+  /*.tile p {
     font-size: medium;
-  }
+  }*/
 }
 
 /*only have hover functionality on hover enabled devices (i.e. not touch)*/

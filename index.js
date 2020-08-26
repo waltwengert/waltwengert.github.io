@@ -3,6 +3,37 @@ window.onload = function () {
   toggleBtn(0, true);
 };
 
+window.onscroll = function() {
+  var headingHeight;
+  if (window.innerWidth >= 600) {
+    //wider screen, heading constant 281px
+    headingHeight = 281;
+  } else {
+    //smaller (mogile) screen, heading constant 251px
+    headingHeight = 251;
+  }
+
+  //if the page scroll reaches the bottom
+  if ((window.innerHeight - headingHeight + window.scrollY) >= document.body.offsetHeight) {
+    //now that the bottom of the page has been reached, reenable scrolling for inner
+    //section divs
+    document.getElementById("about").style.overflow = "auto";
+    document.getElementById("projects").style.overflow = "auto";
+    document.getElementById("education").style.overflow = "auto";
+    document.getElementById("employment").style.overflow = "auto";
+  }
+
+  //if the page scroll reaches the top
+  if ((window.innerHeight - headingHeight + window.scrollY) <= document.body.offsetHeight) {
+    //now that the bottom of the page has been reached, reenable scrolling for inner
+    //section divs
+    document.getElementById("about").style.overflow = "hidden";
+    document.getElementById("projects").style.overflow = "hidden";
+    document.getElementById("education").style.overflow = "hidden";
+    document.getElementById("employment").style.overflow = "hidden";
+  }
+};
+
 function populatePage() {
   var pageData = data; //the JSON data that is a stand-in for an API response
 
@@ -21,7 +52,7 @@ function populatePage() {
   for (var i = 0; i < about.length; i++) {
     var aboutDiv = document.createElement("div");
     aboutDiv.classList.add("tile");
-    document.getElementById("aboutTiles").append(aboutDiv);
+    document.getElementById("about").append(aboutDiv);
 
     var head = document.createElement("h2");
     head.innerHTML = about[i].heading;
@@ -38,7 +69,7 @@ function populatePage() {
   for (var i = 0; i < projects.length; i++) {
     var projectDiv = document.createElement("div");
     projectDiv.classList.add("tile");
-    document.getElementById("projectTiles").append(projectDiv);
+    document.getElementById("projects").append(projectDiv);
 
     var pTitle = document.createElement("h2");
     pTitle.innerHTML = projects[i].title;
@@ -55,7 +86,7 @@ function populatePage() {
   for (var i = 0; i < education.length; i++) {
     var educationDiv = document.createElement("div");
     educationDiv.classList.add("tile");
-    document.getElementById("educationTiles").append(educationDiv);
+    document.getElementById("education").append(educationDiv);
 
     var eTitle = document.createElement("h2");
     eTitle.innerHTML = education[i].level;
@@ -72,7 +103,7 @@ function populatePage() {
   for (var i = 0; i < employment.length; i++) {
     var employmentDiv = document.createElement("div");
     employmentDiv.classList.add("tile");
-    document.getElementById("employmentTiles").append(employmentDiv);
+    document.getElementById("employment").append(employmentDiv);
 
     var eTitle = document.createElement("h2");
     eTitle.innerHTML = employment[i].employer;
