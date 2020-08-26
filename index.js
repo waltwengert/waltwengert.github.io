@@ -9,7 +9,7 @@ window.onscroll = function() {
     //wider screen, heading constant 281px
     headingHeight = 281;
   } else {
-    //smaller (mogile) screen, heading constant 251px
+    //smaller (mobile) screen, heading constant 251px
     headingHeight = 251;
   }
 
@@ -24,7 +24,7 @@ window.onscroll = function() {
   }
 
   //if the page scroll reaches the top
-  if ((window.innerHeight - headingHeight + window.scrollY) <= document.body.offsetHeight) {
+  if ((window.innerHeight - headingHeight + window.scrollY) < document.body.offsetHeight) {
     //now that the bottom of the page has been reached, reenable scrolling for inner
     //section divs
     document.getElementById("about").style.overflow = "hidden";
@@ -116,7 +116,8 @@ function populatePage() {
 }
 
 function toggleBtn(btnID, firstLoad) {
-  if (!firstLoad) {
+  //if it isn't the initial page load and not a small/mobile device
+  if (!firstLoad && window.innerWidth >= 600) {
     //scroll down the page to the sections part (302px constant on regular screens)
     window.scroll({top: 302, behavior: 'smooth'});
   }
