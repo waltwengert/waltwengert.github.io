@@ -25,6 +25,21 @@ var data = {
       body:
         "was the focus of my degree and I am currently seeking employment in this field. Check out the projects tab on this site to see some of my work!",
     },
+    {
+      heading: "I am",
+      body:
+        "a recent graduate from The University of Queensland where I majored in Computer Science and Film & Television Studies in a Bachelor of Science and Arts dual degree.",
+    },
+    {
+      heading: "I currently",
+      body:
+        "work as an IT Technician for Education Queensland. In this role I manage a school's network and assist staff with hardware and software issues.",
+    },
+    {
+      heading: "Software development",
+      body:
+        "was the focus of my degree and I am currently seeking employment in this field. Check out the projects tab on this site to see some of my work!",
+    },
   ],
   projects: [
     {
@@ -104,31 +119,6 @@ var data = {
       employer: "Australian Electoral Commission",
       position: "Polling Official",
       period: "June 2016",
-    },
-    {
-      employer: "Lightmare Studios",
-      position: "Assistant",
-      period: "May 2012-May 2013",
-    },
-    {
-      employer: "Education Queensland",
-      position: "IT Technician",
-      period: "June 2020-Present",
-    },
-    {
-      employer: "Kmart",
-      position: "Retail Assistant",
-      period: "April 2012-June 2020",
-    },
-    {
-      employer: "Australian Electoral Commission",
-      position: "Polling Official",
-      period: "June 2016",
-    },
-    {
-      employer: "Lightmare Studios",
-      position: "Assistant",
-      period: "May 2012-May 2013",
     },
   ],
 };
