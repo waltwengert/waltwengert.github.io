@@ -165,22 +165,6 @@ a {
   padding-bottom: 5%;
 }
 
-/*.tileContainer {
-  width: 80%;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  scrollbar-width: none;
-}
-
-.tileContainer::-webkit-scrollbar {
-  display: none;
-}*/
-
 .tile {
   margin: 10px auto;
   border-left: 2px solid;
@@ -226,7 +210,7 @@ a {
   }
 
   .img-circle {
-    width: 100px;
+    width: 110px;
   }
 
   .fab {
@@ -243,10 +227,6 @@ a {
     background-color: #fffaff;
     margin: auto;
   }
-
-  /*.tile p {
-    font-size: medium;
-  }*/
 }
 
 /*only have hover functionality on hover enabled devices (i.e. not touch)*/
