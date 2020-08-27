@@ -152,6 +152,8 @@ a {
 
   display: flex;
   flex-direction: column;
+
+  -webkit-overflow-scrolling: touch;
 }
 
 .section h2 {
