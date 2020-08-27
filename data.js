@@ -3,7 +3,7 @@
 var data = {
   heading: {
     name: "Walt Wengert",
-    imgSource: "me.png",
+    imgSource: "ww.gif",
     mailLink: "mailto:walt.frederick.john@live.com",
     mailText: "walt.frederick.john@live.com",
     githubLink: "https://github.com/waltwengert",
