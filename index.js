@@ -15,24 +15,34 @@ window.onscroll = function() {
 
   //if the page scroll reaches the bottom
   if ((window.innerHeight - headingHeight + window.scrollY) >= document.body.offsetHeight) {
-    //now that the bottom of the page has been reached, reenable scrolling for inner
-    //section divs
+    //enable scrolling for section divs
     document.getElementById("about").style.overflow = "auto";
     document.getElementById("projects").style.overflow = "auto";
     document.getElementById("education").style.overflow = "auto";
     document.getElementById("employment").style.overflow = "auto";
-  }
 
-  //if the page scroll reaches the top
-  if ((window.innerHeight - headingHeight + window.scrollY) < document.body.offsetHeight) {
-    //now that the bottom of the page has been reached, reenable scrolling for inner
-    //section divs
+    //disable scrolling for body
+    document.body.style.overflow = "hidden";
+  }
+};
+
+function switchScroll(sectionID) {
+  sectionTop = document.getElementById(sectionID).scrollTop;
+
+  console.log(window.innerHeight + "\t" + sectionTop + "\t" + document.body.offsetHeight);
+
+  if(sectionTop == 0) {
+    //if ((window.innerHeight - headingHeight + window.scrollY) < document.body.offsetHeight) {
+    //disable scrolling for section divs
     document.getElementById("about").style.overflow = "hidden";
     document.getElementById("projects").style.overflow = "hidden";
     document.getElementById("education").style.overflow = "hidden";
     document.getElementById("employment").style.overflow = "hidden";
+  
+    //enable scrolling for body
+    document.body.style.overflow = "auto";
   }
-};
+}
 
 function populatePage() {
   var pageData = data; //the JSON data that is a stand-in for an API response

@@ -79,26 +79,12 @@
     </div>
 
     <!--About section, basic paragraphs describing who I am in context of dev-->
-    <div id="about" class="section"></div>
+    <div id="about" class="section" onscroll="switchScroll('about')"></div>
     <!--Projects section, rows of tiles for each project-->
-    <div id="projects" class="section"></div>
+    <div id="projects" class="section" onscroll="switchScroll('projects')"></div>
     <!--Education section, rows of tiles (level, focus, institution, period)-->
-    <div id="education" class="section"></div>
+    <div id="education" class="section" onscroll="switchScroll('education')"></div>
     <!--Employment section, rows of tiles (employer, position, period)-->
-    <div id="employment" class="section"></div>
+    <div id="employment" class="section" onscroll="switchScroll('employment')"></div>
   </body>
-</html>
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="Robots" content="NOINDEX " />
-  </head>
-  <body></body>
-  <script type="text/javascript">
-    var gearPage = document.getElementById("GearPage");
-    if (null != gearPage) {
-      gearPage.parentNode.removeChild(gearPage);
-      document.title = "Error";
-    }
-  </script>
 </html>
