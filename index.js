@@ -15,29 +15,44 @@ document.addEventListener("scroll", function(e) {
     headingHeight = 251;
   }
 
-  //if the page scroll reaches the bottom
-  if ((window.innerHeight - headingHeight + window.scrollY) >= document.body.offsetHeight) {
+  //assign scroll tops of each div for easier reference 
+  abScroll = document.getElementById("about").scrollTop;
+  prScroll = document.getElementById("projects").scrollTop;
+  edScroll = document.getElementById("education").scrollTop;
+  emScroll = document.getElementById("employment").scrollTop;
+  
+  if (window.scrollY <= headingHeight - 10) {
+    //scrolling through heading
+    console.log("heading");
+
+    //disable scrolling for section divs
+    document.getElementById("about").style.overflow = "hidden";
+    document.getElementById("projects").style.overflow = "hidden";
+    document.getElementById("education").style.overflow = "hidden";
+    document.getElementById("employment").style.overflow = "hidden";
+
+    //enable scrolling for body
+    document.body.style.overflow = "auto";
+  } else if (abScroll >= 10 || prScroll >= 10 || edScroll >= 10 || emScroll >= 10) {
+    //scrolling through div
+    console.log("div");
+
     //enable scrolling for section divs
     document.getElementById("about").style.overflow = "auto";
     document.getElementById("projects").style.overflow = "auto";
     document.getElementById("education").style.overflow = "auto";
     document.getElementById("employment").style.overflow = "auto";
 
-    //if the page is scrolling through the heading (+20px buffer)
-    if (window.scrollY >= headingHeight + 20) { 
-      //disable scrolling for body
-      document.body.style.overflow = "hidden";
-    } else {
-      //enable it
-      document.body.style.overflow = "auto";
-    }
-  } else if ((document.getElementById("about").scrollTop <= 0) || (document.getElementById("projects").scrollTop <= 0)
-            || (document.getElementById("education").scrollTop <= 0) || (document.getElementById("employment").scrollTop <= 0)) {
-    //disable scrolling for section divs
-    document.getElementById("about").style.overflow = "hidden";
-    document.getElementById("projects").style.overflow = "hidden";
-    document.getElementById("education").style.overflow = "hidden";
-    document.getElementById("employment").style.overflow = "hidden";
+    //disable scrolling for body
+    document.body.style.overflow = "hidden";
+  } else {
+    console.log("overlap");
+
+    //enable scrolling for section divs
+    document.getElementById("about").style.overflow = "auto";
+    document.getElementById("projects").style.overflow = "auto";
+    document.getElementById("education").style.overflow = "auto";
+    document.getElementById("employment").style.overflow = "auto";
 
     //enable scrolling for body
     document.body.style.overflow = "auto";
@@ -151,10 +166,13 @@ function toggleBtn(btnID, firstLoad) {
   var divs = ["about", "projects", "education", "employment"];
 
   for (var i = 0; i < btns.length; i++) {
+    //hide each section div and scroll back to top
     document.getElementById(btns[i]).classList.remove("btn-active");
     document.getElementById(divs[i]).style.display = "none";
+    document.getElementById(divs[i]).scrollTop = 0;
   }
 
+  //reenable the selected button's section div
   document.getElementById(btns[btnID]).classList.add("btn-active");
   document.getElementById(divs[btnID]).style.display = "flex";
 }
