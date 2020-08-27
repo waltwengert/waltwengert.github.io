@@ -3,8 +3,9 @@ window.onload = function () {
   toggleBtn(0, true);
 };
 
-//this is called whenever the page itself is scrolled
-window.onscroll = function windowScroll() {
+//detect a scroll anywhere on the page including child divs
+document.addEventListener("scroll", function(e) {
+  //assign heading height based on device size
   var headingHeight;
   if (window.innerWidth >= 600) {
     //wider screen, heading constant 281px
@@ -30,19 +31,18 @@ window.onscroll = function windowScroll() {
       //enable it
       document.body.style.overflow = "auto";
     }
-  }
-};
-
-//this is called if any of the sections are scrolled
-function switchScroll(sectionID) {
-  if (document.getElementById(sectionID).scrollTop <= 0) {
+  } else if ((document.getElementById("about").scrollTop <= 0) || (document.getElementById("projects").scrollTop <= 0)
+            || (document.getElementById("education").scrollTop <= 0) || (document.getElementById("employment").scrollTop <= 0)) {
     //disable scrolling for section divs
-    document.getElementById(sectionID).style.overflow = "hidden";
+    document.getElementById("about").style.overflow = "hidden";
+    document.getElementById("projects").style.overflow = "hidden";
+    document.getElementById("education").style.overflow = "hidden";
+    document.getElementById("employment").style.overflow = "hidden";
 
     //enable scrolling for body
     document.body.style.overflow = "auto";
   }
-}
+}, true);
 
 function populatePage() {
   var jsonData = data; //the JSON data that is a stand-in for an API response
