@@ -88,6 +88,31 @@ var data = {
       institution: "TAFE",
       period: "2012",
     },
+    {
+      level: "Bachelor of Science",
+      focus: "Computer Science (extended major)",
+      institution: "The University of Queensland",
+      period: "2015-2019",
+    },
+    {
+      level: "Bachelor of Arts",
+      focus:
+        "Film and Television Studies (major); Communication Studies (minor), Philosophy (minor)",
+      institution: "The University of Queensland",
+      period: "2015-2019",
+    },
+    {
+      level: "Certificate III",
+      focus: "Media",
+      institution: "TAFE/Lightmare Studios",
+      period: "2012-2013",
+    },
+    {
+      level: "Certificate I",
+      focus: "Information Technology",
+      institution: "TAFE",
+      period: "2012",
+    },
   ],
   employment: [
     {
