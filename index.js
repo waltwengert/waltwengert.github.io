@@ -21,10 +21,8 @@ document.addEventListener("scroll", function(e) {
   edScroll = document.getElementById("education").scrollTop;
   emScroll = document.getElementById("employment").scrollTop;
   
-  if (window.scrollY <= headingHeight - 10) {
+  if (window.scrollY <= headingHeight - 5) {
     //scrolling through heading
-    console.log("heading");
-
     //disable scrolling for section divs
     document.getElementById("about").style.overflow = "hidden";
     document.getElementById("projects").style.overflow = "hidden";
@@ -33,10 +31,8 @@ document.addEventListener("scroll", function(e) {
 
     //enable scrolling for body
     document.body.style.overflow = "auto";
-  } else if (abScroll >= 10 || prScroll >= 10 || edScroll >= 10 || emScroll >= 10) {
+  } else if (abScroll >= 5 || prScroll >= 5 || edScroll >= 5 || emScroll >= 5) {
     //scrolling through div
-    console.log("div");
-
     //enable scrolling for section divs
     document.getElementById("about").style.overflow = "auto";
     document.getElementById("projects").style.overflow = "auto";
@@ -46,8 +42,7 @@ document.addEventListener("scroll", function(e) {
     //disable scrolling for body
     document.body.style.overflow = "hidden";
   } else {
-    console.log("overlap");
-
+    //scrolling through overlap
     //enable scrolling for section divs
     document.getElementById("about").style.overflow = "auto";
     document.getElementById("projects").style.overflow = "auto";
@@ -166,10 +161,9 @@ function toggleBtn(btnID, firstLoad) {
   var divs = ["about", "projects", "education", "employment"];
 
   for (var i = 0; i < btns.length; i++) {
-    //hide each section div and scroll back to top
+    //disable/hide each section div
     document.getElementById(btns[i]).classList.remove("btn-active");
     document.getElementById(divs[i]).style.display = "none";
-    document.getElementById(divs[i]).scrollTop = 0;
   }
 
   //reenable the selected button's section div
