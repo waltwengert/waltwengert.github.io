@@ -13,32 +13,17 @@ var data = {
     {
       heading: "I am",
       body:
-        "a recent graduate from The University of Queensland where I majored in Computer Science and Film & Television Studies in a Bachelor of Science and Arts dual degree.",
+        "a recent Computer Science/Film and TV graduate from The University of Queensland.",
     },
     {
-      heading: "I currently",
+      heading: "I work",
       body:
-        "work as an IT Technician for Education Queensland. In this role I manage a school's network and assist staff with hardware and software issues.",
-    },
-    {
-      heading: "Software development",
-      body:
-        "was the focus of my degree and I am currently seeking employment in this field. Check out the projects tab on this site to see some of my work!",
-    },
-    {
-      heading: "I am",
-      body:
-        "a recent graduate from The University of Queensland where I majored in Computer Science and Film & Television Studies in a Bachelor of Science and Arts dual degree.",
-    },
-    {
-      heading: "I currently",
-      body:
-        "work as an IT Technician for Education Queensland. In this role I manage a school's network and assist staff with hardware and software issues.",
+        "as an IT Technician for Education Queensland, administering a school's network and devices (Windows workstations, iPads).",
     },
     {
       heading: "Software development",
       body:
-        "was the focus of my degree and I am currently seeking employment in this field. Check out the projects tab on this site to see some of my work!",
+        "was the focus of my degree and one of my main interests. Check out the projects tab on this site to see some of my work.",
     },
   ],
   projects: [

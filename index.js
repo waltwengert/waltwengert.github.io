@@ -4,7 +4,7 @@ window.onload = function () {
 };
 
 //this is called whenever the page itself is scrolled
-window.onscroll = function() {
+window.onscroll = function windowScroll() {
   var headingHeight;
   if (window.innerWidth >= 600) {
     //wider screen, heading constant 281px
@@ -35,10 +35,10 @@ window.onscroll = function() {
 
 //this is called if any of the sections are scrolled
 function switchScroll(sectionID) {
-  if(document.getElementById(sectionID).scrollTop <= 0) {
+  if (document.getElementById(sectionID).scrollTop <= 0) {
     //disable scrolling for section divs
     document.getElementById(sectionID).style.overflow = "hidden";
-  
+
     //enable scrolling for body
     document.body.style.overflow = "auto";
   }
@@ -157,7 +157,4 @@ function toggleBtn(btnID, firstLoad) {
 
   document.getElementById(btns[btnID]).classList.add("btn-active");
   document.getElementById(divs[btnID]).style.display = "flex";
-
-  //run this function on button click to reenable scrolling for the page when section has no overflow
-  switchScroll(divs[btnID]);
 }
