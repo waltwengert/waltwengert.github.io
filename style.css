@@ -135,7 +135,8 @@ a {
 .section {
   /*-16% from 8% padding either side*/
   width: 84%;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 
   /*leave 78px for the height of the buttons*/
   height: calc(100% - 78px);
@@ -155,7 +156,7 @@ a {
 }
 
 .section p {
-  font-size: large;
+  font-size: 18px;
   padding-left: 10%;
   padding-right: 10%;
   padding-bottom: 5%;
@@ -172,7 +173,6 @@ a {
 .tile h2 {
   padding-top: 5%;
   padding-left: 10%;
-  padding-bottom: 10px;
 }
 
 /*if the screen is less than 600px wide (i.e. a mobile device)*/
@@ -187,9 +187,9 @@ a {
 
   .section {
     width: 100%;
-    padding: 0;
+    padding: 0px;
 
-    /*leave 78px for the height of the buttons*/
+    /*leave 54px for the height of the buttons*/
     height: calc(100% - 54px);
   }
 
@@ -216,12 +216,12 @@ a {
 
   .tile {
     /*if the screen is thin (mobile) then modify tile style*/
-    width: 95%;
+    width: 90%;
     border: 0px;
     border-top: 1px solid;
     border-color: #3f3f3f;
     background-color: #fffaff;
-    margin: auto;
+    margin: 0px auto;
   }
 }
 
