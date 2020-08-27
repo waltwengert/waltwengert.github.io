@@ -18,12 +18,12 @@ var data = {
     {
       heading: "I work",
       body:
-        "as an IT Technician for Education Queensland, administering a school's network and devices (Windows workstations, iPads).",
+        "as an IT Technician for Education Queensland, administering a school's network and devices.",
     },
     {
       heading: "Software development",
       body:
-        "was the focus of my degree and one of my main interests. Check out the projects tab on this site to see some of my work.",
+        "was the focus of my degree and one of my main interests. Check out the projects tab on this site to see some of my work!",
     },
   ],
   projects: [
