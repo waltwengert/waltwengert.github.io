@@ -3,6 +3,7 @@ window.onload = function () {
   toggleBtn(0, true);
 };
 
+//this is called whenever the page itself is scrolled
 window.onscroll = function() {
   var headingHeight;
   if (window.innerWidth >= 600) {
@@ -21,23 +22,22 @@ window.onscroll = function() {
     document.getElementById("education").style.overflow = "auto";
     document.getElementById("employment").style.overflow = "auto";
 
-    //disable scrolling for body
-    document.body.style.overflow = "hidden";
+    //if the page is scrolling through the heading (+20px buffer)
+    if (window.scrollY >= headingHeight + 20) { 
+      //disable scrolling for body
+      document.body.style.overflow = "hidden";
+    } else {
+      //enable it
+      document.body.style.overflow = "auto";
+    }
   }
 };
 
+//this is called if any of the sections are scrolled
 function switchScroll(sectionID) {
-  sectionTop = document.getElementById(sectionID).scrollTop;
-
-  console.log(window.innerHeight + "\t" + sectionTop + "\t" + document.body.offsetHeight);
-
-  if(sectionTop == 0) {
-    //if ((window.innerHeight - headingHeight + window.scrollY) < document.body.offsetHeight) {
+  if(document.getElementById(sectionID).scrollTop <= 0) {
     //disable scrolling for section divs
-    document.getElementById("about").style.overflow = "hidden";
-    document.getElementById("projects").style.overflow = "hidden";
-    document.getElementById("education").style.overflow = "hidden";
-    document.getElementById("employment").style.overflow = "hidden";
+    document.getElementById(sectionID).style.overflow = "hidden";
   
     //enable scrolling for body
     document.body.style.overflow = "auto";
@@ -45,10 +45,10 @@ function switchScroll(sectionID) {
 }
 
 function populatePage() {
-  var pageData = data; //the JSON data that is a stand-in for an API response
+  var jsonData = data; //the JSON data that is a stand-in for an API response
 
   //populate the heading
-  var heading = pageData.heading;
+  var heading = jsonData.heading;
   document.getElementById("name").innerHTML = heading.name;
   document.getElementById("myImg").src = heading.imgSource;
   document.getElementById("mail").href = heading.mailLink;
@@ -56,8 +56,16 @@ function populatePage() {
   document.getElementById("github").href = heading.githubLink;
   document.getElementById("linkedin").href = heading.linkedinLink;
 
+  //populate all the sections
+  populateAbout(jsonData);
+  populateProjects(jsonData);
+  populateEducation(jsonData);
+  populateEmployment(jsonData);  
+}
+
+function populateAbout (jsonData) {
   //populate the about section
-  var about = pageData.about;
+  var about = jsonData.about;
 
   for (var i = 0; i < about.length; i++) {
     var aboutDiv = document.createElement("div");
@@ -72,9 +80,11 @@ function populatePage() {
     body.innerHTML = about[i].body;
     aboutDiv.append(body);
   }
+}
 
+function populateProjects (jsonData) {
   //populate the projects section
-  var projects = pageData.projects;
+  var projects = jsonData.projects;
 
   for (var i = 0; i < projects.length; i++) {
     var projectDiv = document.createElement("div");
@@ -89,9 +99,11 @@ function populatePage() {
     pDescription.innerHTML = projects[i].description;
     projectDiv.append(pDescription);
   }
+}
 
+function populateEducation (jsonData) {
   //populate the education section
-  var education = pageData.education;
+  var education = jsonData.education;
 
   for (var i = 0; i < education.length; i++) {
     var educationDiv = document.createElement("div");
@@ -106,9 +118,11 @@ function populatePage() {
     eDescription.innerHTML = education[i].focus;
     educationDiv.append(eDescription);
   }
+}
 
+function populateEmployment (jsonData) {
   //populate the employment section
-  var employment = pageData.employment;
+  var employment = jsonData.employment;
 
   for (var i = 0; i < employment.length; i++) {
     var employmentDiv = document.createElement("div");
@@ -143,4 +157,7 @@ function toggleBtn(btnID, firstLoad) {
 
   document.getElementById(btns[btnID]).classList.add("btn-active");
   document.getElementById(divs[btnID]).style.display = "flex";
+
+  //run this function on button click to reenable scrolling for the page when section has no overflow
+  switchScroll(divs[btnID]);
 }
