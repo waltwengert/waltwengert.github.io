@@ -172,7 +172,7 @@ function populateEmployment(jsonData) {
 
 function toggleBtn(btnID, firstLoad) {
   //if it isn't the initial page load and not a small/mobile device
-  if (!firstLoad && window.innerWidth >= 600) {
+  if (!firstLoad /*&& window.innerWidth >= 600*/) {
     //scroll down the page to the sections part (302px constant on regular screens)
     window.scroll({ top: 302, behavior: "smooth" });
   }
