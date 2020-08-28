@@ -28,66 +28,31 @@ var data = {
   ],
   projects: [
     {
-      logo: "project.jpg",
+      screen: "project.jpg",
       title: "Shift Rosterer",
       tech: "HTML, CSS, JS, PHP, SQL",
-      link: " ",
-      source: " ",
-      description:
-        "Tool for employers/employees to manage an organisation's shift roster.",
+      link: "https://github.com/waltwengert/Shift-Rosterer",
     },
     {
-      logo: "project.jpg",
+      screen: "project.jpg",
       title: "This Portfolio Site",
       tech: "HTML, CSS, JS",
-      link: "https://github.com/waltwengert/portfolio_site",
-      source: "https://github.com/waltwengert/portfolio_site",
-      description:
-        "Single page website to display resume information and easily link to portfolio projects' source/downloads.",
+      link: "https://github.com/waltwengert/waltwengert.github.io",
     },
     {
-      logo: "project.jpg",
+      screen: "project.jpg",
       title: "Endless Runner",
-      tech: "Python (TkInter)",
+      tech: "Python",
       link: "https://github.com/waltwengert/endless_runner",
-      source: "https://github.com/waltwengert/endless_runner",
-      description: "Simple horizontal endless runner game.",
     },
     {
-      logo: "project.jpg",
+      screen: "project.jpg",
       title: "py Calculator",
       tech: "Python",
       link: "https://github.com/waltwengert/py_calculator",
-      source: "https://github.com/waltwengert/py_calculator",
-      description: "Python implementation of a standard GUI calculator",
     },
   ],
   education: [
-    {
-      level: "Bachelor of Science",
-      focus: "Computer Science (extended major)",
-      institution: "The University of Queensland",
-      period: "2015-2019",
-    },
-    {
-      level: "Bachelor of Arts",
-      focus:
-        "Film and Television Studies (major); Communication Studies (minor), Philosophy (minor)",
-      institution: "The University of Queensland",
-      period: "2015-2019",
-    },
-    {
-      level: "Certificate III",
-      focus: "Media",
-      institution: "TAFE/Lightmare Studios",
-      period: "2012-2013",
-    },
-    {
-      level: "Certificate I",
-      focus: "Information Technology",
-      institution: "TAFE",
-      period: "2012",
-    },
     {
       level: "Bachelor of Science",
       focus: "Computer Science (extended major)",
@@ -118,17 +83,22 @@ var data = {
     {
       employer: "Education Queensland",
       position: "IT Technician",
-      period: "June 2020-Present",
+      period: "June 2020 - Present",
     },
     {
       employer: "Kmart",
       position: "Retail Assistant",
-      period: "April 2012-June 2020",
+      period: "April 2012 - June 2020",
     },
     {
       employer: "Australian Electoral Commission",
       position: "Polling Official",
       period: "June 2016",
+    },
+    {
+      employer: "Lightmare Studios",
+      position: "Software QA",
+      period: "May 2012 - May 2013",
     },
   ],
 };
