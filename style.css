@@ -23,9 +23,9 @@ body {
   width: 100%;
 
   /*to achieve body scrolling over heading*/
-  position:fixed;
+  position: fixed;
   top: 0;
-  z-index: -99; 
+  z-index: -99;
 }
 
 #name {
@@ -101,23 +101,23 @@ a {
 }
 
 #btnAbout {
-  background-color: #2b4162; 
+  background-color: #2b4162;
 }
 
 #about {
-  background-color: #2b4162; 
+  background-color: #2b4162;
 }
 
 #btnProj {
-  background-color: #0b6e4f; 
+  background-color: #0b6e4f;
 }
 
 #projects {
-  background-color: #0b6e4f; 
+  background-color: #0b6e4f;
 }
 
 #btnEdu {
-  background-color: #fa9f42; 
+  background-color: #fa9f42;
 }
 
 #education {
@@ -125,11 +125,11 @@ a {
 }
 
 #btnEmp {
-  background-color: #721817; 
+  background-color: #721817;
 }
 
 #employment {
-  background-color: #721817; 
+  background-color: #721817;
 }
 
 .section {
@@ -137,6 +137,8 @@ a {
   width: 84%;
   margin-left: auto;
   margin-right: auto;
+
+  padding-top: 20px;
 
   /*leave 78px for the height of the buttons*/
   height: calc(100% - 78px);
@@ -187,7 +189,7 @@ a {
 
   .section {
     width: 100%;
-    padding: 0px;
+    /*padding: 0px;*/
 
     /*leave 54px for the height of the buttons*/
     height: calc(100% - 54px);
@@ -196,7 +198,7 @@ a {
   .buttons {
     padding-right: 0%;
     padding-left: 0%;
-    
+
     /*the height of heading*/
     margin-top: 251px;
   }
