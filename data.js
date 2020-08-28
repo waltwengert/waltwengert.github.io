@@ -28,25 +28,25 @@ var data = {
   ],
   projects: [
     {
-      screen: "project.jpg",
+      screen: "https://via.placeholder.com/300.png",
       title: "Shift Rosterer",
       tech: "HTML, CSS, JS, PHP, SQL",
       link: "https://github.com/waltwengert/Shift-Rosterer",
     },
     {
-      screen: "project.jpg",
+      screen: "portfolio.png",
       title: "This Portfolio Site",
       tech: "HTML, CSS, JS",
       link: "https://github.com/waltwengert/waltwengert.github.io",
     },
     {
-      screen: "project.jpg",
+      screen: "endless.png",
       title: "Endless Runner",
       tech: "Python",
       link: "https://github.com/waltwengert/endless_runner",
     },
     {
-      screen: "project.jpg",
+      screen: "calc.png",
       title: "py Calculator",
       tech: "Python",
       link: "https://github.com/waltwengert/py_calculator",
