@@ -4,55 +4,64 @@ window.onload = function () {
 };
 
 //detect a scroll anywhere on the page including child divs
-document.addEventListener("scroll", function(e) {
-  //assign heading height based on device size
-  var headingHeight;
-  if (window.innerWidth >= 600) {
-    //wider screen, heading constant 281px
-    headingHeight = 281;
-  } else {
-    //smaller (mobile) screen, heading constant 251px
-    headingHeight = 251;
-  }
+document.addEventListener(
+  "scroll",
+  function (e) {
+    //assign heading height based on device size
+    var headingHeight;
+    if (window.innerWidth >= 600) {
+      //wider screen, heading constant 281px
+      headingHeight = 281;
+    } else {
+      //smaller (mobile) screen, heading constant 251px
+      headingHeight = 251;
+    }
 
-  //assign scroll tops of each div for easier reference 
-  abScroll = document.getElementById("about").scrollTop;
-  prScroll = document.getElementById("projects").scrollTop;
-  edScroll = document.getElementById("education").scrollTop;
-  emScroll = document.getElementById("employment").scrollTop;
-  
-  if (window.scrollY <= headingHeight - 5) {
-    //scrolling through heading
-    //disable scrolling for section divs
-    document.getElementById("about").style.overflow = "hidden";
-    document.getElementById("projects").style.overflow = "hidden";
-    document.getElementById("education").style.overflow = "hidden";
-    document.getElementById("employment").style.overflow = "hidden";
+    //assign scroll tops of each div for easier reference
+    abScroll = document.getElementById("about").scrollTop;
+    prScroll = document.getElementById("projects").scrollTop;
+    edScroll = document.getElementById("education").scrollTop;
+    emScroll = document.getElementById("employment").scrollTop;
 
-    //enable scrolling for body
-    document.body.style.overflow = "auto";
-  } else if (abScroll >= 5 || prScroll >= 5 || edScroll >= 5 || emScroll >= 5) {
-    //scrolling through div
-    //enable scrolling for section divs
-    document.getElementById("about").style.overflow = "auto";
-    document.getElementById("projects").style.overflow = "auto";
-    document.getElementById("education").style.overflow = "auto";
-    document.getElementById("employment").style.overflow = "auto";
+    if (window.scrollY <= headingHeight - 10) {
+      //scrolling through heading
+      //disable scrolling for section divs
+      document.getElementById("about").style.overflow = "hidden";
+      document.getElementById("projects").style.overflow = "hidden";
+      document.getElementById("education").style.overflow = "hidden";
+      document.getElementById("employment").style.overflow = "hidden";
 
-    //disable scrolling for body
-    document.body.style.overflow = "hidden";
-  } else {
-    //scrolling through overlap
-    //enable scrolling for section divs
-    document.getElementById("about").style.overflow = "auto";
-    document.getElementById("projects").style.overflow = "auto";
-    document.getElementById("education").style.overflow = "auto";
-    document.getElementById("employment").style.overflow = "auto";
+      //enable scrolling for body
+      document.body.style.overflow = "auto";
+    } else if (
+      abScroll >= 10 ||
+      prScroll >= 10 ||
+      edScroll >= 10 ||
+      emScroll >= 10
+    ) {
+      //scrolling through div
+      //enable scrolling for section divs
+      document.getElementById("about").style.overflow = "auto";
+      document.getElementById("projects").style.overflow = "auto";
+      document.getElementById("education").style.overflow = "auto";
+      document.getElementById("employment").style.overflow = "auto";
 
-    //enable scrolling for body
-    document.body.style.overflow = "auto";
-  }
-}, true);
+      //disable scrolling for body
+      document.body.style.overflow = "hidden";
+    } else {
+      //scrolling through overlap
+      //enable scrolling for section divs
+      document.getElementById("about").style.overflow = "auto";
+      document.getElementById("projects").style.overflow = "auto";
+      document.getElementById("education").style.overflow = "auto";
+      document.getElementById("employment").style.overflow = "auto";
+
+      //enable scrolling for body
+      document.body.style.overflow = "auto";
+    }
+  },
+  true
+);
 
 function populatePage() {
   var jsonData = data; //the JSON data that is a stand-in for an API response
@@ -70,10 +79,10 @@ function populatePage() {
   populateAbout(jsonData);
   populateProjects(jsonData);
   populateEducation(jsonData);
-  populateEmployment(jsonData);  
+  populateEmployment(jsonData);
 }
 
-function populateAbout (jsonData) {
+function populateAbout(jsonData) {
   //populate the about section
   var about = jsonData.about;
 
@@ -92,7 +101,7 @@ function populateAbout (jsonData) {
   }
 }
 
-function populateProjects (jsonData) {
+function populateProjects(jsonData) {
   //populate the projects section
   var projects = jsonData.projects;
 
@@ -111,7 +120,7 @@ function populateProjects (jsonData) {
   }
 }
 
-function populateEducation (jsonData) {
+function populateEducation(jsonData) {
   //populate the education section
   var education = jsonData.education;
 
@@ -130,7 +139,7 @@ function populateEducation (jsonData) {
   }
 }
 
-function populateEmployment (jsonData) {
+function populateEmployment(jsonData) {
   //populate the employment section
   var employment = jsonData.employment;
 
@@ -153,7 +162,7 @@ function toggleBtn(btnID, firstLoad) {
   //if it isn't the initial page load and not a small/mobile device
   if (!firstLoad && window.innerWidth >= 600) {
     //scroll down the page to the sections part (302px constant on regular screens)
-    window.scroll({top: 302, behavior: 'smooth'});
+    window.scroll({ top: 302, behavior: "smooth" });
   }
 
   //btnID 0-3 based on index of following arrays
