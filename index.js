@@ -66,17 +66,19 @@ function populateAbout(jsonData) {
   var about = jsonData.about;
 
   for (var i = 0; i < about.length; i++) {
-    var aboutDiv = document.createElement("div");
-    aboutDiv.classList.add("tile");
-    document.getElementById("about").append(aboutDiv);
+    //each about tile is a simple <h2> heading for the first word or two stored
+    //and a <p> paragraph
+    var aboutTile = document.createElement("div");
+    aboutTile.classList.add("tile");
+    document.getElementById("about").append(aboutTile);
 
-    var head = document.createElement("h2");
-    head.innerHTML = about[i].heading;
-    aboutDiv.append(head);
+    var aboutHeading = document.createElement("h2");
+    aboutHeading.innerHTML = about[i].heading;
+    aboutTile.append(aboutHeading);
 
-    var body = document.createElement("p");
-    body.innerHTML = about[i].body;
-    aboutDiv.append(body);
+    var aboutBody = document.createElement("p");
+    aboutBody.innerHTML = about[i].body;
+    aboutTile.append(aboutBody);
   }
 }
 
@@ -85,17 +87,32 @@ function populateProjects(jsonData) {
   var projects = jsonData.projects;
 
   for (var i = 0; i < projects.length; i++) {
-    var projectDiv = document.createElement("div");
-    projectDiv.classList.add("tile");
-    document.getElementById("projects").append(projectDiv);
+    //each project tile has a <h2> title, and to the right of it a <h3> tech
+    //beneath these a screen shot img, and to the far right a github link
+    var projectTile = document.createElement("div");
+    projectTile.classList.add("tile");
+    document.getElementById("projects").append(projectTile);
 
-    var pTitle = document.createElement("h2");
-    pTitle.innerHTML = projects[i].title;
-    projectDiv.append(pTitle);
+    var projectTitle = document.createElement("h2");
+    projectTitle.innerHTML = projects[i].title;
+    projectTile.append(projectTitle);
 
-    var pDescription = document.createElement("p");
-    pDescription.innerHTML = projects[i].description;
-    projectDiv.append(pDescription);
+    var projectTech = document.createElement("h3");
+    projectTech.innerHTML = projects[i].tech;
+    projectTile.append(projectTech);
+
+    var projectScreen = document.createElement("img");
+    projectScreen.src = projects[i].screen;
+    projectTile.append(projectScreen);
+
+    var linkIcon = document.createElement("i");
+    linkIcon.classList.add("fab");
+    linkIcon.classList.add("fa-github");
+    linkIcon.classList.add("projLink");
+    var projectLink = document.createElement("a");
+    projectLink.href = projects[i].link;
+    projectLink.innerHTML = linkIcon.outerHTML;
+    projectTile.append(projectLink);
   }
 }
 
@@ -104,17 +121,27 @@ function populateEducation(jsonData) {
   var education = jsonData.education;
 
   for (var i = 0; i < education.length; i++) {
-    var educationDiv = document.createElement("div");
-    educationDiv.classList.add("tile");
-    document.getElementById("education").append(educationDiv);
+    //each education tile has a <h2> level, and beneath it a <h3> focus
+    //and two <h4> institution and period on the right hand side
+    var eduTile = document.createElement("div");
+    eduTile.classList.add("tile");
+    document.getElementById("education").append(eduTile);
 
-    var eTitle = document.createElement("h2");
-    eTitle.innerHTML = education[i].level;
-    educationDiv.append(eTitle);
+    var eduLevel = document.createElement("h2");
+    eduLevel.innerHTML = education[i].level;
+    eduTile.append(eduLevel);
 
-    var eDescription = document.createElement("p");
-    eDescription.innerHTML = education[i].focus;
-    educationDiv.append(eDescription);
+    var eduFocus = document.createElement("h3");
+    eduFocus.innerHTML = education[i].focus;
+    eduTile.append(eduFocus);
+
+    var eduInstitution = document.createElement("h4");
+    eduInstitution.innerHTML = education[i].institution;
+    eduTile.append(eduInstitution);
+
+    var eduPeriod = document.createElement("h4");
+    eduPeriod.innerHTML = education[i].period;
+    eduTile.append(eduPeriod);
   }
 }
 
@@ -123,17 +150,23 @@ function populateEmployment(jsonData) {
   var employment = jsonData.employment;
 
   for (var i = 0; i < employment.length; i++) {
-    var employmentDiv = document.createElement("div");
-    employmentDiv.classList.add("tile");
-    document.getElementById("employment").append(employmentDiv);
+    //each employment tile has a <h2> employer, and beneath it has
+    //two <h3>'s; position and period which are left and right alligned respectively
+    var empTile = document.createElement("div");
+    empTile.classList.add("tile");
+    document.getElementById("employment").append(empTile);
 
-    var eTitle = document.createElement("h2");
-    eTitle.innerHTML = employment[i].employer;
-    employmentDiv.append(eTitle);
+    var empEmployer = document.createElement("h2");
+    empEmployer.innerHTML = employment[i].employer;
+    empTile.append(empEmployer);
 
-    var eDescription = document.createElement("p");
-    eDescription.innerHTML = employment[i].position;
-    employmentDiv.append(eDescription);
+    var empPosition = document.createElement("h3");
+    empPosition.innerHTML = employment[i].position;
+    empTile.append(empPosition);
+
+    var empPeriod = document.createElement("h3");
+    empPeriod.innerHTML = employment[i].period;
+    empTile.append(empPeriod);
   }
 }
 
