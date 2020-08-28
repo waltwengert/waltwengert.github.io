@@ -23,41 +23,20 @@ document.addEventListener(
     edScroll = document.getElementById("education").scrollTop;
     emScroll = document.getElementById("employment").scrollTop;
 
-    if (window.scrollY <= headingHeight - 10) {
+    if (window.scrollY <= headingHeight - 40) {
       //scrolling through heading
       //disable scrolling for section divs
       document.getElementById("about").style.overflow = "hidden";
       document.getElementById("projects").style.overflow = "hidden";
       document.getElementById("education").style.overflow = "hidden";
       document.getElementById("employment").style.overflow = "hidden";
-
-      //enable scrolling for body
-      document.body.style.overflow = "auto";
-    } else if (
-      abScroll >= 10 ||
-      prScroll >= 10 ||
-      edScroll >= 10 ||
-      emScroll >= 10
-    ) {
-      //scrolling through div
-      //enable scrolling for section divs
-      document.getElementById("about").style.overflow = "auto";
-      document.getElementById("projects").style.overflow = "auto";
-      document.getElementById("education").style.overflow = "auto";
-      document.getElementById("employment").style.overflow = "auto";
-
-      //disable scrolling for body
-      document.body.style.overflow = "hidden";
     } else {
-      //scrolling through overlap
+      //scrolling through overlap/div
       //enable scrolling for section divs
       document.getElementById("about").style.overflow = "auto";
       document.getElementById("projects").style.overflow = "auto";
       document.getElementById("education").style.overflow = "auto";
       document.getElementById("employment").style.overflow = "auto";
-
-      //enable scrolling for body
-      document.body.style.overflow = "auto";
     }
   },
   true
