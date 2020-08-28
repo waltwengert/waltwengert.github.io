@@ -73,6 +73,11 @@ a {
   font-size: 30px;
 }
 
+/*the icons on the project tiles*/
+.projLink {
+  color: #2a2a2a;
+}
+
 .buttons {
   display: flex;
   padding-right: 8%;
@@ -168,7 +173,7 @@ a {
   margin: 10px auto;
   border-left: 2px solid;
   border-color: #2a2a2a;
-  background-color: #bfbfbf;
+  background-color: #e3e3e3;
   width: 80%;
 }
 
@@ -189,7 +194,6 @@ a {
 
   .section {
     width: 100%;
-    /*padding: 0px;*/
 
     /*leave 54px for the height of the buttons*/
     height: calc(100% - 54px);
@@ -234,6 +238,10 @@ a {
   }
 
   a:hover {
+    color: #9f9f9f;
+  }
+
+  .projLink:hover {
     color: #9f9f9f;
   }
 }
