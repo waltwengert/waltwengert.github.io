@@ -35,7 +35,7 @@ var data = {
     },
     {
       screen: "portfolio.png",
-      title: "This Portfolio Site",
+      title: "This Site",
       tech: "HTML, CSS, JS",
       link: "https://github.com/waltwengert/waltwengert.github.io",
     },
