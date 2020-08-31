@@ -17,26 +17,13 @@ document.addEventListener(
       headingHeight = 251;
     }
 
-    //assign scroll tops of each div for easier reference
-    abScroll = document.getElementById("about").scrollTop;
-    prScroll = document.getElementById("projects").scrollTop;
-    edScroll = document.getElementById("education").scrollTop;
-    emScroll = document.getElementById("employment").scrollTop;
-
-    if (window.scrollY <= headingHeight - 40) {
-      //scrolling through heading
-      //disable scrolling for section divs
-      document.getElementById("about").style.overflow = "hidden";
-      document.getElementById("projects").style.overflow = "hidden";
-      document.getElementById("education").style.overflow = "hidden";
-      document.getElementById("employment").style.overflow = "hidden";
+    //if the user has scrolled past the heading, fix the buttons to the top of screen
+    if (window.scrollY >= headingHeight) {
+      document.getElementById("btns").style.position = "fixed";
+      document.getElementById("btns").style.top = "0";
     } else {
-      //scrolling through overlap/div
-      //enable scrolling for section divs
-      document.getElementById("about").style.overflow = "auto";
-      document.getElementById("projects").style.overflow = "auto";
-      document.getElementById("education").style.overflow = "auto";
-      document.getElementById("employment").style.overflow = "auto";
+      document.getElementById("btns").style.position = "absolute";
+      document.getElementById("btns").style.top = headingHeight + "px";
     }
   },
   true
@@ -171,10 +158,14 @@ function populateEmployment(jsonData) {
 }
 
 function toggleBtn(btnID, firstLoad) {
-  //if it isn't the initial page load and not a small/mobile device
-  if (!firstLoad /*&& window.innerWidth >= 600*/) {
-    //scroll down the page to the sections part (302px constant on regular screens)
-    window.scroll({ top: 302, behavior: "smooth" });
+  if (!firstLoad && window.innerWidth >= 600) {
+    //if it isn't the initial page load and not a small/mobile device
+    //scroll down the page to the sections part (281px constant on regular screens)
+    window.scroll({ top: 281, behavior: "smooth" });
+  } else if (!firstLoad) {
+    //if it's still not the first load but is a mobile device
+    //scroll down the page to the sections part (251px constant on regular screens)
+    window.scroll({ top: 251, behavior: "smooth" });
   }
 
   //btnID 0-3 based on index of following arrays

@@ -25,7 +25,7 @@ body {
   /*to achieve body scrolling over heading*/
   position: fixed;
   top: 0;
-  z-index: -99;
+  z-index: -3;
 }
 
 #name {
@@ -82,9 +82,13 @@ a {
   display: flex;
   padding-right: 8%;
   padding-left: 8%;
+  position: absolute;
 
-  /*the height of heading*/
-  margin-top: 281px;
+  /*281px for the heading height, 0 for left and right to force flex*/
+  top: 281px;
+  left: 0;
+  right: 0;
+  z-index: 0;
 }
 
 .btn {
@@ -143,19 +147,23 @@ a {
   margin-left: auto;
   margin-right: auto;
 
+  /*the height of heading (281) and buttons (78)*/
+  margin-top: 359px;
+
   padding-top: 20px;
 
   /*leave 78px for the height of the buttons*/
-  height: calc(100% - 78px);
+  min-height: calc(100% - 78px);
 
   color: #2a2a2a;
   box-sizing: border-box;
 
   /*this is only temporary, in JS change to auto at page's bottom*/
-  overflow: hidden;
+  overflow: visible;
 
   display: flex;
   flex-direction: column;
+  z-index: -2;
 }
 
 .section h2 {
@@ -197,14 +205,20 @@ a {
 
     /*leave 54px for the height of the buttons*/
     height: calc(100% - 54px);
+
+    /*the height of heading (251) and buttons (54)*/
+    margin-top: 305px;
   }
 
   .buttons {
     padding-right: 0%;
     padding-left: 0%;
 
+    /*251px for the heading height*/
+    top: 251px;
+
     /*the height of heading*/
-    margin-top: 251px;
+    /*margin-top: 251px;*/
   }
 
   .btn {
