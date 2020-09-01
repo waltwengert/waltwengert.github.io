@@ -146,11 +146,11 @@ a {
   width: 84%;
   margin-left: auto;
   margin-right: auto;
+  min-height: 100vh;
+  padding-top: 20px;
 
   /*the height of heading (281) and buttons (78)*/
   margin-top: 359px;
-  padding-top: 20px;
-  min-height: 100%;
 
   color: #2a2a2a;
   box-sizing: border-box;
