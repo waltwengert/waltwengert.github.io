@@ -28,7 +28,7 @@ var data = {
   ],
   projects: [
     {
-      screen: "https://via.placeholder.com/300.png",
+      screen: "https://via.placeholder.com/200.png",
       title: "Shift Rosterer",
       tech: "HTML, CSS, JS, PHP, SQL",
       link: "https://github.com/waltwengert/Shift-Rosterer",
@@ -40,7 +40,7 @@ var data = {
       link: "https://github.com/waltwengert/waltwengert.github.io",
     },
     {
-      screen: "https://via.placeholder.com/300.png",
+      screen: "https://via.placeholder.com/200.png",
       title: "Secret Santa",
       tech: "HTML, CSS, JS",
       link: "https://github.com/waltwengert/Secret-Santa",
