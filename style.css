@@ -184,18 +184,21 @@ a {
 
 .tile h2 {
   padding-top: 5%;
-  padding-left: 10%;
+  padding-left: 8%;
 }
 
 .projScreen {
   width: 200px;
   height: 200px;
   object-fit: contain;
-  padding: 20px;
+
+  padding-left: 10%;
+  padding-bottom: 20px;
 }
 
 .projTech {
-  padding: 20px;
+  padding-left: 10%;
+  padding-bottom: 20px;
 }
 
 /*if the screen is less than 600px wide (i.e. a mobile device)*/
@@ -211,9 +214,6 @@ a {
   .section {
     width: 100%;
 
-    /*leave 54px for the height of the buttons*/
-    height: calc(100% - 54px);
-
     /*the height of heading (251) and buttons (54)*/
     margin-top: 305px;
   }
@@ -224,9 +224,6 @@ a {
 
     /*251px for the heading height*/
     top: 251px;
-
-    /*the height of heading*/
-    /*margin-top: 251px;*/
   }
 
   .btn {
