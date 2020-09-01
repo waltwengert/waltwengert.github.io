@@ -3,8 +3,8 @@ window.onload = function () {
   toggleBtn(0, true);
 };
 
-//detect a scroll anywhere on the page including child divs
-document.addEventListener(
+//detect a scroll anywhere on the page
+window.addEventListener(
   "scroll",
   function (e) {
     //assign heading height based on device size
