@@ -40,6 +40,12 @@ var data = {
       link: "https://github.com/waltwengert/waltwengert.github.io",
     },
     {
+      screen: "https://via.placeholder.com/300.png",
+      title: "Secret Santa",
+      tech: "HTML, CSS, JS",
+      link: "https://github.com/waltwengert/Secret-Santa",
+    },
+    {
       screen: "endless.PNG",
       title: "Endless Runner",
       tech: "Python",
