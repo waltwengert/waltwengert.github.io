@@ -187,6 +187,17 @@ a {
   padding-left: 10%;
 }
 
+.projScreen {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  padding: 20px;
+}
+
+.projTech {
+  padding: 20px;
+}
+
 /*if the screen is less than 600px wide (i.e. a mobile device)*/
 @media screen and (max-width: 600px) {
   #name {

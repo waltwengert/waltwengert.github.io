@@ -85,14 +85,13 @@ function populateProjects(jsonData) {
     projectTile.append(projectTitle);
 
     var projectTech = document.createElement("h3");
+    projectTech.classList.add("projTech");
     projectTech.innerHTML = projects[i].tech;
     projectTile.append(projectTech);
 
     var projectScreen = document.createElement("img");
+    projectScreen.classList.add("projScreen");
     projectScreen.src = projects[i].screen;
-    projectScreen.style.width = "200px";
-    projectScreen.style.height = "200px";
-    projectScreen.style.objectFit = "contain";
     projectTile.append(projectScreen);
 
     var linkIcon = document.createElement("i");
