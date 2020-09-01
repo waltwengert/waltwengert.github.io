@@ -34,19 +34,19 @@ var data = {
       link: "https://github.com/waltwengert/Shift-Rosterer",
     },
     {
-      screen: "portfolio.png",
+      screen: "portfolio.PNG",
       title: "This Site",
       tech: "HTML, CSS, JS",
       link: "https://github.com/waltwengert/waltwengert.github.io",
     },
     {
-      screen: "endless.png",
+      screen: "endless.PNG",
       title: "Endless Runner",
       tech: "Python",
       link: "https://github.com/waltwengert/endless_runner",
     },
     {
-      screen: "calc.png",
+      screen: "calc.PNG",
       title: "py Calculator",
       tech: "Python",
       link: "https://github.com/waltwengert/py_calculator",
