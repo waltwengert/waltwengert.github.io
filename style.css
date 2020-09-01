@@ -149,10 +149,7 @@ a {
 
   /*the height of heading (281) and buttons (78)*/
   margin-top: 359px;
-
   padding-top: 20px;
-
-  /*leave 78px for the height of the buttons*/
   min-height: 100%;
 
   color: #2a2a2a;
