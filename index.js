@@ -85,7 +85,7 @@ function populateProjects(jsonData) {
     projectTile.append(projectTitle);
 
     var projectTech = document.createElement("h3");
-    projectTech.classList.add("projTech");
+    projectTech.classList.add("subheading");
     projectTech.innerHTML = projects[i].tech;
     projectTile.append(projectTech);
 
@@ -121,6 +121,7 @@ function populateEducation(jsonData) {
     eduTile.append(eduLevel);
 
     var eduFocus = document.createElement("h3");
+    eduFocus.classList.add("subheading");
     eduFocus.innerHTML = education[i].focus;
     eduTile.append(eduFocus);
 
@@ -150,6 +151,7 @@ function populateEmployment(jsonData) {
     empTile.append(empEmployer);
 
     var empPosition = document.createElement("h3");
+    empPosition.classList.add("subheading");
     empPosition.innerHTML = employment[i].position;
     empTile.append(empPosition);
 
