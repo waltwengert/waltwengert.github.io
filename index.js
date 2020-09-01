@@ -90,6 +90,9 @@ function populateProjects(jsonData) {
 
     var projectScreen = document.createElement("img");
     projectScreen.src = projects[i].screen;
+    projectScreen.style.width = "200px";
+    projectScreen.style.height = "200px";
+    projectScreen.style.objectFit = "contain";
     projectTile.append(projectScreen);
 
     var linkIcon = document.createElement("i");
