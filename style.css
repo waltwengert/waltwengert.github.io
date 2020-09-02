@@ -163,15 +163,18 @@ a {
   z-index: -2;
 }
 
-.section h2 {
+#about h2 {
   font-size: 28px;
+  padding-top: 5%;
+  padding-bottom: 1%;
+  padding-left: 7%;
 }
 
-.section p {
+#about p {
   font-size: 18px;
-  padding-left: 10%;
-  padding-right: 10%;
   padding-bottom: 5%;
+  padding-left: 7%;
+  padding-right: 7%;
 }
 
 .tile {
@@ -180,26 +183,6 @@ a {
   border-color: #2a2a2a;
   background-color: #e3e3e3;
   width: 80%;
-}
-
-.tile h2 {
-  padding-top: 5%;
-  padding-left: 8%;
-}
-
-.subheading {
-  padding-left: 10%;
-  padding-top: 10px;
-  padding-bottom: 20px;
-}
-
-.projScreen {
-  width: 200px;
-  height: 200px;
-  object-fit: contain;
-
-  padding-left: 10%;
-  padding-bottom: 20px;
 }
 
 /*if the screen is less than 600px wide (i.e. a mobile device)*/
@@ -238,6 +221,10 @@ a {
   .fab {
     /*increase top padding of github/linkedin icons to centre them*/
     padding-top: 13px;
+  }
+
+  #about h2 {
+    font-size: 20px;
   }
 
   .tile {
