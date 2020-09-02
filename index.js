@@ -167,11 +167,11 @@ function toggleBtn(btnID, firstLoad) {
     //if it isn't the initial page load and not a small/mobile device
     //scroll down the page to the sections part (281px constant on regular screens)
     window.scroll({ top: 281, behavior: "smooth" });
-  } else if (!firstLoad) {
+  } /*else if (!firstLoad) {
     //if it's still not the first load but is a mobile device
     //scroll down the page to the sections part (251px constant on regular screens)
     window.scroll({ top: 251, behavior: "smooth" });
-  }
+  }*/
 
   //btnID 0-3 based on index of following arrays
   var btns = ["btnAbout", "btnProj", "btnEdu", "btnEmp"];
