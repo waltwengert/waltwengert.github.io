@@ -46,7 +46,7 @@ var data = {
       title: "Secret Santa",
       tech: "HTML, CSS, JS",
       link: "https://github.com/waltwengert/Secret-Santa",
-      play: "https://google.com",
+      play: "https://waltwengert.github.io/secret-santa/",
     },
     {
       screen: "endless.PNG",
