@@ -443,7 +443,7 @@ a {
 
   .tile {
     /*if the screen is thin (mobile) then modify tile style*/
-    width: 98%;
+    width: 96%;
     border: 0px;
     border-top: 1px solid;
     border-color: #3f3f3f;
