@@ -23,11 +23,6 @@ window.addEventListener(
     if (window.scrollY > headingHeight) {
       buttons.style.position = "fixed";
       buttons.style.top = "0";
-    } else if (window.scrollY > 0) {
-      //the slight increase on .top stops a visual bug with iOS
-      //touch scrolling (where buttons would float in heading)
-      buttons.style.position = "absolute";
-      buttons.style.top = headingHeight + 0.1 + "px";
     } else {
       buttons.style.position = "absolute";
       buttons.style.top = headingHeight + "px";
