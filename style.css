@@ -395,6 +395,10 @@ a {
     background-color: #fffaff;
     margin: 0px auto;
   }
+
+  .lastTile {
+    margin-bottom: 30px;
+  }
 }
 
 /*if the screen is more than 1200px wide (i.e. full screen 1080+ monitor)*/
