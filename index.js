@@ -8,7 +8,7 @@ document.addEventListener(
   "scroll",
   function (e) {
     //assign heading height based on device size
-    var headingHeight;
+    var headingHeight = 0;
     if (window.innerWidth >= 600) {
       //wider screen, heading constant 281px
       headingHeight = 281;
@@ -17,16 +17,17 @@ document.addEventListener(
       headingHeight = 251;
     }
 
+    buttons = document.getElementById("btns");
+    buttons.style.position = "absolute";
+    buttons.style.top = headingHeight + "px";
+
     //if the user has scrolled past the heading set fixed top to 0,
     //otherwise set it to the amount scrolled down the heading
-    buttons = document.getElementById("btns");
     if (window.scrollY > headingHeight) {
       buttons.style.position = "fixed";
       buttons.style.top = "0";
-    } else {
-      buttons.style.position = "absolute";
-      buttons.style.top = headingHeight + "px";
-    }
+    } /*else {
+    }*/
   },
   true
 );
