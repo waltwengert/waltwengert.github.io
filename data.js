@@ -31,8 +31,8 @@ var data = {
       screen: "https://via.placeholder.com/200.png",
       title: "Shift Rosterer",
       tech: "HTML, CSS, JS, PHP, SQL",
-      link: "https://github.com/waltwengert/Shift-Rosterer",
-      play: "https://google.com",
+      link: "https://github.com/waltwengert/shift-rosterer",
+      play: "https://waltwengert.github.io/shift-rosterer",
     },
     {
       screen: "portfolio.PNG",
@@ -45,7 +45,7 @@ var data = {
       screen: "https://via.placeholder.com/200.png",
       title: "Secret Santa",
       tech: "HTML, CSS, JS",
-      link: "https://github.com/waltwengert/Secret-Santa",
+      link: "https://github.com/waltwengert/secret-santa",
       play: "https://waltwengert.github.io/secret-santa/",
     },
     {
