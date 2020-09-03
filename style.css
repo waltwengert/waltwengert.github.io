@@ -165,8 +165,8 @@ a {
 #projects img {
   width: 40%;
   height: 200px;
-  object-fit: cover;
-  object-position: 50% 0%;
+  object-fit: contain;
+  /*object-position: 50% 0%;*/
   float: left;
 
   padding: 5%;
