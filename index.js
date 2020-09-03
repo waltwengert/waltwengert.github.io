@@ -27,8 +27,9 @@ window.addEventListener(
       buttons.style.position = "absolute";
       buttons.style.top = headingHeight + "px";
     } else {
+      //when window.scrollY and headingHeight are equal
       buttons.style.position = "fixed";
-      buttons.style.top = headingHeight - window.scrollY + "px";
+      buttons.style.top = headingHeight - window.scrollY + 1 + "px";
     }
   },
   true
