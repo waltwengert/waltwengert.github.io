@@ -32,14 +32,14 @@ var data = {
       title: "Shift Rosterer",
       tech: "HTML, CSS, JS, PHP, SQL",
       link: "https://github.com/waltwengert/Shift-Rosterer",
-      play: "na",
+      play: "https://google.com",
     },
     {
       screen: "portfolio.PNG",
       title: "This Site",
       tech: "HTML, CSS, JS",
       link: "https://github.com/waltwengert/waltwengert.github.io",
-      play: "na",
+      play: "https://waltwengert.github.io",
     },
     {
       screen: "https://via.placeholder.com/200.png",
