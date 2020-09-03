@@ -24,15 +24,7 @@ window.addEventListener(
       buttons.style.top = "0";
     } else {
       buttons.style.position = "absolute";
-      buttons.style.top = headingHeight + "px";
-    }
-
-    if (
-      parseInt(buttons.style.top) != 0 &&
-      parseInt(buttons.style.top) < headingHeight
-    ) {
-      console.log("scroll bug");
-      buttons.style.top = headingHeight + "px";
+      buttons.style.top = headingHeight + window.scrollY + "px";
     }
   },
   true
