@@ -166,7 +166,6 @@ a {
   width: 40%;
   height: 200px;
   object-fit: contain;
-  /*object-position: 50% 0%;*/
   float: left;
 
   padding: 5%;
@@ -336,6 +335,9 @@ a {
 
     padding-top: 10px;
     padding-bottom: 10px;
+
+    object-fit: cover;
+    object-position: 50% 0%;
   }
 
   #projects h2 {
