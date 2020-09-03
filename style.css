@@ -95,7 +95,7 @@ a {
 
 .btn {
   border: none;
-  background-color: #e96245; /*#3e68a8;*/
+  background-color: #e96245;
   color: #fffaff;
   cursor: pointer;
   padding: 12px;
@@ -104,51 +104,17 @@ a {
 }
 
 .btn:focus {
-  background-color: #a62700; /*#2f4c7a;*/
+  background-color: #a62700;
 }
 
 .btn-active {
   pointer-events: none;
-  background-color: #a62700; /*#2f4c7a;*/
+  background-color: #a62700;
   color: #1a1a1a;
 }
 
-/*
-#btnAbout {
-  background-color: #37588a; /*#2b4162;//
-}
-
-#about {
-  background-color: #37588a; /*#2b4162;//
-}
-
-#btnProj {
-  background-color: #37588a; /*#0b6e4f;//
-}
-
-#projects {
-  background-color: #37588a; /*#0b6e4f;//
-}
-
-#btnEdu {
-  background-color: #37588a; /*#fa9f42;//
-}
-
-#education {
-  background-color: #37588a; /*#fa9f42;//
-}
-
-#btnEmp {
-  background-color: #37588a; /*#721817;//
-}
-
-#employment {
-  background-color: #37588a; /*#721817;//
-}
-*/
-
 .section {
-  background-color: #a62700; /*#2f4c7a;*/
+  background-color: #a62700;
 
   /*-16% from 8% padding either side*/
   width: 84%;
@@ -221,7 +187,7 @@ a {
 /*github and play icons*/
 #projects .projLink {
   padding-top: 2%;
-  padding-left: 5%;
+  padding-right: 5%;
   font-size: 36px;
 }
 
@@ -292,8 +258,8 @@ a {
 .empPeriod {
   padding-right: 15%;
   padding-left: calc(5% - 1px);
-  border-left: 2px solid;
-  border-color: #3f3f3f;
+  border-left: 1px solid;
+  border-color: #707070;
   margin-bottom: 30px;
 }
 
@@ -352,7 +318,7 @@ a {
   }
 
   .img-circle {
-    width: 110px;
+    width: 100px;
   }
 
   .fab {
@@ -373,7 +339,6 @@ a {
   }
 
   #projects .projLink {
-    padding-left: 6%;
     padding-top: 4%;
   }
 
