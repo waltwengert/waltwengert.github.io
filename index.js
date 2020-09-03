@@ -21,8 +21,13 @@ window.addEventListener(
     //otherwise set it to the amount scrolled down the heading
     buttons = document.getElementById("btns");
     if (window.scrollY > headingHeight) {
+      buttons.style.position = "fixed";
       buttons.style.top = "0";
+    } else if (window.scrollY < headingHeight) {
+      buttons.style.position = "absolute";
+      buttons.style.top = headingHeight + "px";
     } else {
+      buttons.style.position = "fixed";
       buttons.style.top = headingHeight - window.scrollY + "px";
     }
   },
