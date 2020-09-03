@@ -383,7 +383,7 @@ a {
 
   #employment h2 {
     /*bring the width to par with new tile width*/
-    width: 90%;
+    width: 86%;
     padding-bottom: 0px;
 
     text-align: left;
@@ -394,7 +394,7 @@ a {
   #employment h3 {
     /*remove float so elements are no longer side by side*/
     float: none;
-    width: 90%;
+    width: 86%;
     padding-right: 7%;
     padding-left: 7%;
     padding-bottom: 0%;
