@@ -167,10 +167,14 @@ a {
   z-index: -2;
 }
 
+/*the titles for all section tiles*/
+.section h2 {
+  font-size: 28px;
+}
+
 /*about first few words/heading*/
 #about h2 {
-  font-size: 28px;
-  padding-top: 15px;
+  padding-top: 25px;
   padding-bottom: 10px;
   padding-left: 7%;
 }
@@ -178,17 +182,47 @@ a {
 /*about body*/
 #about p {
   font-size: 18px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   padding-left: 7%;
   padding-right: 7%;
 }
 
+/*project images*/
+#projects img {
+  width: 40%;
+  height: 200px;
+  object-fit: contain;
+  float: left;
+
+  padding: 5%;
+}
+
+/*project title*/
+#projects h2 {
+  padding-top: 10%;
+}
+
+/*project tech*/
+#projects h3 {
+  font-size: 18px;
+  padding-top: 10px;
+  padding-right: 5%;
+  font-style: italic;
+  font-weight: normal;
+}
+
+/*github and play icons*/
+#projects .projLink {
+  padding-top: 5%;
+  padding-left: 5%;
+  font-size: 36px;
+}
+
 /*education level*/
 #education h2 {
-  font-size: 28px;
   width: 55%;
   padding-left: 7%;
-  padding-top: 15px;
+  padding-top: 25px;
   padding-bottom: 10px;
   float: left;
 }
@@ -200,7 +234,7 @@ a {
   font-style: italic;
   width: 65%;
   padding-left: 7%;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   float: left;
 }
 
@@ -222,10 +256,9 @@ a {
 
 /*employment employer*/
 #employment h2 {
-  font-size: 28px;
   width: 100%;
   text-align: center;
-  padding-top: 15px;
+  padding-top: 25px;
   padding-bottom: 5px;
 }
 
@@ -254,7 +287,7 @@ a {
   padding-left: calc(5% - 1px);
   border-left: 2px solid;
   border-color: #3f3f3f;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .tile {
@@ -295,6 +328,10 @@ a {
     margin-top: 305px;
   }
 
+  .section h2 {
+    font-size: 24px;
+  }
+
   .buttons {
     padding-right: 0%;
     padding-left: 0%;
@@ -316,8 +353,13 @@ a {
     padding-top: 13px;
   }
 
-  #about h2 {
-    font-size: 24px;
+  #projects img {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  #projects .projLink {
+    padding-left: 8%;
   }
 
   #education .tile {
@@ -326,7 +368,6 @@ a {
   }
 
   #education h2 {
-    font-size: 24px;
     width: 80%;
     padding-bottom: 10px;
     float: none;
@@ -361,7 +402,6 @@ a {
   #employment h2 {
     /*bring the width to par with new tile width*/
     width: 90%;
-    font-size: 24px;
     padding-bottom: 0px;
 
     text-align: left;
