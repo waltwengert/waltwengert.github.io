@@ -13,17 +13,17 @@ var data = {
     {
       heading: "I am",
       body:
-        "a recent Computer Science/Film and TV graduate from The University of Queensland.",
+        "a recent <strong>Computer Science</strong>/Film and Television Studies graduate from The <strong>University of Queensland</strong>.",
     },
     {
       heading: "I work",
       body:
-        "as an IT Technician for Education Queensland, administering a school's network and devices.",
+        "as an <strong>IT Technician</strong> for Education Queensland, <strong>administering</strong> a school's <strong>network</strong> and devices.",
     },
     {
       heading: "Software development",
       body:
-        "was the focus of my degree and one of my main interests. Check out the projects tab on this site to see some of my work!",
+        "was the focus of my degree and one of my main interests. Check out the <strong>projects tab</strong> on this site to see some of my work!",
     },
   ],
   projects: [
