@@ -44,7 +44,7 @@ var data = {
     {
       screen: "kindylog.PNG",
       title: "KindyLog Product Site",
-      tech: "HTML, CSS, JS",
+      tech: "HTML, CSS (Bootstrap), JS, PHP",
       link: "https://github.com/waltwengert/kindylog-productsite",
       play: "https://waltwengert.github.io/kindylog-productsite",
     },
