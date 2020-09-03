@@ -51,7 +51,6 @@ body {
 #mail {
   font-family: "Roboto Slab", "Arial", sans-serif;
   font-size: 18px;
-  font-style: italic;
 
   /*to stop the link going accross the entire page*/
   width: min-content;
@@ -60,6 +59,7 @@ body {
 a {
   color: #fffaff;
   padding-top: 10px;
+  text-decoration: none;
 }
 
 /*the github and linkedin icons*/
@@ -476,6 +476,7 @@ a {
   }
 
   a:hover {
+    text-decoration: underline;
     color: #9f9f9f;
   }
 
