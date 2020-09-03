@@ -18,6 +18,9 @@ body {
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #1a1a1a;
+
+  /*stop bugs with scrolling on iOS*/
+  -webkit-overflow-scrolling: touch;
 }
 
 .heading {
@@ -161,6 +164,8 @@ a {
 
   /*this is only temporary, in JS change to auto at page's bottom*/
   overflow: visible;
+
+  /*stop bugs with scrolling on iOS*/
   -webkit-overflow-scrolling: touch;
 
   display: flex;
