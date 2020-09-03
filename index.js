@@ -26,32 +26,12 @@ window.addEventListener(
       buttons.style.position = "absolute";
       buttons.style.top = headingHeight + "px";
     }
-  },
-  true
-);
 
-window.addEventListener(
-  "touchmove",
-  function (e) {
-    //assign heading height based on device size
-    var headingHeight;
-    if (window.innerWidth >= 600) {
-      //wider screen, heading constant 281px
-      headingHeight = 281;
-    } else {
-      //smaller (mobile) screen, heading constant 251px
-      headingHeight = 251;
-    }
-
-    //if the user has scrolled past the heading, fix the buttons to the top of screen
-    buttons = document.getElementById("btns");
-    if (window.scrollY >= headingHeight) {
-      console.log("fixed");
-      buttons.style.position = "fixed";
-      buttons.style.top = "0";
-    } else {
-      console.log("absolute");
-      buttons.style.position = "absolute";
+    if (
+      parseInt(buttons.style.top) != 0 &&
+      parseInt(buttons.style.top) < headingHeight
+    ) {
+      console.log("scroll bug");
       buttons.style.top = headingHeight + "px";
     }
   },
