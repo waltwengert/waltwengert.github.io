@@ -167,13 +167,15 @@ a {
   z-index: -2;
 }
 
+/*about first few words/heading*/
 #about h2 {
   font-size: 28px;
-  padding-top: 5%;
+  padding-top: 15px;
   padding-bottom: 1%;
   padding-left: 7%;
 }
 
+/*about body*/
 #about p {
   font-size: 18px;
   padding-bottom: 5%;
@@ -181,6 +183,42 @@ a {
   padding-right: 7%;
 }
 
+/*education level*/
+#education h2 {
+  font-size: 28px;
+  width: 55%;
+  padding-left: 5%;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  float: left;
+}
+
+/*education focus*/
+#education h3 {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: italic;
+  width: 55%;
+  padding-left: 5%;
+  padding-bottom: 20px;
+  float: left;
+}
+
+/*education institution + period*/
+#education h4 {
+  width: 30%;
+  padding-left: 5%;
+  padding-right: 5%;
+  float: left;
+}
+
+/*education institution*/
+.eduInstitution {
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+/*employment employer*/
 #employment h2 {
   font-size: 28px;
   width: 100%;
@@ -189,6 +227,7 @@ a {
   padding-bottom: 10px;
 }
 
+/*employment position + period*/
 #employment h3 {
   float: left;
   width: 30%;
@@ -200,11 +239,13 @@ a {
   font-size: 20px;
 }
 
+/*employment position*/
 .empPos {
   padding-left: 10%;
   padding-right: calc(10% - 1px);
 }
 
+/*employment period*/
 .empPeriod {
   padding-right: 10%;
   padding-left: calc(10% - 1px);

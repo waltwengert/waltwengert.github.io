@@ -131,6 +131,7 @@ function populateEducation(jsonData) {
     eduTile.append(eduLevel);
 
     var eduInstitution = document.createElement("h4");
+    eduInstitution.classList.add("eduInstitution");
     eduInstitution.innerHTML = education[i].institution;
     eduTile.append(eduInstitution);
 
