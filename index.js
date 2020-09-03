@@ -27,9 +27,9 @@ window.addEventListener(
       parseInt(buttons.style.top) == 0 &&
       window.innerWidth < 600
     ) {
-      //to prevent a visual bug related to touch scroll event handling
+      //hacky fix to prevent a visual bug related to touch scroll event handling
       //(where the buttons div's top would go into the heading div on mobile
-      //scroll up)
+      //scroll up from section divs (when buttons are fixed))
       buttons.style.top = headingHeight + 100 + "px";
     } else {
       buttons.style.position = "absolute";
@@ -130,14 +130,14 @@ function populateEducation(jsonData) {
     eduLevel.innerHTML = education[i].level;
     eduTile.append(eduLevel);
 
+    var eduInstitution = document.createElement("h4");
+    eduInstitution.innerHTML = education[i].institution;
+    eduTile.append(eduInstitution);
+
     var eduFocus = document.createElement("h3");
     eduFocus.classList.add("subheading");
     eduFocus.innerHTML = education[i].focus;
     eduTile.append(eduFocus);
-
-    var eduInstitution = document.createElement("h4");
-    eduInstitution.innerHTML = education[i].institution;
-    eduTile.append(eduInstitution);
 
     var eduPeriod = document.createElement("h4");
     eduPeriod.innerHTML = education[i].period;
