@@ -95,6 +95,7 @@ a {
 
 .btn {
   border: none;
+  background-color: #5280c7;
   color: #fffaff;
   cursor: pointer;
   padding: 12px;
@@ -103,47 +104,52 @@ a {
 }
 
 .btn:focus {
-  background-color: #2a2a2a;
+  background-color: #2f4c7a;
 }
 
 .btn-active {
   pointer-events: none;
+  background-color: #2f4c7a;
   color: #1a1a1a;
 }
 
+/*
 #btnAbout {
-  background-color: #2b4162;
+  background-color: #37588a; /*#2b4162;//
 }
 
 #about {
-  background-color: #2b4162;
+  background-color: #37588a; /*#2b4162;//
 }
 
 #btnProj {
-  background-color: #0b6e4f;
+  background-color: #37588a; /*#0b6e4f;//
 }
 
 #projects {
-  background-color: #0b6e4f;
+  background-color: #37588a; /*#0b6e4f;//
 }
 
 #btnEdu {
-  background-color: #fa9f42;
+  background-color: #37588a; /*#fa9f42;//
 }
 
 #education {
-  background-color: #fa9f42;
+  background-color: #37588a; /*#fa9f42;//
 }
 
 #btnEmp {
-  background-color: #721817;
+  background-color: #37588a; /*#721817;//
 }
 
 #employment {
-  background-color: #721817;
+  background-color: #37588a; /*#721817;//
 }
+*/
 
 .section {
+  background-color: #2f4c7a;
+
   /*-16% from 8% padding either side*/
   width: 84%;
   margin-left: auto;
