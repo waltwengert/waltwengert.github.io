@@ -265,6 +265,10 @@ a {
   width: 80%;
 }
 
+.lastTile {
+  margin-bottom: 40px;
+}
+
 /*if the screen is less than 600px wide (i.e. a mobile device)*/
 @media screen and (max-width: 600px) {
   html,

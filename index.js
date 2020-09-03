@@ -59,6 +59,9 @@ function populateAbout(jsonData) {
     //and a <p> paragraph
     var aboutTile = document.createElement("div");
     aboutTile.classList.add("tile");
+    if (i == about.length - 1) {
+      aboutTile.classList.add("lastTile");
+    }
     document.getElementById("about").append(aboutTile);
 
     var aboutHeading = document.createElement("h2");
@@ -80,6 +83,9 @@ function populateProjects(jsonData) {
     //beneath these a screen shot img, and to the far right a github link
     var projectTile = document.createElement("div");
     projectTile.classList.add("tile");
+    if (i == projects.length - 1) {
+      projectTile.classList.add("lastTile");
+    }
     document.getElementById("projects").append(projectTile);
 
     var projectTitle = document.createElement("h2");
@@ -116,6 +122,9 @@ function populateEducation(jsonData) {
     //and two <h4> institution and period on the right hand side
     var eduTile = document.createElement("div");
     eduTile.classList.add("tile");
+    if (i == education.length - 1) {
+      eduTile.classList.add("lastTile");
+    }
     document.getElementById("education").append(eduTile);
 
     var eduLevel = document.createElement("h2");
@@ -146,6 +155,9 @@ function populateEmployment(jsonData) {
     //each employment tile has a <h2> employer, and beneath it has
     //two <h3>'s; position and period which are left and right alligned respectively
     var empTile = document.createElement("div");
+    if (i == employment.length - 1) {
+      empTile.classList.add("lastTile");
+    }
     empTile.classList.add("tile");
     document.getElementById("employment").append(empTile);
 
