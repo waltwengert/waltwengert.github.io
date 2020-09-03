@@ -7,14 +7,17 @@ window.onload = function () {
 document.addEventListener(
   "scroll",
   function (e) {
-    //assign heading height based on device size
+    //assign heading and buttons height based on device size
     var headingHeight = 0;
+    var buttonsHeight = 0;
     if (window.innerWidth >= 600) {
-      //wider screen, heading constant 281px
+      //wider screen, heading constant 281px, buttons constant 78px
       headingHeight = 281;
+      buttonsHeight = 78;
     } else {
-      //smaller (mobile) screen, heading constant 251px
+      //smaller (mobile) screen, heading constant 251px, buttons constant 54px
       headingHeight = 251;
+      buttonsHeight = 54;
     }
 
     buttons = document.getElementById("btns");
