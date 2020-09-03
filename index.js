@@ -24,10 +24,13 @@ window.addEventListener(
       buttons.style.top = "0";
     } else if (
       window.scrollY < headingHeight &&
-      parseInt(buttons.style.top) == 0
+      parseInt(buttons.style.top) == 0 &&
+      window.innerWidth < 600
     ) {
-      console.log("goin up");
-      buttons.style.top = headingHeight + window.scrollY + "px";
+      //to prevent a visual bug related to touch scroll event handling
+      //(where the buttons div's top would go into the heading div on mobile
+      //scroll up)
+      buttons.style.top = headingHeight + 100 + "px";
     } else {
       buttons.style.position = "absolute";
       buttons.style.top = headingHeight + "px";
