@@ -95,7 +95,7 @@ a {
 
 .btn {
   border: none;
-  background-color: #3e68a8;
+  background-color: #659dbd; /*#3e68a8;*/
   color: #fffaff;
   cursor: pointer;
   padding: 12px;
@@ -104,12 +104,12 @@ a {
 }
 
 .btn:focus {
-  background-color: #2f4c7a;
+  background-color: #467c9c; /*#2f4c7a;*/
 }
 
 .btn-active {
   pointer-events: none;
-  background-color: #2f4c7a;
+  background-color: #467c9c; /*#2f4c7a;*/
   color: #1a1a1a;
 }
 
@@ -148,7 +148,7 @@ a {
 */
 
 .section {
-  background-color: #2f4c7a;
+  background-color: #467c9c; /*#2f4c7a;*/
 
   /*-16% from 8% padding either side*/
   width: 84%;
