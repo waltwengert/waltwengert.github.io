@@ -360,7 +360,8 @@ a {
   }
 
   #projects .projLink {
-    padding-left: 7%;
+    padding-left: 6%;
+    padding-top: 4%;
   }
 
   #education .tile {
