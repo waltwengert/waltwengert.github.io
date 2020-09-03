@@ -355,8 +355,15 @@ a {
   }
 
   #projects img {
+    width: 30%;
+    height: 150px;
+
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+
+  #projects h2 {
+    padding-top: 5%;
   }
 
   #projects .projLink {
