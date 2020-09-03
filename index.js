@@ -114,6 +114,17 @@ function populateProjects(jsonData) {
     projectLink.href = projects[i].link;
     projectLink.innerHTML = linkIcon.outerHTML;
     projectTile.append(projectLink);
+
+    if (projects[i].play != "na") {
+      var lI = document.createElement("i");
+      lI.classList.add("fas");
+      lI.classList.add("fa-play-circle");
+      lI.classList.add("projLink");
+      var projectPlay = document.createElement("a");
+      projectPlay.href = projects[i].play;
+      projectPlay.innerHTML = lI.outerHTML;
+      projectTile.append(projectPlay);
+    }
   }
 }
 
