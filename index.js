@@ -4,7 +4,7 @@ window.onload = function () {
 };
 
 //detect a scroll anywhere on the page
-window.addEventListener(
+document.addEventListener(
   "scroll",
   function (e) {
     //assign heading height based on device size
