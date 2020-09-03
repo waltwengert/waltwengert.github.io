@@ -414,7 +414,7 @@ a {
     /*if the screen is thin (mobile) then modify tile style*/
     width: 96%;
     border: 0px;
-    border-top: 1px dotted;
+    border-bottom: 1px dotted;
     border-color: #3f3f3f;
     /*background-color: #fffaff;*/
     margin: 0px auto;
