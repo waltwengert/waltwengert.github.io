@@ -42,6 +42,13 @@ var data = {
       play: "https://waltwengert.github.io",
     },
     {
+      screen: "kindylog.PNG",
+      title: "KindyLog Product Site",
+      tech: "HTML, CSS, JS",
+      link: "https://github.com/waltwengert/kindylog-productsite",
+      play: "https://waltwengert.github.io/kindylog-productsite",
+    },
+    {
       screen: "https://via.placeholder.com/200.png",
       title: "Secret Santa",
       tech: "HTML, CSS, JS",
