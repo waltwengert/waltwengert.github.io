@@ -22,9 +22,15 @@ window.addEventListener(
     if (window.scrollY >= headingHeight) {
       buttons.style.position = "fixed";
       buttons.style.top = "0";
+    } else if (
+      window.scrollY < headingHeight &&
+      parseInt(buttons.style.top) == 0
+    ) {
+      console.log("goin up");
+      buttons.style.top = headingHeight + window.scrollY + "px";
     } else {
       buttons.style.position = "absolute";
-      buttons.style.top = headingHeight + window.scrollY + "px";
+      buttons.style.top = headingHeight + "px";
     }
   },
   true
