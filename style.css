@@ -330,14 +330,14 @@ a {
   }
 
   #projects img {
-    width: 30%;
-    height: 150px;
+    width: 35%;
+    height: 140px;
 
     padding-top: 10px;
     padding-bottom: 10px;
 
     object-fit: cover;
-    object-position: 50% 0%;
+    object-position: 50% 10%;
   }
 
   #projects h2 {
@@ -346,6 +346,7 @@ a {
 
   #projects .projLink {
     padding-top: 4%;
+    padding-bottom: 20px;
   }
 
   #education .tile {
