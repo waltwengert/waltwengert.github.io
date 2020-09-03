@@ -321,8 +321,8 @@ a {
 
   .section {
     width: 100%;
-    /*100% of page height excluding buttons*/
-    min-height: calc(100vh - 54px);
+    /*100% of page height excluding buttons + 15px buffer*/
+    min-height: calc(100vh - 54px + 15px);
 
     /*the height of heading (251) and buttons (54)*/
     margin-top: 305px;
