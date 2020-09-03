@@ -243,15 +243,16 @@ a {
 
 /*employment position*/
 .empPos {
-  padding-left: 10%;
-  padding-right: calc(10% - 1px);
+  padding-left: 15%;
+  padding-right: calc(5% - 1px);
+  text-align: right;
 }
 
 /*employment period*/
 .empPeriod {
-  padding-right: 10%;
-  padding-left: calc(10% - 1px);
-  border-left: 2px dotted;
+  padding-right: 15%;
+  padding-left: calc(5% - 1px);
+  border-left: 2px solid;
   border-color: #3f3f3f;
   margin-bottom: 10px;
 }
