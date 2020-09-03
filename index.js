@@ -92,6 +92,11 @@ function populateProjects(jsonData) {
     }
     document.getElementById("projects").append(projectTile);
 
+    var projectScreen = document.createElement("img");
+    projectScreen.classList.add("projScreen");
+    projectScreen.src = projects[i].screen;
+    projectTile.append(projectScreen);
+
     var projectTitle = document.createElement("h2");
     projectTitle.innerHTML = projects[i].title;
     projectTile.append(projectTitle);
@@ -100,11 +105,6 @@ function populateProjects(jsonData) {
     projectTech.classList.add("subheading");
     projectTech.innerHTML = projects[i].tech;
     projectTile.append(projectTech);
-
-    var projectScreen = document.createElement("img");
-    projectScreen.classList.add("projScreen");
-    projectScreen.src = projects[i].screen;
-    projectTile.append(projectScreen);
 
     var linkIcon = document.createElement("i");
     linkIcon.classList.add("fab");
