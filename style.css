@@ -310,6 +310,19 @@ a {
   }
 }
 
+/*if the screen is more than 1200px wide (i.e. full screen 1080+ monitor)*/
+@media screen and (min-width: 1200px) {
+  .buttons {
+    padding-left: 14%;
+    padding-right: 14%;
+  }
+
+  .section {
+    /*-28% from 14% padding either side*/
+    width: 72%;
+  }
+}
+
 /*only have hover functionality on hover enabled devices (i.e. not touch)*/
 @media (hover: hover) {
   .btn:hover {
