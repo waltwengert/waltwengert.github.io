@@ -161,6 +161,7 @@ a {
 
   /*this is only temporary, in JS change to auto at page's bottom*/
   overflow: visible;
+  -webkit-overflow-scrolling: touch;
 
   display: flex;
   flex-direction: column;
