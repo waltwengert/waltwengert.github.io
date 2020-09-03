@@ -171,14 +171,14 @@ a {
 #about h2 {
   font-size: 28px;
   padding-top: 15px;
-  padding-bottom: 1%;
+  padding-bottom: 10px;
   padding-left: 7%;
 }
 
 /*about body*/
 #about p {
   font-size: 18px;
-  padding-bottom: 5%;
+  padding-bottom: 20px;
   padding-left: 7%;
   padding-right: 7%;
 }
@@ -187,7 +187,7 @@ a {
 #education h2 {
   font-size: 28px;
   width: 55%;
-  padding-left: 5%;
+  padding-left: 7%;
   padding-top: 15px;
   padding-bottom: 10px;
   float: left;
@@ -198,22 +198,24 @@ a {
   font-size: 18px;
   font-weight: normal;
   font-style: italic;
-  width: 55%;
-  padding-left: 5%;
+  width: 65%;
+  padding-left: 7%;
   padding-bottom: 20px;
   float: left;
 }
 
 /*education institution + period*/
 #education h4 {
-  width: 30%;
-  padding-left: 5%;
+  width: 20%;
+  padding-left: 3%;
   padding-right: 5%;
   float: left;
+  text-align: right;
 }
 
 /*education institution*/
-.eduInstitution {
+#education .eduInstitution {
+  width: 30%;
   padding-top: 20px;
   padding-bottom: 15px;
 }
@@ -224,7 +226,7 @@ a {
   width: 100%;
   text-align: center;
   padding-top: 15px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 /*employment position + period*/
@@ -236,7 +238,7 @@ a {
   padding-bottom: 10px;
 
   font-weight: normal;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 /*employment position*/
@@ -251,7 +253,7 @@ a {
   padding-left: calc(10% - 1px);
   border-left: 2px dotted;
   border-color: #3f3f3f;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .tile {
@@ -313,6 +315,44 @@ a {
     font-size: 24px;
   }
 
+  #education .tile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #education h2 {
+    font-size: 24px;
+    width: 80%;
+    padding-bottom: 10px;
+    float: none;
+    order: 1;
+  }
+
+  #education h3 {
+    width: 90%;
+    float: none;
+    padding-bottom: 10px;
+    order: 2;
+  }
+
+  #education h4 {
+    /*hide the date for a leaner mobile look*/
+    display: none;
+  }
+
+  #education .eduInstitution {
+    padding-top: 0;
+    float: none;
+    order: 3;
+    display: block;
+    width: 90%;
+    text-align: left;
+    font-size: 18px;
+    font-weight: normal;
+    padding-bottom: 20px;
+    padding-left: 7%;
+  }
+
   #employment h2 {
     /*bring the width to par with new tile width*/
     width: 90%;
@@ -338,6 +378,7 @@ a {
 
   .empPeriod {
     border: 0px;
+    margin-bottom: 20px;
   }
 
   .tile {
