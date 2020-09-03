@@ -177,6 +177,38 @@ a {
   padding-right: 7%;
 }
 
+#employment h2 {
+  font-size: 28px;
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+#employment h3 {
+  float: left;
+  width: 30%;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.empPos {
+  padding-left: 10%;
+  padding-right: calc(10% - 1px);
+}
+
+.empPeriod {
+  padding-right: 10%;
+  padding-left: calc(10% - 1px);
+  border-left: 2px solid;
+  border-color: #2a2a2a;
+  margin-bottom: 20px;
+}
+
 .tile {
   margin: 10px auto;
   border-left: 2px solid;
@@ -225,6 +257,33 @@ a {
 
   #about h2 {
     font-size: 20px;
+  }
+
+  #employment h2 {
+    /*bring the width to par with new tile width*/
+    width: 90%;
+    font-size: 24px;
+    padding-bottom: 0px;
+
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  #employment h3 {
+    /*remove float so elements are no longer side by side*/
+    float: none;
+    width: 90%;
+    padding-right: 7%;
+    padding-left: 7%;
+    padding-bottom: 0%;
+    font-size: 18px;
+
+    text-align: left;
+  }
+
+  .empPeriod {
+    border: 0px;
   }
 
   .tile {

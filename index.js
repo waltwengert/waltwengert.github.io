@@ -152,11 +152,12 @@ function populateEmployment(jsonData) {
     empTile.append(empEmployer);
 
     var empPosition = document.createElement("h3");
-    empPosition.classList.add("subheading");
+    empPosition.classList.add("empPos");
     empPosition.innerHTML = employment[i].position;
     empTile.append(empPosition);
 
     var empPeriod = document.createElement("h3");
+    empPeriod.classList.add("empPeriod");
     empPeriod.innerHTML = employment[i].period;
     empTile.append(empPeriod);
   }
