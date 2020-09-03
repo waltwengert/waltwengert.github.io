@@ -19,18 +19,9 @@ window.addEventListener(
 
     //if the user has scrolled past the heading, fix the buttons to the top of screen
     buttons = document.getElementById("btns");
-    if (window.scrollY >= headingHeight) {
+    if (window.scrollY > headingHeight) {
       buttons.style.position = "fixed";
       buttons.style.top = "0";
-    } else if (
-      window.scrollY < headingHeight &&
-      parseInt(buttons.style.top) == 0 &&
-      window.innerWidth < 600
-    ) {
-      //hacky fix to prevent a visual bug related to touch scroll event handling
-      //(where the buttons div's top would go into the heading div on mobile
-      //scroll up from section divs (when buttons are fixed))
-      buttons.style.top = headingHeight + 1 + "px";
     } else {
       buttons.style.position = "absolute";
       buttons.style.top = headingHeight + "px";
