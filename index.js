@@ -17,14 +17,13 @@ window.addEventListener(
       headingHeight = 251;
     }
 
-    //if the user has scrolled past the heading, fix the buttons to the top of screen
+    //if the user has scrolled past the heading set fixed top to 0,
+    //otherwise set it to the amount scrolled down the heading
     buttons = document.getElementById("btns");
     if (window.scrollY > headingHeight) {
-      buttons.style.position = "fixed";
       buttons.style.top = "0";
     } else {
-      buttons.style.position = "absolute";
-      buttons.style.top = headingHeight + "px";
+      buttons.style.top = headingHeight - window.scrollY + "px";
     }
   },
   true
