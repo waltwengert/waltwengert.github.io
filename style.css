@@ -223,6 +223,13 @@ a {
 
 /*if the screen is less than 600px wide (i.e. a mobile device)*/
 @media screen and (max-width: 600px) {
+  html,
+  body {
+    /*make height 100% minus the height of the buttons so page doesn't
+      overscroll*/
+    height: calc(100vh - 54px);
+  }
+
   #name {
     font-size: 30px;
   }
@@ -233,6 +240,8 @@ a {
 
   .section {
     width: 100%;
+    /*100% of page height excluding buttons*/
+    min-height: calc(100vh - 54px);
 
     /*the height of heading (251) and buttons (54)*/
     margin-top: 305px;
