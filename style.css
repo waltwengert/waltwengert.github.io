@@ -84,7 +84,7 @@ a {
   display: flex;
   padding-right: 8%;
   padding-left: 8%;
-  position: fixed;
+  position: absolute;
 
   /*281px for the heading height, 0 for left and right to force flex*/
   top: 281px;
