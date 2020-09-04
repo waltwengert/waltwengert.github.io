@@ -13,7 +13,7 @@ var data = {
     {
       heading: "I am",
       body:
-        "a recent <strong>Computer Science</strong>/Film and Television Studies graduate from The <strong>University of Queensland</strong>.",
+        "a recent <strong>Computer Science</strong>/Film and Television Studies graduate from <strong>The University of Queensland</strong>.",
     },
     {
       heading: "I work",
