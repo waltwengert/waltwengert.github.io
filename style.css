@@ -92,7 +92,7 @@ a {
 .btn {
   /*margin-left: 1px;
   margin-right: 1px;*/
-  background-color: #5684ae /*c1684d*/;
+  background-color: /*#5684ae*/ #c1684d;
   color: #fffaff;
   cursor: pointer;
   padding: 12px;
@@ -101,17 +101,17 @@ a {
 }
 
 .btn:focus {
-  background-color: #214761 /*a62700*/;
+  background-color: /*#214761*/ #a62700;
 }
 
 .btn-active {
   pointer-events: none;
-  background-color: #214761 /*a62700*/;
+  background-color: /*#214761*/ #a62700;
   color: #1a1a1a;
 }
 
 .section {
-  background-color: #214761 /*a62700*/;
+  background-color: /*#214761*/ #a62700;
 
   /*-16% from 8% padding either side*/
   width: 84%;
@@ -457,6 +457,6 @@ a {
   }
 
   #projects .projLink:hover {
-    color: #214761 /*a62700*/;
+    color: /*#214761*/ #a62700;
   }
 }
