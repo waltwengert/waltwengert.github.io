@@ -336,8 +336,8 @@ a {
     padding-top: 10px;
     padding-bottom: 10px;
 
-    object-fit: cover;
-    object-position: 50% 10%;
+    /*object-fit: cover;
+    object-position: 50% 10%;*/
   }
 
   #projects h2 {
