@@ -92,7 +92,7 @@ a {
 .btn {
   /*margin-left: 1px;
   margin-right: 1px;*/
-  background-color: /*#c1684d*/ #4882e0;
+  background-color: /*#c1684d*/ #6b87b5;
   color: #fffaff;
   cursor: pointer;
   padding: 12px;
@@ -484,6 +484,6 @@ a {
   }
 
   #projects .projLink:hover {
-    color: /*#a62700*/ #4882e0;
+    color: /*#a62700*/ #6b87b5;
   }
 }
