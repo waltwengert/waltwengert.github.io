@@ -52,6 +52,27 @@ document.addEventListener(
   true
 );
 
+function toggleBtn(btnID, firstLoad) {
+  var btnsHeight = 0;
+  if (window.innerWidth >= 600) {
+    //if the browser is desktop (or simply wide enough) buttons are 78px high
+    btnsHeight = 78;
+  } else {
+    //otherwise the browser is mobile (or small) and buttons are 54px high
+    btnsHeight = 54;
+  }
+
+  //btnID for each button corresponds with index of its div
+  var divs = ["about", "projects", "education", "employment"];
+
+  //no need to scroll on page load as user hasn't made an action
+  if (!firstLoad) {
+    var elementYOff = document.getElementById(divs[btnID]).offsetTop;
+    //scroll to the top of the selected section taking buttons into account
+    window.scroll({ top: elementYOff - btnsHeight, behavior: "smooth" });
+  }
+}
+
 function populatePage() {
   var jsonData = data; //the JSON data that is a stand-in for an API response
 
@@ -197,35 +218,12 @@ function populateEmployment(jsonData) {
     empEmployer.innerHTML = employment[i].employer;
     empTile.append(empEmployer);
 
-    var empPosition = document.createElement("h3");
-    empPosition.classList.add("empPos");
-    empPosition.innerHTML = employment[i].position;
-    empTile.append(empPosition);
-
-    var empPeriod = document.createElement("h3");
-    empPeriod.classList.add("empPeriod");
+    var empPeriod = document.createElement("h4");
     empPeriod.innerHTML = employment[i].period;
     empTile.append(empPeriod);
-  }
-}
 
-function toggleBtn(btnID, firstLoad) {
-  var btnsHeight = 0;
-  if (window.innerWidth >= 600) {
-    //if the browser is desktop (or simply wide enough) buttons are 78px high
-    btnsHeight = 78;
-  } else {
-    //otherwise the browser is mobile (or small) and buttons are 54px high
-    btnsHeight = 54;
-  }
-
-  //btnID for each button corresponds with index of its div
-  var divs = ["about", "projects", "education", "employment"];
-
-  //no need to scroll on page load as user hasn't made an action
-  if (!firstLoad) {
-    var elementYOff = document.getElementById(divs[btnID]).offsetTop;
-    //scroll to the top of the selected section taking buttons into account
-    window.scroll({ top: elementYOff - btnsHeight, behavior: "auto" });
+    var empPosition = document.createElement("h3");
+    empPosition.innerHTML = employment[i].position;
+    empTile.append(empPosition);
   }
 }

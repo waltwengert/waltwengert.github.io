@@ -215,8 +215,9 @@ a {
   font-size: 18px;
   font-weight: normal;
   font-style: italic;
-  width: 65%;
+  width: 55%;
   padding-left: 7%;
+  padding-right: 10%;
   padding-bottom: 30px;
   float: left;
 }
@@ -239,38 +240,34 @@ a {
 
 /*employment employer*/
 #employment h2 {
-  width: 100%;
-  text-align: center;
+  width: 55%;
+  padding-left: 7%;
   padding-top: 25px;
-  padding-bottom: 5px;
-}
-
-/*employment position + period*/
-#employment h3 {
-  float: left;
-  width: 30%;
-  text-align: center;
-  padding-top: 10px;
   padding-bottom: 10px;
-
-  font-weight: normal;
-  font-size: 18px;
+  float: left;
 }
 
 /*employment position*/
-.empPos {
-  padding-left: 15%;
-  padding-right: calc(5% - 1px);
-  text-align: right;
+#employment h3 {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: italic;
+  width: 55%;
+  padding-left: 7%;
+  padding-right: 10%;
+  padding-bottom: 30px;
+  float: left;
 }
 
 /*employment period*/
-.empPeriod {
-  padding-right: 15%;
-  padding-left: calc(5% - 1px);
-  border-left: 1px solid;
-  border-color: #707070;
-  margin-bottom: 30px;
+#employment h4 {
+  width: 30%;
+  padding-left: 3%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 15px;
+  float: left;
+  text-align: right;
 }
 
 .tile {
@@ -402,31 +399,36 @@ a {
     padding-left: 7%;
   }
 
-  #employment h2 {
-    /*bring the width to par with new tile width*/
-    width: 86%;
-    padding-bottom: 0px;
+  #employment .tile {
+    display: flex;
+    flex-direction: column;
+  }
 
-    text-align: left;
-    padding-left: 7%;
-    padding-right: 7%;
+  #employment h2 {
+    width: 80%;
+    padding-bottom: 10px;
+    float: none;
+    order: 1;
   }
 
   #employment h3 {
-    /*remove float so elements are no longer side by side*/
+    width: 90%;
     float: none;
-    width: 86%;
-    padding-right: 7%;
-    padding-left: 7%;
-    padding-bottom: 0%;
-    font-size: 18px;
-
-    text-align: left;
+    padding-bottom: 10px;
+    order: 2;
   }
 
-  .empPeriod {
-    border: 0px;
-    margin-bottom: 20px;
+  #employment h4 {
+    padding-top: 0;
+    float: none;
+    order: 3;
+    display: block;
+    width: 90%;
+    text-align: left;
+    font-size: 18px;
+    font-weight: normal;
+    padding-bottom: 20px;
+    padding-left: 7%;
   }
 
   .tile {
