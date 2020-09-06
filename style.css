@@ -119,11 +119,11 @@ a {
   margin-right: auto;
 
   /*100% of page height excluding buttons + 20px buffer*/
-  min-height: calc(100vh - 78px + 20px);
+  /*min-height: calc(100vh - 78px + 20px);*/
   padding-top: 20px;
 
   /*the height of heading (281) and buttons (78)*/
-  margin-top: 359px;
+  /*margin-top: 359px;*/
 
   color: #555;
   box-sizing: border-box;
@@ -139,6 +139,12 @@ a {
 /*the titles for all section tiles*/
 .section h2 {
   font-size: 28px;
+}
+
+/*the about section as it is the first one*/
+#about {
+  /*the height of heading (281) and buttons (78)*/
+  margin-top: 359px;
 }
 
 /*about first few words/heading*/
@@ -278,6 +284,10 @@ a {
   margin-bottom: 40px;
 }
 
+#footer {
+  min-height: 100px;
+}
+
 /*if the screen is less than 600px wide (i.e. a mobile device)*/
 @media screen and (max-width: 600px) {
   html,
@@ -298,10 +308,10 @@ a {
   .section {
     width: 100%;
     /*100% of page height excluding buttons + 15px buffer*/
-    min-height: calc(100vh - 54px + 15px);
+    /*min-height: calc(100vh - 54px + 15px);*/
 
     /*the height of heading (251) and buttons (54)*/
-    margin-top: 305px;
+    /*margin-top: 305px;*/
   }
 
   .section h2 {
@@ -327,6 +337,11 @@ a {
   .fab {
     /*increase top padding of github/linkedin icons to centre them*/
     padding-top: 13px;
+  }
+
+  #about {
+    /*the height of heading (251) and buttons (54)*/
+    margin-top: 305px;
   }
 
   #projects img {

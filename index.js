@@ -29,8 +29,26 @@ document.addEventListener(
     if (window.scrollY > headingHeight + buttonsHeight / 2) {
       buttons.style.position = "fixed";
       buttons.style.top = "0";
-    } /*else {
-    }*/
+    }
+
+    //
+    var btns = ["btnAbout", "btnProj", "btnEdu", "btnEmp"];
+    var divs = ["about", "projects", "education", "employment"];
+
+    for (var i = 0; i < divs.length; i++) {
+      var divTop = document.getElementById(divs[i]).offsetTop - buttonsHeight;
+      var divBottom = divTop + document.getElementById(divs[i]).offsetHeight;
+
+      //
+      if (divTop < window.scrollY && divBottom > window.scrollY) {
+        document.getElementById(btns[i]).classList.add("btn-active");
+        console.log("Set " + btns[i] + " active");
+      } else if (window.scrollY >= headingHeight + buttonsHeight) {
+        //only remove active buttons if we're scrolling past the heading (otherwise it'll be on about)
+        document.getElementById(btns[i]).classList.remove("btn-active");
+        console.log("Remove " + btns[i] + " from active");
+      }
+    }
   },
   true
 );
@@ -193,27 +211,32 @@ function populateEmployment(jsonData) {
 }
 
 function toggleBtn(btnID, firstLoad) {
-  if (!firstLoad && window.innerWidth >= 600) {
-    //if it isn't the initial page load and not a small/mobile device
-    //scroll down the page to the sections part (281px constant on regular screens)
-    window.scroll({ top: 281, behavior: "smooth" });
-  } /*else if (!firstLoad) {
-    //if it's still not the first load but is a mobile device
-    //scroll down the page to the sections part (251px constant on regular screens)
-    window.scroll({ top: 251, behavior: "smooth" });
-  }*/
+  var btnsHeight = 0;
+  if (window.innerWidth >= 600) {
+    //if the browser is desktop (or simply wide enough) buttons are 78px high
+    btnsHeight = 78;
+  } else {
+    //otherwise the browser is mobile (or small) and buttons are 54px high
+    btnsHeight = 54;
+  }
 
   //btnID 0-3 based on index of following arrays
   var btns = ["btnAbout", "btnProj", "btnEdu", "btnEmp"];
   var divs = ["about", "projects", "education", "employment"];
 
-  for (var i = 0; i < btns.length; i++) {
-    //disable/hide each section div
-    document.getElementById(btns[i]).classList.remove("btn-active");
-    document.getElementById(divs[i]).style.display = "none";
+  //no need to scroll on page load as user hasn't made an action
+  if (!firstLoad) {
+    var elementYOff = document.getElementById(divs[btnID]).offsetTop;
+
+    //scroll to the top of the selected section taking buttons into account
+    window.scroll({ top: elementYOff - btnsHeight, behavior: "smooth" });
   }
 
-  //reenable the selected button's section div
-  document.getElementById(btns[btnID]).classList.add("btn-active");
-  document.getElementById(divs[btnID]).style.display = "flex";
+  /*
+  for (var i = 0; i < btns.length; i++) {
+    //clear all buttons from being active
+    document.getElementById(btns[i]).classList.remove("btn-active");
+  }
+  //reenable active on the selected button
+  document.getElementById(btns[btnID]).classList.add("btn-active");*/
 }
