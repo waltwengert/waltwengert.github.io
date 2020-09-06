@@ -82,8 +82,8 @@ a {
   padding-left: 8%; /*calc(8% - 1px);*/
   position: absolute;
 
-  /*281px for the heading height, 0 for left and right to force flex*/
-  top: 281px;
+  /*280px for the heading height, 0 for left and right to force flex*/
+  top: 280px;
   left: 0;
   right: 0;
   z-index: 0;
@@ -102,6 +102,7 @@ a {
 
 .btn:focus {
   background-color: /*#214761*/ #a62700;
+  color: #1a1a1a;
 }
 
 .btn-active {
@@ -122,8 +123,8 @@ a {
   /*min-height: calc(100vh - 78px + 20px);*/
   padding-top: 20px;
 
-  /*the height of heading (281) and buttons (78)*/
-  /*margin-top: 359px;*/
+  /*the height of heading (280) and buttons (78)*/
+  /*margin-top: 358px;*/
 
   color: #555;
   box-sizing: border-box;
@@ -143,8 +144,8 @@ a {
 
 /*the about section as it is the first one*/
 #about {
-  /*the height of heading (281) and buttons (78)*/
-  margin-top: 359px;
+  /*the height of heading (280) and buttons (78)*/
+  margin-top: 358px;
 }
 
 /*about first few words/heading*/
@@ -310,8 +311,8 @@ a {
     /*100% of page height excluding buttons + 15px buffer*/
     /*min-height: calc(100vh - 54px + 15px);*/
 
-    /*the height of heading (251) and buttons (54)*/
-    /*margin-top: 305px;*/
+    /*the height of heading (250) and buttons (54)*/
+    /*margin-top: 304px;*/
   }
 
   .section h2 {
@@ -322,8 +323,8 @@ a {
     padding-right: 0%;
     padding-left: 0%;
 
-    /*251px for the heading height*/
-    top: 251px;
+    /*250px for the heading height*/
+    top: 250px;
   }
 
   .btn {
@@ -340,8 +341,8 @@ a {
   }
 
   #about {
-    /*the height of heading (251) and buttons (54)*/
-    margin-top: 305px;
+    /*the height of heading (250) and buttons (54)*/
+    margin-top: 304px;
   }
 
   #projects img {
@@ -440,6 +441,10 @@ a {
 
   .lastTile {
     margin-bottom: 30px;
+  }
+
+  #footer {
+    min-height: 50px;
   }
 }
 

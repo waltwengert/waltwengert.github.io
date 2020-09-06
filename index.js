@@ -11,12 +11,12 @@ document.addEventListener(
     var headingHeight = 0;
     var buttonsHeight = 0;
     if (window.innerWidth >= 600) {
-      //wider screen, heading constant 281px, buttons constant 78px
-      headingHeight = 281;
+      //wider screen, heading constant 280px, buttons constant 78px
+      headingHeight = 280;
       buttonsHeight = 78;
     } else {
-      //smaller (mobile) screen, heading constant 251px, buttons constant 54px
-      headingHeight = 251;
+      //smaller (mobile) screen, heading constant 250px, buttons constant 54px
+      headingHeight = 250;
       buttonsHeight = 54;
     }
 
@@ -31,7 +31,7 @@ document.addEventListener(
       buttons.style.top = "0";
     }
 
-    //
+    //the IDs for each button and its corresponding div
     var btns = ["btnAbout", "btnProj", "btnEdu", "btnEmp"];
     var divs = ["about", "projects", "education", "employment"];
 
@@ -39,15 +39,14 @@ document.addEventListener(
       var divTop = document.getElementById(divs[i]).offsetTop - buttonsHeight;
       var divBottom = divTop + document.getElementById(divs[i]).offsetHeight;
 
-      //
-      if (divTop < window.scrollY && divBottom > window.scrollY) {
+      if (window.scrollY >= divTop && window.scrollY < divBottom) {
+        //scrolling through this div
         document.getElementById(btns[i]).classList.add("btn-active");
-        console.log("Set " + btns[i] + " active");
-      } else if (window.scrollY >= headingHeight + buttonsHeight) {
-        //only remove active buttons if we're scrolling past the heading (otherwise it'll be on about)
+        document.getElementById(btns[i]).focus();
+      } else if (window.scrollY >= headingHeight) {
+        //scrolling past the heading but not in this div
         document.getElementById(btns[i]).classList.remove("btn-active");
-        console.log("Remove " + btns[i] + " from active");
-      }
+      } //else scrolling through the heading so do nothing
     }
   },
   true
@@ -220,23 +219,13 @@ function toggleBtn(btnID, firstLoad) {
     btnsHeight = 54;
   }
 
-  //btnID 0-3 based on index of following arrays
-  var btns = ["btnAbout", "btnProj", "btnEdu", "btnEmp"];
+  //btnID for each button corresponds with index of its div
   var divs = ["about", "projects", "education", "employment"];
 
   //no need to scroll on page load as user hasn't made an action
   if (!firstLoad) {
     var elementYOff = document.getElementById(divs[btnID]).offsetTop;
-
     //scroll to the top of the selected section taking buttons into account
-    window.scroll({ top: elementYOff - btnsHeight, behavior: "smooth" });
+    window.scroll({ top: elementYOff - btnsHeight, behavior: "auto" });
   }
-
-  /*
-  for (var i = 0; i < btns.length; i++) {
-    //clear all buttons from being active
-    document.getElementById(btns[i]).classList.remove("btn-active");
-  }
-  //reenable active on the selected button
-  document.getElementById(btns[btnID]).classList.add("btn-active");*/
 }
