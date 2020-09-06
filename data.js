@@ -13,7 +13,7 @@ var data = {
     {
       heading: "I am",
       body:
-        "a recent <strong>Computer Science</strong>/Film and Television Studies graduate from <strong>The University of Queensland</strong>.",
+        "a recent <strong>Computer Science</strong>/Film Studies graduate from <strong>The University of Queensland</strong>.",
     },
     {
       heading: "I work",
@@ -23,7 +23,7 @@ var data = {
     {
       heading: "Software development",
       body:
-        "was the focus of my degree and one of my main interests. Check out the <strong>projects below</strong> to see some of my work!",
+        "was the focus of my degree and is one of my main interests. Check out the <strong>projects below</strong> to see some of my work!",
     },
   ],
   projects: [
@@ -44,7 +44,7 @@ var data = {
     {
       screen: "kindylog.PNG",
       title: "KindyLog Product Site",
-      tech: "HTML, CSS (Bootstrap), JS, PHP",
+      tech: "HTML, CSS, JS, PHP",
       link: "https://github.com/waltwengert/kindylog-productsite",
       play: "https://waltwengert.github.io/kindylog-productsite",
     },
