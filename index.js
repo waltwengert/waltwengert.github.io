@@ -69,7 +69,10 @@ function toggleBtn(btnID, firstLoad) {
   if (!firstLoad) {
     var elementYOff = document.getElementById(divs[btnID]).offsetTop;
     //scroll to the top of the selected section taking buttons into account
-    window.scroll({ top: elementYOff - btnsHeight, behavior: "smooth" });
+    window.scroll({ top: elementYOff - btnsHeight, behavior: "auto" });
+    //scroll behaviour "smooth" is definitely ideal aesthetically but
+    //isn't realistic (unsupported in some browsers and registers a scroll
+    //event each pixel)
   }
 }
 
