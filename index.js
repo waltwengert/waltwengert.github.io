@@ -37,16 +37,17 @@ document.addEventListener(
 
     for (var i = 0; i < divs.length; i++) {
       var divTop = document.getElementById(divs[i]).offsetTop - buttonsHeight;
-      var divBottom = divTop + document.getElementById(divs[i]).offsetHeight;
+      var divBottom = divTop + document.getElementById(divs[i]).offsetHeight; //else scrolling through the heading so do nothing
 
-      if (window.scrollY >= divTop && window.scrollY < divBottom) {
+      //offset of 40 counteracts padding between divs
+      if (window.scrollY >= divTop - 40 && window.scrollY < divBottom - 40) {
         //scrolling through this div
         document.getElementById(btns[i]).classList.add("btn-active");
         document.getElementById(btns[i]).focus();
       } else if (window.scrollY >= headingHeight) {
         //scrolling past the heading but not in this div
         document.getElementById(btns[i]).classList.remove("btn-active");
-      } //else scrolling through the heading so do nothing
+      }
     }
   },
   true
