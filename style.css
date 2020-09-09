@@ -94,7 +94,7 @@ a {
   /*margin-left: 1px;
   margin-right: 1px;*/
   background-color: /*#c1684d*/ /*#6b87b5*/ #627280;
-  color: #fffaff;
+  color: #2a2a2a;
   cursor: pointer;
   padding: 12px;
   flex: 1;
@@ -103,12 +103,12 @@ a {
 
 .btn:focus {
   background-color: /*#a62700*/ /*#2d4d80*/ #2a4e6c;
-  color: #222222 /*#66f732*/;
+  color: #fffaff /*#66f732*/;
 }
 
 .btn-active {
   background-color: /*#a62700*/ /*#2d4d80*/ #2a4e6c;
-  color: #222222 /*#66f732*/;
+  color: #fffaff /*#66f732*/;
 }
 
 .section {
@@ -464,19 +464,15 @@ a {
 /*only have hover functionality on hover enabled devices (i.e. not touch)*/
 @media (hover: hover) {
   .btn:hover {
-    color: #9f9f9f;
+    color: #2a4e6c;
   }
 
   .btn-active:hover {
-    color: #1a1a1a;
+    color: #fffaff;
   }
 
   a:hover {
     text-decoration: underline;
-    color: #9f9f9f;
-  }
-
-  .projLink:hover {
     color: #9f9f9f;
   }
 
