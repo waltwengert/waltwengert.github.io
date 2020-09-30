@@ -199,7 +199,7 @@ a {
   padding-top: 2%;
   padding-right: 5%;
   font-size: 36px;
-  color: #3a4a4d;
+  color: #444444;
 }
 
 /*education level*/
@@ -451,20 +451,20 @@ a {
 /*if the screen is more than 1200px wide (i.e. full screen 1080+ monitor)*/
 @media screen and (min-width: 1200px) {
   .buttons {
-    padding-left: 14%;
-    padding-right: 14%;
+    padding-left: 16%;
+    padding-right: 16%;
   }
 
   .section {
-    /*-28% from 14% padding either side*/
-    width: 72%;
+    /*-32% from 16% padding either side*/
+    width: 68%;
   }
 }
 
 /*only have hover functionality on hover enabled devices (i.e. not touch)*/
 @media (hover: hover) {
   .btn:hover {
-    color: #2a4e6c;
+    color: /*#2a4e6c*/ #9f9f9f;
   }
 
   .btn-active:hover {
@@ -477,6 +477,6 @@ a {
   }
 
   #projects .projLink:hover {
-    color: /*#a62700*/ /*#2d4d80*/ #2a4e6c;
+    color: /*#a62700*/ /*#2d4d80*/ #9f9f9f;
   }
 }
