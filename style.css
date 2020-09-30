@@ -239,6 +239,11 @@ a {
   padding-bottom: 15px;
 }
 
+/*last section, needs a min height equal to page - buttons so it can be nav'd to*/
+#employment {
+  min-height: calc(100vh - 78px);
+}
+
 /*employment employer*/
 #employment h2 {
   width: 55%;
@@ -281,10 +286,6 @@ a {
 
 .lastTile {
   margin-bottom: 40px;
-}
-
-#employment .lastTile {
-  margin-bottom: 20vh;
 }
 
 /*if the screen is less than 600px wide (i.e. a mobile device)*/
@@ -398,6 +399,10 @@ a {
     font-weight: normal;
     padding-bottom: 20px;
     padding-left: 7%;
+  }
+
+  #employment {
+    min-height: calc(100vh - 54px);
   }
 
   #employment .tile {
