@@ -10,12 +10,16 @@ document.addEventListener(
     //assign heading and buttons height based on device size
     var headingHeight = 0;
     var buttonsHeight = 0;
-    if (window.innerWidth >= 600) {
-      //wider screen, heading constant 280px, buttons constant 78px
+    if (window.innerWidth >= 1400) {
+      //full screen
+      headingHeight = 310;
+      buttonsHeight = 78;
+    } else if (window.innerWidth >= 600) {
+      //medium screen
       headingHeight = 280;
       buttonsHeight = 78;
     } else {
-      //smaller (mobile) screen, heading constant 250px, buttons constant 54px
+      //small (mobile) screen
       headingHeight = 250;
       buttonsHeight = 54;
     }
@@ -56,10 +60,10 @@ document.addEventListener(
 function toggleBtn(btnID, firstLoad) {
   var btnsHeight = 0;
   if (window.innerWidth >= 600) {
-    //if the browser is desktop (or simply wide enough) buttons are 78px high
+    //if the browser is desktop 
     btnsHeight = 78;
   } else {
-    //otherwise the browser is mobile (or small) and buttons are 54px high
+    //otherwise the browser is mobile 
     btnsHeight = 54;
   }
 
@@ -71,9 +75,7 @@ function toggleBtn(btnID, firstLoad) {
     var elementYOff = document.getElementById(divs[btnID]).offsetTop;
     //scroll to the top of the selected section taking buttons into account
     window.scroll({ top: elementYOff - btnsHeight, behavior: "auto" });
-    //scroll behaviour "smooth" is definitely ideal aesthetically but
-    //isn't realistic (unsupported in some browsers and registers a scroll
-    //event each pixel)
+    //scroll behaviour "smooth" looks nice but low support
   }
 }
 
