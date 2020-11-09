@@ -46,7 +46,7 @@ var data = {
       title: "KindyLog Product Site",
       tech: "HTML, CSS, JS, PHP",
       link: "https://github.com/waltwengert/kindylog-productsite",
-      play: "https://waltwengert.github.io/kindylog-productsite",
+      play: "na",
     },
     {
       screen: "assets/secretsanta.PNG",
