@@ -83,7 +83,7 @@ function populatePage() {
   //populate the heading
   var heading = jsonData.heading;
   document.getElementById("name").innerHTML = heading.name;
-  document.getElementById("myImg").src = heading.imgSource;
+  document.getElementById("ww").src = heading.imgSource;
   document.getElementById("mail").href = heading.mailLink;
   document.getElementById("mail").innerHTML = heading.mailText;
   document.getElementById("github").href = heading.githubLink;
