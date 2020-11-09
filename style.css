@@ -79,8 +79,8 @@ a {
 .buttons {
   display: flex;
   /*taking 1px from the side margins of 1px on .btn*/
-  padding-right: 8%; /*calc(8% - 1px);*/
-  padding-left: 8%; /*calc(8% - 1px);*/
+  padding-right: 11%; /*calc(8% - 1px);*/
+  padding-left: 11%; /*calc(8% - 1px);*/
   position: absolute;
 
   /*280px for the heading height, 0 for left and right to force flex*/
@@ -114,8 +114,8 @@ a {
 .section {
   background-color: /*#a62700*/ /*#2d4d80*/ #2a4e6c;
 
-  /*-16% from 8% padding either side*/
-  width: 84%;
+  /*-22% from 11% padding either side*/
+  width: 78%;
   margin-left: auto;
   margin-right: auto;
 
@@ -453,16 +453,18 @@ a {
   }
 }
 
-/*if the screen is more than 1200px wide (i.e. full screen 1080+ monitor)*/
-@media screen and (min-width: 1200px) {
+/*if the screen is more than 1400px wide (i.e. full screen 1080+ monitor)*/
+@media screen and (min-width: 1400px) {  
   .buttons {
-    padding-left: 16%;
-    padding-right: 16%;
+    padding-left: 19%;
+    padding-right: 19%;
+
+    top: 320px;
   }
 
   .section {
-    /*-32% from 16% padding either side*/
-    width: 68%;
+    /*-38% from 18% padding either side*/
+    width: 62%;
   }
 }
 
