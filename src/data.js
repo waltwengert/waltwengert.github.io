@@ -28,7 +28,7 @@ var data = {
   ],
   projects: [
     {
-      screen: "https://via.placeholder.com/200.png",
+      screen: "assets/shiftroster.PNG",
       title: "Shift Rosterer",
       tech: "HTML, CSS, JS, PHP, SQL",
       link: "https://github.com/waltwengert/shift-rosterer",
