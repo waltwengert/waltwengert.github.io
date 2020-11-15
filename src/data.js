@@ -23,7 +23,7 @@ var data = {
     {
       heading: "Software development",
       body:
-        "was the focus of my degree and is one of my main interests. Most of my recent experience is in <strong>full stack web development</strong> but my degree touched on a bit of everything.<br><br>Check out the <strong>projects below</strong> to see some of my work!",
+        "was the focus of my degree and is one of my main interests.<br><br>Most of my recent experience is in <strong>full stack web development</strong> but my degree touched on a bit of everything.<br><br>Check out the <strong>projects below</strong> to see some of my work!",
     },
   ],
   projects: [
