@@ -13,17 +13,17 @@ var data = {
     {
       heading: "I am",
       body:
-        "a recent <strong>Computer Science</strong>/Film Studies graduate from <strong>The University of Queensland</strong>.",
+        "a <strong>Computer Science</strong>/Film Studies graduate from <strong>The University of Queensland</strong>.<br><br>I am currently looking for an entry point into the <strong>software development</strong> industry.",
     },
     {
       heading: "I work",
       body:
-        "as an <strong>IT Technician</strong> for Education Queensland, <strong>administering</strong> a school's <strong>network</strong> and devices.",
+        "as an <strong>IT Technician</strong> for Education Queensland, <strong>administering</strong> a school's <strong>network</strong> and devices.<br><br>On a day-to-day basis, I coordinate with <strong>school stakeholders</strong> to ensure their tech needs are met.",
     },
     {
       heading: "Software development",
       body:
-        "was the focus of my degree and is one of my main interests. Check out the <strong>projects below</strong> to see some of my work!",
+        "was the focus of my degree and is one of my main interests. Most of my recent experience is in <strong>full stack web development</strong> but my degree touched on a bit of everything.<br><br>Check out the <strong>projects below</strong> to see some of my work!",
     },
   ],
   projects: [
@@ -101,22 +101,22 @@ var data = {
     {
       employer: "Education Queensland",
       position: "IT Technician",
-      period: "June 2020 - Present",
+      period: "2020 &mdash; Present",
     },
     {
       employer: "Kmart",
       position: "Retail Assistant",
-      period: "April 2012 - June 2020",
+      period: "2012 &mdash; 2020",
     },
     {
       employer: "Australian Electoral Commission",
       position: "Polling Official",
-      period: "June 2016",
+      period: "2016, 2019",
     },
     {
       employer: "Lightmare Studios",
       position: "Software QA",
-      period: "May 2012 - May 2013",
+      period: "2012 &mdash; 2013",
     },
   ],
 };
