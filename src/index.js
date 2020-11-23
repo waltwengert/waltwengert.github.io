@@ -131,24 +131,40 @@ function populateProjects(jsonData) {
     //beneath these a screen shot img, and to the far right a github link
     var projectTile = document.createElement("div");
     projectTile.classList.add("tile");
+    projectTile.classList.add("projTile");
     if (i == projects.length - 1) {
       projectTile.classList.add("lastTile");
     }
     document.getElementById("projects").append(projectTile);
 
+    //divs/columns for tile content
+    var imgDiv = document.createElement("div");
+    imgDiv.classList.add("imgDiv");
+    var txtDiv = document.createElement("div");
+    txtDiv.classList.add("txtDiv");
+    var btnDiv = document.createElement("div");
+    btnDiv.classList.add("btnDiv");
+    projectTile.append(imgDiv);
+    projectTile.append(txtDiv);
+    projectTile.append(btnDiv);
+
     var projectScreen = document.createElement("img");
     projectScreen.classList.add("projScreen");
     projectScreen.src = projects[i].screen;
-    projectTile.append(projectScreen);
+    imgDiv.append(projectScreen);
 
     var projectTitle = document.createElement("h2");
     projectTitle.innerHTML = projects[i].title;
-    projectTile.append(projectTitle);
+    txtDiv.append(projectTitle);
 
     var projectTech = document.createElement("h3");
     projectTech.classList.add("subheading");
     projectTech.innerHTML = projects[i].tech;
-    projectTile.append(projectTech);
+    txtDiv.append(projectTech);
+
+    var projectAbout = document.createElement("p");
+    projectAbout.innerHTML = projects[i].about;
+    txtDiv.append(projectAbout);
 
     var linkIcon = document.createElement("i");
     linkIcon.classList.add("fab");
@@ -157,7 +173,7 @@ function populateProjects(jsonData) {
     var projectLink = document.createElement("a");
     projectLink.href = projects[i].link;
     projectLink.innerHTML = linkIcon.outerHTML;
-    projectTile.append(projectLink);
+    btnDiv.append(projectLink);
 
     if (projects[i].play != "na") {
       var lI = document.createElement("i");
@@ -167,7 +183,7 @@ function populateProjects(jsonData) {
       var projectPlay = document.createElement("a");
       projectPlay.href = projects[i].play;
       projectPlay.innerHTML = lI.outerHTML;
-      projectTile.append(projectPlay);
+      btnDiv.append(projectPlay);
     }
   }
 }
