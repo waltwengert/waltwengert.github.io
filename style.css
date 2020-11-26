@@ -218,6 +218,8 @@ a {
 #projects p {
   padding-left: 10px;
   padding-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 30px;
 }
 
 /*github and play icons*/
@@ -372,6 +374,10 @@ a {
 
   #projects h2 {
     padding-top: 5%;
+  }
+
+  #projects h3 {
+    padding-bottom: 6%;
   }
 
   #projects p {
