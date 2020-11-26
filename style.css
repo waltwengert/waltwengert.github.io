@@ -195,9 +195,10 @@ a {
 #projects img {
   max-width: 90%;
   max-width: 90%;
-  padding: 10px;
+  margin: 10px;
   object-fit: cover;
   object-position: top;
+  box-shadow: 3px 3px 3px gray;
 }
 
 /*project title*/
@@ -333,11 +334,6 @@ a {
 
   .section {
     width: 100%;
-    /*100% of page height excluding buttons + 15px buffer*/
-    /*min-height: calc(100vh - 54px + 15px);*/
-
-    /*the height of heading (250) and buttons (54)*/
-    /*margin-top: 304px;*/
   }
 
   .section h2 {
@@ -371,7 +367,7 @@ a {
   }
 
   #projects img {
-    object-fit: cover;
+    box-shadow: 1px 1px 1px gray;
   }
 
   #projects h2 {
