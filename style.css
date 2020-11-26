@@ -474,6 +474,7 @@ a {
 
   .lastTile {
     margin-bottom: 30px;
+    border-bottom: none;
   }
 }
 
