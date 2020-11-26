@@ -36,14 +36,6 @@ var data = {
       play: "na",
     },
     {
-      screen: "assets/portfolio.PNG",
-      title: "This Site",
-      tech: "HTML, CSS, JS",
-      about: "Front-end website that uses JavaScript to populate the page (from JSON) and manage page navigation. Responsively designed to look good on any device.",
-      link: "https://github.com/waltwengert/waltwengert.github.io",
-      play: "https://waltwengert.github.io",
-    },
-    {
       screen: "assets/kindylog.PNG",
       title: "KindyLog Product Site",
       tech: "HTML, CSS, JS, PHP",
@@ -58,6 +50,14 @@ var data = {
       about: "Front-end web app designed to generate Secret Santa assignments for a group of any size. Features a shuffle algorithm.",
       link: "https://github.com/waltwengert/secret-santa",
       play: "https://waltwengert.github.io/secret-santa/",
+    },
+    {
+      screen: "assets/portfolio.PNG",
+      title: "This Site",
+      tech: "HTML, CSS, JS",
+      about: "Front-end website that uses JavaScript to populate the page (from JSON) and manage page navigation. Responsively designed to look good on any device.",
+      link: "https://github.com/waltwengert/waltwengert.github.io",
+      play: "https://waltwengert.github.io",
     },
     {
       screen: "assets/endless.PNG",
