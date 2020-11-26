@@ -28,7 +28,7 @@ var data = {
   ],
   projects: [
     {
-      screen: "assets/shiftroster_Browser.PNG",
+      screen: "assets/shiftroster_Browser.png",
       title: "Shift Rosterer",
       tech: "HTML, CSS, JS (jQuery), PHP, SQL",
       about: "Web app designed to view and manage rosters as a manager or employee. Features a sign-in system, interactive jQuery, and CRUD database operations.",
@@ -36,7 +36,7 @@ var data = {
       play: "na",
     },
     {
-      screen: "assets/kindylog_Browser.PNG",
+      screen: "assets/kindylog_Browser.png",
       title: "KindyLog Product Site",
       tech: "HTML, CSS, JS, PHP",
       about: "While working with 3CS Software on KindyLog, I developed a site for the product to gauge public interest. Site stores visit and expression of interest data in a MySQL DB and queries this data to create Google Charts.",
@@ -44,7 +44,7 @@ var data = {
       play: "na",
     },
     {
-      screen: "assets/secretsanta_Browser.PNG",
+      screen: "assets/secretsanta_Browser.png",
       title: "Secret Santa",
       tech: "HTML, CSS, JS",
       about: "Front-end web app designed to generate Secret Santa assignments for a group of any size. Features a shuffle algorithm.",
@@ -52,7 +52,7 @@ var data = {
       play: "https://waltwengert.github.io/secret-santa/",
     },
     {
-      screen: "assets/portfolio_Browser.PNG",
+      screen: "assets/portfolio_Browser.png",
       title: "This Site",
       tech: "HTML, CSS, JS",
       about: "Front-end website that uses JavaScript to populate the page (from JSON) and manage page navigation. Responsively designed to look good on any device.",
