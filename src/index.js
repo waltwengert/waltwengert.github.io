@@ -30,7 +30,7 @@ document.addEventListener(
 
     //if the user has scrolled past the heading set fixed top to 0,
     //otherwise set it to the amount scrolled down the heading
-    if (window.scrollY > headingHeight + buttonsHeight / 2) {
+    if (window.scrollY > headingHeight) {
       buttons.style.position = "fixed";
       buttons.style.top = "0";
     }
