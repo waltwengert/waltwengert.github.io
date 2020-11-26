@@ -134,7 +134,7 @@ a {
 
   display: flex;
   flex-direction: column;
-  z-index: -2;
+  /*z-index: -2;*/
 }
 
 /*the titles for all section tiles*/
@@ -146,6 +146,7 @@ a {
 #about {
   /*the height of heading (280) and buttons (78)*/
   margin-top: 358px;
+  z-index: -5;
 }
 
 /*about first few words/heading*/
@@ -191,6 +192,10 @@ a {
   text-align: center;
 }
 
+#projects {
+  z-index: -4;
+}
+
 /*project images*/
 #projects img {
   max-width: 90%;
@@ -229,6 +234,10 @@ a {
   flex: 1;
   padding: 0;
   padding-right: 10px;
+}
+
+#education {
+  z-index: -3;
 }
 
 /*education level*/
@@ -271,6 +280,7 @@ a {
 /*last section, needs a min height equal to page - buttons so it can be nav'd to*/
 #employment {
   min-height: calc(100vh - 78px);
+  z-index: -2;
 }
 
 /*employment employer*/
