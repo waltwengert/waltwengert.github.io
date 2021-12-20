@@ -95,6 +95,11 @@ var data = {
   ],
   employment: [
     {
+      employer: "QSuper",
+      position: "Systems Developer",
+      period: "January 2021 &mdash; Present",
+    },
+    {
       employer: "Education Queensland",
       position: "IT Technician",
       period: "March 2020 &mdash; December 2020",
