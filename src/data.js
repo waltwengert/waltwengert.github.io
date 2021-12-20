@@ -13,17 +13,7 @@ var data = {
     {
       heading: "I am",
       body:
-        "a <strong>Computer Science</strong>/Film Studies graduate from <strong>The University of Queensland</strong>.<br><br>I'm currently looking for an entry point into the <strong>software development</strong> industry.",
-    },
-    {
-      heading: "I work",
-      body:
-        "as an <strong>IT Technician</strong> for Education Queensland, <strong>administering</strong> a school's <strong>network</strong> and devices.<br><br>On a day-to-day basis, I coordinate with <strong>school stakeholders</strong> to ensure their tech needs are met.",
-    },
-    {
-      heading: "Software development",
-      body:
-        "was the focus of my degree and is one of my main interests.<br><br>Most of my recent experience is in <strong>full stack web development</strong> but my degree touched on a bit of everything.<br><br>Check out the <strong>projects below</strong> to see some of my work!",
+        "a <strong>Software Developer</strong> currently employed as a Systems Developer at QSuper, where I work on Acurity and Java-based projects, with a strong focus on improving development processes through enhancing testing suites, and implementing modern DevOps practices via the creation of Azure CI/CD pipelines.<br><br>I graduated from the University of Queensland as a <strong>Computer Science</strong>/Film Studies major in a dual degree Bachelor of Science/Arts.<br><br>I have a constant drive to expand my experience and knowledge of modern <strong>software development</strong> and tech in general.",
     },
   ],
   projects: [
@@ -107,11 +97,11 @@ var data = {
     {
       employer: "Education Queensland",
       position: "IT Technician",
-      period: "2020 &mdash; Present",
+      period: "March 2020 &mdash; December 2020",
     },
     {
       employer: "Kmart",
-      position: "Retail Assistant",
+      position: "Team Leader",
       period: "2012 &mdash; 2020",
     },
     {
