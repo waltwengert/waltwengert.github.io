@@ -13,7 +13,7 @@ var data = {
     {
       heading: "I am",
       body:
-        "a <strong>Software Developer</strong> currently employed as a Systems Developer at QSuper, where I work on Acurity and Java-based projects, with a strong focus on improving development processes through enhancing testing suites, and implementing modern DevOps practices via the creation of Azure CI/CD pipelines.<br><br>I graduated from the University of Queensland as a <strong>Computer Science</strong>/Film Studies major in a dual degree Bachelor of Science/Arts.<br><br>I have a constant drive to expand my experience and knowledge of modern <strong>software development</strong> and tech in general.",
+        "a <strong>Software Developer</strong> currently employed as a Systems Developer at QSuper. I work on Acurity and Java-based projects, with a strong focus on improving development processes through enhancing testing suites, and implementing modern DevOps practices via the creation of Azure CI/CD pipelines.<br><br>I graduated from the University of Queensland as a <strong>Computer Science</strong>/Film Studies major in a dual degree Bachelor of Science/Arts.<br><br>I have a constant drive to expand my experience and knowledge of modern <strong>software development</strong> and tech in general.",
     },
   ],
   projects: [
