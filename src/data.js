@@ -7,7 +7,7 @@ var data = {
     mailLink: "mailto:walt.frederick.john@live.com",
     mailText: "walt.frederick.john@live.com",
     githubLink: "https://github.com/waltwengert",
-    linkedinLink: "https://www.linkedin.com/in/walter-wengert-457864196/",
+    linkedinLink: "https://www.linkedin.com/in/walter-wengert/",
   },
   about: [
     {
